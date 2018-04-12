@@ -37,6 +37,13 @@
     		<div id="home" class="window-center">
     			<div class="header-home">
 					<img src="<?php echo RUTA_IMG?>logo/logo_home.png">
+					<div class="mdl-idioma">
+						<select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdiomaHome()">
+							<option value="Español">Espa&ntilde;ol</option>
+							<option value="Inglés">English</option>
+							<option value="Portugués">Portugu&ecirc;s</option>
+						</select>
+    				</div>
 		    	</div>
     			<div class="mdl-container mdl-all-window">
     				<div class="first-eslogan">
@@ -67,9 +74,15 @@
 	    				<img class="logo-partner" src="<?php echo RUTA_IMG?>logo/google.png">
 	    				<!-- <h2>Etes-vous prêt pour SAP Business One &#63;</h2> -->
 	    			</div>
-	    			<div class="header-right eslogan">
+	    			<div class="header-right">
 	    				<button class="mdl-button mdl-js-button mdl-button--icon button-home" onclick="returnHome()"><i class="mdi mdi-home"></i></button>
-	    				<h2><?php echo $eslogan ?></h2>
+	    				<div class="mdl-idioma">
+							<select class="selectpicker" id="Idioma"  name="Idioma" onchange="cambiarIdioma()">
+								<option value="Español">Espa&ntilde;ol</option>
+								<option value="Inglés">English</option>
+								<option value="Portugués">Portugu&ecirc;s</option>
+							</select>
+	    				</div>
 						<div class="background3"></div>
 						<div class="background2"></div>
 						<div class="background1"></div>
