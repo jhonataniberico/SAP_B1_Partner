@@ -39,9 +39,8 @@
 					<img src="<?php echo RUTA_IMG?>logo/logo_home.png">
 					<div class="mdl-idioma">
 						<select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdiomaHome()">
-							<option value="Español">Espa&ntilde;ol</option>
-							<option value="Inglés">English</option>
-							<option value="Portugués">Portugu&ecirc;s</option>
+							<option value="Francés">Français</option>
+							<option value="Sueco">Suomalainen</option>
 						</select>
     				</div>
 		    	</div>
@@ -78,9 +77,8 @@
 	    				<button class="mdl-button mdl-js-button mdl-button--icon button-home" onclick="returnHome()"><i class="mdi mdi-home"></i></button>
 	    				<div class="mdl-idioma">
 							<select class="selectpicker" id="Idioma"  name="Idioma" onchange="cambiarIdioma()">
-								<option value="Español">Espa&ntilde;ol</option>
-								<option value="Inglés">English</option>
-								<option value="Portugués">Portugu&ecirc;s</option>
+								<option value="Francés">Français</option>
+							<option value="Sueco">Suomalainen</option>
 							</select>
 	    				</div>
 						<div class="background3"></div>
