@@ -22,14 +22,6 @@
 	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>animate.css?v=<?php echo time();?>">
 	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
 	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.css?v=<?php echo time();?>">
-	<!-- <script type="text/javascript">
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-114404560-1', 'auto');
-			ga('send', 'pageview');
-	</script> -->
 </head>
 <body>
 	<section id="principal">
@@ -245,7 +237,7 @@
 		            			<div class="flip-card">
 		            				<div class="card-front card-front-none">
 			            				<img src="<?php echo RUTA_IMG?>cards/card-empleados.png">
-			            				<p>Número de empleados</p>
+			            				<p>N&uacute;mero de empleados</p>
 			            			</div>
 		            			</div>
 		            			<div class="content-card">
@@ -279,13 +271,13 @@
 			            				<div class="col-xs-12">
 			            					<div class="mdl-select">
 			            						<select class="selectpicker" id="facturacion" name="facturacion" title="Seleccione" onchange="selectFacturacion(this.id)">
-													<option value="< 1 Millón de Dólares">< 1 Millón de dólares</option>
-													<option value="1 - 3 Millones de dólares">1 - 3 Millones de dólares</option>
-													<option value="3 - 5 Millones de dólares">3 - 5 Millones de dólares</option>
-													<option value="5 - 10 Millones de dólares">5 - 10 Millones de dólares</option>
-													<option value="10 - 20 Millones de dólares">10 - 20 Millones de dólares</option>
-													<option value="20 - 40 Millones de dólares">20 - 40 Millones de dólares</option>
-													<option value="No poseo información">No poseo información</option>
+													<option value="< 1 Millón de Dólares">< 1 Mill&oacute;n de d&oacute;lares</option>
+													<option value="1 - 3 Millones de dólares">1 - 3 Millones de d&oacute;lares</option>
+													<option value="3 - 5 Millones de dólares">3 - 5 Millones de d&oacute;lares</option>
+													<option value="5 - 10 Millones de dólares">5 - 10 Millones de d&oacute;lares</option>
+													<option value="10 - 20 Millones de dólares">10 - 20 Millones de d&oacute;lares</option>
+													<option value="20 - 40 Millones de dólares">20 - 40 Millones de d&oacute;lares</option>
+													<option value="No poseo información">No poseo informaci&oacute;n</option>
 												</select>
 			            					</div>
 				            			</div>
@@ -640,7 +632,7 @@
 		            					<p>o</p>
 		            				</div>
 		            				<div class="content-linkedin">
-		            					<a class="button-linkedin" href="<?php  echo "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id={$client_id}&redirect_uri={$redirect_uri}&state={$csrf_token}&scope={$scopes}"; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i>Conéctese v&iacute;a LinkedIn</a>
+		            					<a class="button-linkedin" href="<?php  echo "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id={$client_id}&redirect_uri={$redirect_uri}&state={$csrf_token}&scope={$scopes}"; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i>Con&eacute;ctese v&iacute;a LinkedIn</a>
 		            				</div>
 		            			</div>
 		        				<div class="col-sm-6">
@@ -711,7 +703,7 @@
 		        				<div class="col-xs-12 mdl-label m-t-10">
 		    						<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
 										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-										<span class="mdl-checkbox__label f-s-14" style="">He le&iacute;do y acepto los <a class="FONDO_TERMINOS" href="https://www.sap.com/corporate/en/legal/terms-of-use.html" target="_blank" style="">Términos y condiciones de SAP</a></span>
+										<span class="mdl-checkbox__label f-s-14" style="">He le&iacute;do y acepto los <a class="FONDO_TERMINOS" href="https://www.sap.com/corporate/en/legal/terms-of-use.html" target="_blank" style="">T&eacute;rminos y condiciones de SAP</a></span>
 									</label>
 		        				</div>
 		        				<div class="col-xs-12 text-right m-t-25">
@@ -721,8 +713,8 @@
 	            		</div>
 	            	</div>
             		<div class="mdl-agradecimiento">
-            			<h2>Gracias por su interés</h2>
-            			<p>Un representante de SAP se pondrá en contacto con Usted para ayudarlo a dar el primer paso.</p>
+            			<h2>Gracias por su inter&eacute;s</h2>
+            			<p>Un representante de SAP se pondr&aacute; en contacto con Usted para ayudarlo a dar el primer paso.</p>
             		</div>
 				</div>
 				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect button-arrow button-prev" onclick="buttonQuestion(1)">
@@ -744,7 +736,7 @@
 						<img alt="" src="">
 					</div>
 				    <div class="mdl-card__supporting-text">
-                        <h2>Sabía que...</h2>
+                        <h2>Sab&iacute;a que...</h2>
                         <p></p>
                         <small></small>
 					</div> 
