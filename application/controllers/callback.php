@@ -28,14 +28,8 @@ class callback extends CI_Controller {
 		$this->session->set_userdata($session);
 		if($_SESSION['idioma'] == 'Español') {
 			header("location: es");
-		}else if($_SESSION['idioma'] == 'Inglés') {
-			header("location: en");
-		}else if($_SESSION['idioma'] == 'Portugués') {
-			header("location: pt");
 		}else if($_SESSION['idioma'] == 'Francés') {
 			header("location: fr");
-		}else if($_SESSION['idioma'] == 'Sueco') {
-			header("location: fi");
 		}
     } 
 }
