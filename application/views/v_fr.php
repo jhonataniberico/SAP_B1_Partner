@@ -51,7 +51,7 @@
     				</div>
 	    			<div class="second-eslogan">
 	    				<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
-	            		<h2 class="title-home">Diff&eacute;rents scénarios, une seule solution.</h2>
+	            		<h2 class="title-home">Diff&eacute;rents sc&eacute;narios, une seule solution.</h2>
 	    			</div>
 	    		</div>
 	    		<div class="background-body">
@@ -137,7 +137,7 @@
 			        				</div>
 			        				<div class="contenido-right">
 			    						<h2>Le saviez-vous &#63;</h2>
-			    						<p>Pour chaque nouvel innovateur qui propose un nouveau march&eacute; ou type de produit, une centaine de marchés sont r&eacute;duits ou paralys&eacute;s.</p>
+			    						<p>Pour chaque nouvel innovateur qui propose un nouveau march&eacute; ou type de produit, une centaine de march&eacute;s sont r&eacute;duits ou paralys&eacute;s.</p>
 			    						<small>(IDC, septembre 2016)</small>
 			        				</div>
 			        			</div>
@@ -158,7 +158,7 @@
 			        				</div>
 			        				<div class="contenido-right">
 			    						<h2>Le saviez-vous &#63;</h2>
-			    						<p>Vous pouvez augmenter de mani&egrave;re générale l’exp&eacute;rience client en utilisant des processus rapides et en mettant en place une prise de commande multicanal.</p>
+			    						<p>Vous pouvez augmenter de mani&egrave;re g&eacute;n&eacute;rale l’exp&eacute;rience client en utilisant des processus rapides et en mettant en place une prise de commande multicanal.</p>
 			    						<small>(SAP Performance Benchmarking)</small>
 			        				</div>
 			        			</div>
@@ -179,7 +179,7 @@
 			        				</div>
 			        				<div class="contenido-right">
 			    						<h2>Le saviez-vous &#63;</h2>
-			    						<p>Les leaders de cette industrie réinventent leurs manières d’opérer et utilisent la technologie comme outil pour perfectionner leurs pratiques commerciales et renforcer la satisfaction de leurs clients et distributeurs.</p>
+			    						<p>Les leaders de cette industrie r&eacute;inventent leurs mani&egrave;res d’op&eacute;rer et utilisent la technologie comme outil pour perfectionner leurs pratiques commerciales et renforcer la satisfaction de leurs clients et distributeurs.</p>
 			    						<small>(IDC, September 2016)</small>
 			        				</div>
 			        			</div>
@@ -200,7 +200,7 @@
 			        				</div>
 			        				<div class="contenido-right">
 			    						<h2>Le saviez-vous &#63;</h2>
-			    						<p>Les coûts de fabrication peuvent être réduits de 19% avec un suivi en temps réel des différentes variables agissant sur les coûts de production.</p>
+			    						<p>Les co&ucirc;ts de fabrication peuvent &ecirc;tre r&eacute;duits de 19% avec un suivi en temps r&eacute;el des diff&eacute;rentes variables agissant sur les co&ucirc;ts de production.</p>
 			    						<small>(IDC, septembre 2016)</small>
 			        				</div>
 			        			</div>
@@ -282,7 +282,7 @@
 					<div class="mdl-container text-center">
 						<div class="question">
 		            		<span class="number">03/05</span>
-		            		<h2>Quelle(s) est(sont) votre(vos) priorité(s)&#63;</h2>
+		            		<h2>Quelle(s) est(sont) votre(vos) priorit&eacute;(s)&#63;</h2>
 		            	</div>
 		            	<div class="mdl-card-question mdl-card-3">
 		            		<div class="flip-card">
@@ -297,14 +297,14 @@
 		            			</div>
 		            		</div>
 		            		<div class="content-card">
-		            			<button id="buttonCloud" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Cloud')">Sélectionner</button>
+		            			<button id="buttonCloud" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Cloud')">S&eacute;lectionner</button>
 		            			<div class="contenido">
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 		            				</div>
 		            				<div class="contenido-right">
 	            						<h2>Le saviez-vous &#63;</h2>
-	            						<p>Plus de 90% des entreprises utilisent déjà la technologie Cloud dans un environnement public, priv&eacute; ou hybride.</p>
+	            						<p>Plus de 90% des entreprises utilisent d&eacute;j&agrave; la technologie Cloud dans un environnement public, priv&eacute; ou hybride.</p>
 	            						<small>(IDC, septembre 2016)</small>
 		            				</div>
 		            			</div>
@@ -314,16 +314,16 @@
 		            		<div class="flip-card">
 		            			<div class="card-front">
 		            				<img src="<?php echo RUTA_IMG?>cards/card-anywhere.png">
-		            				<p>Mobilité</p>
+		            				<p>Mobilit&eacute;</p>
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Offrir aux employ&eacute;s un accès au logiciel par le biais d'une application mobile intuitive.</label>
+		            				<label>Offrir aux employ&eacute;s un acc&egrave;s au logiciel par le biais d'une application mobile intuitive.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card">
-		            			<button id="buttonAnywhere" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Mobilité')">Sélectionner</button>
+		            			<button id="buttonAnywhere" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Mobilité')">S&eacute;lectionner</button>
 		            			<div class="contenido">
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
@@ -370,12 +370,12 @@
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Anticiper les résultats avec des analyses prédictives et orienter votre entreprise vers la bonne direction.</label>
+		            				<label>Anticiper les r&eacute;sultats avec des analyses pr&eacute;dictives et orienter votre entreprise vers la bonne direction.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card">
-		            			<button id="buttonAnalytics" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Une analyse prédictive avec l&acute;analytique')">Sélectionner</button>
+		            			<button id="buttonAnalytics" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Une analyse prédictive avec l&acute;analytique')">S&eacute;lectionner</button>
 		            			<div class="contenido">
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
