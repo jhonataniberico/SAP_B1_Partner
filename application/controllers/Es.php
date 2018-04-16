@@ -177,7 +177,6 @@ class Es extends CI_Controller {
     }
     echo json_encode($data);
   }
-
   function sendGmailSap($email){
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
@@ -501,7 +500,6 @@ class Es extends CI_Controller {
       }
       return json_encode(array_map('utf8_encode', $data));
     }
-
     function EditQuestion(){
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
@@ -515,7 +513,6 @@ class Es extends CI_Controller {
       }
       echo json_encode($data);
     }
-
     function ConfirmarRespuestas(){
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
@@ -529,7 +526,6 @@ class Es extends CI_Controller {
       }
       echo json_encode($data);
   }
-
   function cambiarIdioma(){
     $data['error'] = EXIT_ERROR;
     $data['msj'] = null;
