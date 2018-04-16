@@ -40,19 +40,18 @@
 					<div class="mdl-idioma">
 						<select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdiomaHome()">
 							<option value="Español">Espa&ntilde;ol</option>
-							<option value="Inglés">English</option>
-							<option value="Portugués">Portugu&ecirc;s</option>
+							<option value="Francés">Français</option>
 						</select>
     				</div>
 		    	</div>
     			<div class="mdl-container mdl-all-window">
 	    			<div class="first-eslogan">
     					<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_partner.png">
-	            		<h2 class="title-home">&Eacute;crivez votre slogan ici</h2>
+	            		<h2 class="title-home">Escriba su eslogan aquí</h2>
     				</div>
 	    			<div class="second-eslogan">
 	    				<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
-	            		<h2 class="title-home">Différents scénarios, une seule solution.</h2>
+	            		<h2 class="title-home">Diferentes escenarios, una solución.</h2>
 	    			</div>
 	    		</div>
 	    		<div class="background-body">
