@@ -523,6 +523,7 @@ function enviarGracias(){
 /*BUTTONS NEXT - PREV */
 var m 			  = 1;
 var id_primero 	  = "";
+var partnerPage   = $('#partner');
 var homePage      = $('#home');
 var header        = $('.header');
 var footerLogo    = $('.logo-bottom');
@@ -531,6 +532,10 @@ var secondWindow  = $('#window2-page');
 var thirdWindow   = $('#window3-page');
 var fourthWindow  = $('#window4-page');
 var fifthWindow   = $('#window5-page');
+function buttonNextPartner(){
+	partnerPage.addClass('animated fadeOutLeft');
+	homePage.addClass('animated fadeInRight');
+}
 function buttonNext(){
 	if(pant1 == 0){
 		$('.button-next').prop("disabled", true);

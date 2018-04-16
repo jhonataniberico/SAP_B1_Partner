@@ -34,7 +34,34 @@
 <body>
 	<section id="principal">
 	    <div class="section">
-    		<div id="home" class="window-center">
+	    	<div id="partner" class="window-center">
+				<div class="header-home partner">
+					<img src="<?php echo RUTA_IMG?>logo/categoria_gold.png">
+					<div class="mdl-idioma partner">
+						<select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdiomaHome()">
+							<option value="Español">Espa&ntilde;ol</option>
+							<option value="Inglés">English</option>
+							<option value="Portugués">Portugu&ecirc;s</option>
+						</select>
+    				</div>
+		    	</div>
+	    		<div class="mdl-container mdl-all-window">
+	    			<img class="logo-home partner" src="<?php echo RUTA_IMG?>logo/partner.png">
+	            	<h2 class="title-home partner">Think</h2>
+	    		</div>
+	    		<div class="background-body">
+					<div class="background-body3"></div>
+					<div class="background-body2"></div>
+					<div class="background-body1"></div>
+	    		</div>
+	    		<div class="button-next-prev">
+	    			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect button-arrow button-next" onclick="buttonNextPartner()">
+						<div class="arrow arrow-right"></div>
+					</button>
+	    		</div>
+	    		<div class="fondo-bottom fondo-partner continue"></div>
+	    	</div>
+    		<div id="home" class="window-center opacity-done">
     			<div class="header-home">
 					<img src="<?php echo RUTA_IMG?>logo/logo_home.png">
 					<div class="mdl-idioma">
@@ -44,15 +71,9 @@
 						</select>
     				</div>
 		    	</div>
-    			<div class="mdl-container mdl-all-window">
-	    			<div class="first-eslogan">
-    					<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_partner.png">
-	            		<h2 class="title-home">Escriba su eslogan aqu&iacute;</h2>
-    				</div>
-	    			<div class="second-eslogan">
-	    				<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
-	            		<h2 class="title-home">Diferentes escenarios, una soluci&oacute;n.</h2>
-	    			</div>
+	    		<div class="mdl-container mdl-all-window">
+	    			<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
+	            	<h2 class="title-home">Diferentes escenarios. Una soluci&oacute;n</h2>
 	    		</div>
 	    		<div class="background-body">
 					<div class="background-body3"></div>
@@ -64,18 +85,19 @@
 						<div class="arrow arrow-right"></div>
 					</button>
 	    		</div>
-	    		<div class="fondo-bottom fondo-partner continue"></div>
+	    		<div class="fondo-bottom">
+	    			<img src="<?php echo RUTA_IMG?>fondo/fondo.png">
+	    		</div>
     		</div>
 			<div class="mdl-container-question">
 				<div class="header">
 	    			<div class="header-left">
-	    				<img class="logo-header" src="<?php echo RUTA_IMG?>logo/logo_header.png">
-	    				<img class="logo-partner" src="<?php echo RUTA_IMG?>logo/google.png">
-	    				<h2>¿Est&aacute; listo para SAP Business One&#63;</h2>
+	    				<img class="logo-header" src="<?php echo RUTA_IMG?>logo/partner.png">
+	    				<img class="logo-partner" src="<?php echo RUTA_IMG?>logo/categoria_gold.png">
 	    			</div>
 	    			<div class="header-right">
     					<button class="mdl-button mdl-js-button mdl-button--icon button-home" onclick="returnHome()"><i class="mdi mdi-home"></i></button>
-	    				<div class="mdl-idioma">
+	    				<div class="mdl-idioma partner">
 							<select class="selectpicker" id="Idioma"  name="Idioma" onchange="cambiarIdioma()">
 								<option value="Español">Espa&ntilde;ol</option>
 								<option value="Francés">Fran&ccedil;ais</option>

@@ -8,6 +8,19 @@ h2,p{
     font-family: 'RobotoRegular';
     color: #FFFFFF;
 }
+/*PARTNER*/
+#partner{
+	z-index: 7;
+	background-color: #FFFFFF;
+	-webkit-transition: background-color .3s linear;
+	-moz-transition: background-color .3s linear;
+	-ms-transition: background-color .3s linear;
+	-o-transition: background-color .3s linear;
+	transition: background-color .3s linear;
+}
+.title-home.partner{
+	color: #000000;
+}
 /*CLASES GENERALES*/
 .opacity{
 	z-index: 10 !important;
@@ -233,6 +246,10 @@ table.dataTable.no-footer{
 	width: 100%;
     max-width: 250px;
 }
+.logo-home.partner{
+	max-width: 180px;
+	width: 100%;
+}
 .bottom-right{
 	position: absolute;
     right: 0;
@@ -292,6 +309,10 @@ table.dataTable.no-footer{
 .header-home img{
 	max-width: 160px;
 }
+.header-home.partner img{
+	max-width: 74px;
+	width: 100%;
+}
 .header-home .mdl-idioma{
 	float: right;
 	margin-top: 3px;
@@ -302,7 +323,7 @@ table.dataTable.no-footer{
 	z-index: 0;
 }
 .fondo-bottom.fondo-partner{
-    background: url(../img/fondo/fondo.png) repeat-x;
+    background: url(../img/fondo/fondo_blanco.png) repeat-x;
     width: 100%;
     background-size: 1000px;
     height: 240px;
@@ -367,6 +388,8 @@ table.dataTable.no-footer{
 .header-left{
     padding: 18px 0 18px 25px;
     float: left;
+    display: flex;
+    align-items: center;
 }
 .header-right.admin{
 	max-width: 240px;
@@ -441,15 +464,14 @@ table.dataTable.no-footer{
     font-size: 21px;
 }
 .logo-header{
-	max-width: 140px;
+	max-width: 82px;
 	margin-right: 20px;
 }
 .logo-partner{
 	width: 100%;
-    max-width: 120px;
+    max-width: 75px;
     border-left: 1px solid #000000;
     padding-left: 20px;
-    height: 32px;
 }
 /*BUTTONS NEXT - PREV*/
 .button-next-prev{
@@ -842,8 +864,16 @@ span.number{
 .bootstrap-select .btn-default{
 	background-color: transparent;
 	border: none;
-    color: #000000;
+    color: #FFFFFF;
     outline: none !important;
+    box-shadow: none;
+}
+.partner .bootstrap-select .btn-default.active, 
+.partner .bootstrap-select .btn-default:active, 
+.partner .bootstrap-select.open>.dropdown-toggle.btn-default,
+.partner .bootstrap-select .btn-default:focus,
+.partner .bootstrap-select .btn-default{
+    color: #000000;
 }
 .mdl-select.mdl-standar .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
 	width: 100%;
