@@ -68,7 +68,7 @@ class Es extends CI_Controller {
               $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
               $session    = array('industria' => $datos,
                                   'id_sol'    => $datoInsert['Id'],
-                                  'idioma'    => $idioma);
+                                  'idioma'    => 'Español');
               $this->session->set_userdata($session);
             }else {
               if($pantalla == 2){
