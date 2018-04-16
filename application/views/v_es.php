@@ -46,8 +46,14 @@
     				</div>
 		    	</div>
     			<div class="mdl-container mdl-all-window">
-	    			<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
-	            	<h2 class="title-home">Diferentes escenarios. Una soluci&oacute;n</h2>
+	    			<div class="first-eslogan">
+    					<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_partner.png">
+	            		<h2 class="title-home">&Eacute;crivez votre slogan ici</h2>
+    				</div>
+	    			<div class="second-eslogan">
+	    				<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
+	            		<h2 class="title-home">Différents scénarios, une seule solution.</h2>
+	    			</div>
 	    		</div>
 	    		<div class="background-body">
 					<div class="background-body3"></div>
@@ -59,15 +65,13 @@
 						<div class="arrow arrow-right"></div>
 					</button>
 	    		</div>
-	    		<div class="fondo-bottom">
-	    			<!-- <img class="img-bottom"> -->
-	    			<img src="<?php echo RUTA_IMG?>fondo/fondo.png">
-	    		</div>
+	    		<div class="fondo-bottom fondo-partner continue"></div>
     		</div>
 			<div class="mdl-container-question">
 				<div class="header">
 	    			<div class="header-left">
 	    				<img class="logo-header" src="<?php echo RUTA_IMG?>logo/logo_header.png">
+	    				<img class="logo-partner" src="<?php echo RUTA_IMG?>logo/google.png">
 	    				<h2>¿Est&aacute; listo para SAP Business One&#63;</h2>
 	    			</div>
 	    			<div class="header-right">
@@ -75,8 +79,7 @@
 	    				<div class="mdl-idioma">
 							<select class="selectpicker" id="Idioma"  name="Idioma" onchange="cambiarIdioma()">
 								<option value="Español">Espa&ntilde;ol</option>
-								<option value="Inglés">English</option>
-								<option value="Portugués">Portugu&ecirc;s</option>
+								<option value="Francés">Français</option>
 							</select>
 	    				</div>
 						<div class="background3"></div>
