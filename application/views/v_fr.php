@@ -39,7 +39,7 @@
 					<img src="<?php echo RUTA_IMG?>logo/logo_home.png">
 					<div class="mdl-idioma">
 						<select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdiomaHome()">
-							<option value="Francés">Français</option>
+							<option value="Francés">Fran&ccedil;ais</option>
 							<option value="Español">Espa&ntilde;ol</option>
 						</select>
     				</div>
@@ -51,7 +51,7 @@
     				</div>
 	    			<div class="second-eslogan">
 	    				<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
-	            		<h2 class="title-home">Différents scénarios, une seule solution.</h2>
+	            		<h2 class="title-home">Diff&eacute;rents scénarios, une seule solution.</h2>
 	    			</div>
 	    		</div>
 	    		<div class="background-body">
@@ -77,7 +77,7 @@
 	    				<button class="mdl-button mdl-js-button mdl-button--icon button-home" onclick="returnHome()"><i class="mdi mdi-home"></i></button>
 	    				<div class="mdl-idioma">
 							<select class="selectpicker" id="Idioma"  name="Idioma" onchange="cambiarIdioma()">
-								<option value="Francés">Français</option>
+								<option value="Francés">Fran&ccedil;ais</option>
 								<option value="Español">Espa&ntilde;ol</option>
 							</select>
 	    				</div>
@@ -89,7 +89,7 @@
 	    		<div class="logo-bottom">
         			<img src="http://www.sap-latam.com/sap_business_one/public/img/logo/logo_home.png">
 		    		<div class="bottom-right">
-						<p>Vous pouvez sélectionner plus d'une option</p>
+						<p>Vous pouvez s&eacute;lectionner plus d'une option</p>
 		    		</div>
         		</div>
         		<div class="chat">
@@ -109,14 +109,14 @@
 			        			</div>
 			        		</div>
 			        		<div class="content-card">
-			        			<button id="buttonCard1" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Services professionnels')">Sélectionner</button>
+			        			<button id="buttonCard1" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Services professionnels')">S&eacute;lectionner</button>
 			        			<div class="contenido">
 			        				<div class="contenido-left">
 			        					<img src="<?php echo RUTA_IMG?>cards/card-contenido.png">
 			        				</div>
 			        				<div class="contenido-right">
-			    						<h2>Le saviez-vous ?</h2>
-			    						<p>Les entreprises leaders de conseil et de services professionnels utilisent la technologie de manière innovante pour perfectionner les pratiques commerciales, renforcer l’agilité et améliorer le service client.</p>
+			    						<h2>Le saviez-vous &#63;</h2>
+			    						<p>Les entreprises leaders de conseil et de services professionnels utilisent la technologie de mani&agrave;re innovante pour perfectionner les pratiques commerciales, renforcer l’agilit&eacute; et am&eacute;liorer le service client.</p>
 			    						<small>(IDC, septembre 2016)</small>
 			        				</div>
 			        			</div>
@@ -130,14 +130,14 @@
 			        			</div>
 			        		</div>
 			        		<div class="content-card">
-			        			<button id="buttonCard2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Retail')">Sélectionner</button>
+			        			<button id="buttonCard2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Retail')">S&eacute;lectionner</button>
 			        			<div class="contenido">
 			        				<div class="contenido-left">
 			        					<img src="<?php echo RUTA_IMG?>cards/card-contenido.png">
 			        				</div>
 			        				<div class="contenido-right">
-			    						<h2>Le saviez-vous ?</h2>
-			    						<p>Pour chaque nouvel innovateur qui propose un nouveau marché ou type de produit, une centaine de marchés sont réduits ou paralysés.</p>
+			    						<h2>Le saviez-vous &#63;</h2>
+			    						<p>Pour chaque nouvel innovateur qui propose un nouveau march&eacute; ou type de produit, une centaine de marchés sont r&eacute;duits ou paralys&eacute;s.</p>
 			    						<small>(IDC, septembre 2016)</small>
 			        				</div>
 			        			</div>
@@ -151,14 +151,14 @@
 			        			</div>
 			        		</div>
 			        		<div class="content-card">
-			        			<button id="buttonCard3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Distribution')">Sélectionner</button>
+			        			<button id="buttonCard3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Distribution')">S&eacute;lectionner</button>
 			        			<div class="contenido">
 			        				<div class="contenido-left">
 			        					<img src="<?php echo RUTA_IMG?>cards/card-contenido.png">
 			        				</div>
 			        				<div class="contenido-right">
-			    						<h2>Le saviez-vous ?</h2>
-			    						<p>Vous pouvez augmenter de manière générale l’expérience client en utilisant des processus rapides et en mettant en place une prise de commande multicanal.</p>
+			    						<h2>Le saviez-vous &#63;</h2>
+			    						<p>Vous pouvez augmenter de mani&egrave;re générale l’exp&eacute;rience client en utilisant des processus rapides et en mettant en place une prise de commande multicanal.</p>
 			    						<small>(SAP Performance Benchmarking)</small>
 			        				</div>
 			        			</div>
@@ -172,13 +172,13 @@
 			        			</div>
 			    			</div>
 			    			<div class="content-card">
-			        			<button id="buttonCard4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Biens de consommation')">Sélectionner</button>
+			        			<button id="buttonCard4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Biens de consommation')">S&eacute;lectionner</button>
 			        			<div class="contenido">
 			        				<div class="contenido-left">
 			        					<img src="<?php echo RUTA_IMG?>cards/card-contenido.png">
 			        				</div>
 			        				<div class="contenido-right">
-			    						<h2>Le saviez-vous ?</h2>
+			    						<h2>Le saviez-vous &#63;</h2>
 			    						<p>Les leaders de cette industrie réinventent leurs manières d’opérer et utilisent la technologie comme outil pour perfectionner leurs pratiques commerciales et renforcer la satisfaction de leurs clients et distributeurs.</p>
 			    						<small>(IDC, September 2016)</small>
 			        				</div>
@@ -193,13 +193,13 @@
 			        			</div>
 			        		</div>
 			        		<div class="content-card">
-			        			<button id="buttonCard5" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Production/Industriel')">Sélectionner</button>
+			        			<button id="buttonCard5" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Production/Industriel')">S&eacute;lectionner</button>
 			        			<div class="contenido">
 			        				<div class="contenido-left">
 			        					<img src="<?php echo RUTA_IMG?>cards/card-contenido.png">
 			        				</div>
 			        				<div class="contenido-right">
-			    						<h2>Le saviez-vous ?</h2>
+			    						<h2>Le saviez-vous &#63;</h2>
 			    						<p>Les coûts de fabrication peuvent être réduits de 19% avec un suivi en temps réel des différentes variables agissant sur les coûts de production.</p>
 			    						<small>(IDC, septembre 2016)</small>
 			        				</div>
@@ -219,13 +219,13 @@
 		            			<div class="flip-card">
 		            				<div class="card-front card-front-none">
 			            				<img src="<?php echo RUTA_IMG?>cards/card-empleados.png">
-			            				<p>Nombre d’employés</p>
+			            				<p>Nombre d’employ&eacute;s</p>
 			            			</div>
 		            			</div>
 		            			<div class="content-card">
 		            				<div class="select-empleados">
 		            					<button id="buttonMenos" class="mdl-button mdl-js-button mdl-button--icon select-one" onclick="operar(this.id,1)"><i class="mdi mdi-remove"></i></button>
-		            					<span id="textOperar">Sélectionner</span>
+		            					<span id="textOperar">S&eacute;lectionner</span>
 		            					<button id="buttonMas" class="mdl-button mdl-js-button mdl-button--icon select-one" onclick="operar(this.id,2)"><i class="mdi mdi-add"></i></button>
 		            				</div>
 			            			<div class="contenido">
@@ -233,8 +233,8 @@
 			            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 			            				</div>
 			            				<div class="contenido-right">
-		            						<h2>Le saviez-vous ?</h2>
-		            						<p>La qualité des échanges avec les clients et les consommateurs est le point de départ pour augmenter le résultat des petites et moyennes entreprises de biens de consommation.</p>
+		            						<h2>Le saviez-vous &#63;</h2>
+		            						<p>La qualité des &eacute;changes avec les clients et les consommateurs est le point de départ pour augmenter le r&eacute;sultat des petites et moyennes entreprises de biens de consommation.</p>
 		            						<small>(IDC, September  2016)</small>
 			            				</div>
 			            			</div>
@@ -268,8 +268,8 @@
 			            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 			            				</div>
 			            				<div class="contenido-right">
-		            						<h2>Le saviez-vous ?</h2>
-		            						<p>L’augmentation des emails commerciaux représente aujourd'hui un peu plus de 10% des ventes globales.</p>
+		            						<h2>Le saviez-vous &#63;</h2>
+		            						<p>L’augmentation des emails commerciaux repr&eacute;sente aujourd'hui un peu plus de 10% des ventes globales.</p>
 		            						<small>(IDC, septembre 2016)</small>
 			            				</div>
 			            			</div>
@@ -292,7 +292,7 @@
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Utiliser le Cloud pour se concentrer sur la croissance plutôt que l’implémentation et la gestion IT.</label>
+		            				<label>Utiliser le Cloud pour se concentrer sur la croissance plutôt que l’impl&eacute;mentation et la gestion IT.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
@@ -303,8 +303,8 @@
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 		            				</div>
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Plus de 90% des entreprises utilisent déjà la technologie Cloud dans un environnement public, privé ou hybride.</p>
+	            						<h2>Le saviez-vous &#63;</h2>
+	            						<p>Plus de 90% des entreprises utilisent déjà la technologie Cloud dans un environnement public, priv&eacute; ou hybride.</p>
 	            						<small>(IDC, septembre 2016)</small>
 		            				</div>
 		            			</div>
@@ -318,7 +318,7 @@
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Offrir aux employés un accès au logiciel par le biais d'une application mobile intuitive.</label>
+		            				<label>Offrir aux employ&eacute;s un accès au logiciel par le biais d'une application mobile intuitive.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
@@ -329,8 +329,8 @@
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 		            				</div>
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Vous pouvez accéder à une analyse intégrée pour une prise de décision en temps réel.</p>
+	            						<h2>Le saviez-vous &#63;</h2>
+	            						<p>Vous pouvez acc&eacute;der &aacute; une analyse int&eacute;gr&eacute;e pour une prise de d&eacute;cision en temps r&eacute;el.</p>
 	            						<small>(IDC, spetembre 2016)</small>
 		            				</div>
 		            			</div>
@@ -340,23 +340,23 @@
 		            		<div class="flip-card">
 		            			<div class="card-front">
 		            				<img class="m-b-0" src="<?php echo RUTA_IMG?>cards/card-sap.png">
-		            				<p>Analyse en temps réel avec SAP HANA</p>
+		            				<p>Analyse en temps r&eacute;el avec SAP HANA</p>
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Votre temps d’analyse peut être réduit de 70% avec la puissance de SAP HANA.</label>
+		            				<label>Votre temps d’analyse peut &ecirc;tre r&eacute;duit de 70% avec la puissance de SAP HANA.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card">
-		            			<button id="buttonSap" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Analyse en temps réel avec SAP HANA')">Sélectionner</button>
+		            			<button id="buttonSap" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Analyse en temps réel avec SAP HANA')">S&eacute;lectionner</button>
 		            			<div class="contenido">
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 		            				</div>
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>SAP Business One utilise la technologie In-Memory Computing pour créer des rapports et analyses.</p>
+	            						<h2>Le saviez-vous &#63;</h2>
+	            						<p>SAP Business One utilise la technologie In-Memory Computing pour cr&eacute;er des rapports et analyses.</p>
 	            						<small>(IDC, septembre 2016)</small>
 		            				</div>
 		            			</div>
@@ -366,7 +366,7 @@
 		            		<div class="flip-card">
 		            			<div class="card-front">
 		            				<img class="m-b-0" src="<?php echo RUTA_IMG?>cards/card-analytics.png">
-		            				<p>Une analyse prédictive avec l'analytique</p>
+		            				<p>Une analyse pr&eacute;dictive avec l'analytique</p>
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
@@ -381,8 +381,8 @@
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 		            				</div>
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Vous obtiendrez les moyens pour explorer, augmenter et analyser instantanément les données pratiquement en temps réel.</p>
+	            						<h2>Le saviez-vous &#63;</h2>
+	            						<p>Vous obtiendrez les moyens pour explorer, augmenter et analyser instantan&eacute;ment les donn&eacute;es pratiquement en temps r&eacute;el.</p>
 	            						<small>(IDC, septembre 2016)</small>
 		            				</div>
 		            			</div>
@@ -396,18 +396,18 @@
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Avoir un allié pour faire face aux défis de l’ère digitale et atteindre vos objectifs.</label>
+		            				<label>Avoir un alli&eacute; pour faire face aux d&eacute;fis de l’&eacute;re digitale et atteindre vos objectifs.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card">
-		            			<button id="buttonStarup" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Entreprenariat')">Sélectionner</button>
+		            			<button id="buttonStarup" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Entreprenariat')">S&eacute;lectionner</button>
 		            			<div class="contenido">
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 		            				</div>
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
+	            						<h2>Le saviez-vous &#63;</h2>
 	            						<p>35% des revendeurs de petite et moyenne taille ont investi dans une technologie pour accompagner leur croissance.</p>
 	            						<small>(IDC, septembre 2016)</small>
 		            				</div>
@@ -422,19 +422,19 @@
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Créer rapidement des rapports précis sur les livraisons entrantes et sortantes, les inventaires et la traçabilité des produits.</label>
+		            				<label>Cr&eacute;er rapidement des rapports pr&eacute;cis sur les livraisons entrantes et sortantes, les inventaires et la traçabilit&eacute; des produits.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card">
-		            			<button id="buttonSubsidaries" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Filiales et succursales')">Sélectionner</button>
+		            			<button id="buttonSubsidaries" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Filiales et succursales')">S&eacute;lectionner</button>
 		            			<div class="contenido">
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 		            				</div>
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Une plateforme flexible qui vous fera découvrir tout le potentiel de votre écosystème.</p>
+	            						<h2>Le saviez-vous &#63;</h2>
+	            						<p>Une plateforme flexible qui vous fera d&eacute;couvrir tout le potentiel de votre &eacute;cosyst&agrave;me.</p>
 	            						<small>(IDC, septembre 2016)</small>
 		            				</div>
 		            			</div>
@@ -456,16 +456,16 @@
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Implémenter dans votre infrastructure actuelle ou investir dans des options hardwares certifiées.</label>
+		            				<label>Impl&eacute;menter dans votre infrastructure actuelle ou investir dans des options hardwares certifi&eacute;es.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card bottom">
-		            			<button id="buttonLocal" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-one select-infraestructura" onclick="guardarDatos(this.id,'Local')">Sélectionner</button>
+		            			<button id="buttonLocal" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-one select-infraestructura" onclick="guardarDatos(this.id,'Local')">S&eacute;lectionner</button>
 		            			<div class="contenido">
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Ces applications (e-commerce, point de vente, place de marché, CRM, etc.) peuvent facilement être connectées à SAP Business One quand cela est réalisé On-Premise.</p>
+	            						<h2>Le saviez-vous &#63;</h2>
+	            						<p>Ces applications (e-commerce, point de vente, place de march&eacute;, CRM, etc.) peuvent facilement &ecirc;tre connect&eacute;es &agrave; SAP Business One quand cela est r&eacute;alis&eacute; On-Premise.</p>
 	            						<small>(IDC, septembre 2016)</small>
 		            				</div>
 		            				<div class="contenido-left">
@@ -482,16 +482,16 @@
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Utiliser un logiciel dans le Cloud avec les informations de mon activité.</label>
+		            				<label>Utiliser un logiciel dans le Cloud avec les informations de mon activit&eacute;.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card bottom">
-		            			<button id="buttonCloudI" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-one select-infraestructura" onclick="guardarDatos(this.id,'Cloud')">Sélectionner</button>
+		            			<button id="buttonCloudI" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-one select-infraestructura" onclick="guardarDatos(this.id,'Cloud')">S&eacute;lectionner</button>
 		            			<div class="contenido">
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>21% des entreprises sont de plus en plus intéressées par une alternative Cloud plutôt que du On-Premise.</p>
+	            						<h2>Le saviez-vous &#63;</h2>
+	            						<p>21% des entreprises sont de plus en plus int&eacute;ress&eacute;es par une alternative Cloud plut&ocirc;t que du On-Premise.</p>
 	            						<small>(IDC, septembre 2016)</small>
 		            				</div>
 		            				<div class="contenido-left">
@@ -513,11 +513,11 @@
 		            			</div>
 		            		</div>
 		            		<div class="content-card bottom">
-		            			<button id="buttonHibrida" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-one select-infraestructura" onclick="guardarDatos(this.id,'Hybrid')">Sélectionner</button>
+		            			<button id="buttonHibrida" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-one select-infraestructura" onclick="guardarDatos(this.id,'Hybrid')">S&eacute;lectionner</button>
 		            			<div class="contenido">
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Les sociétés envisagent sereinement l’avenir depuis que les logiciels de management Cloud se développent pour pouvoir gérer du Cloud privé en même temps qu’elles acquirent des ressources auprès de large fournisseurs publics.</p>
+	            						<h2>Le saviez-vous &#63;</h2>
+	            						<p>Les soci&eacute;t&eacute;s envisagent sereinement l’avenir depuis que les logiciels de management Cloud se d&eacute;veloppent pour pouvoir g&eacute;rer du Cloud priv&eacute; en m&ecirc;me temps qu’elles acquirent des ressources aupr&agrave;s de large fournisseurs publics.</p>
 	            						<small>(IDC, septembre 2016)</small>
 		            				</div>
 		            				<div class="contenido-left">
@@ -533,13 +533,13 @@
 						<div class="question">
 		            		<span class="number">05/05</span>
 		            		<div class="question-respuestas">
-		            			<p><span>Selon vos réponses,</span> nous avons une solution idéale pour votre entreprise.</p>
+		            			<p><span>Selon vos r&eacute;ponses,</span> nous avons une solution id&acute;ale pour votre entreprise.</p>
 		            		</div>
 		            	</div>
 		            	<div class="mdl-solicitud">
 			            	<div class="mdl-card-confirmacion">
 		            			<div class="mdl-respuestas text-left">
-		            				<h2 class="title-formulario m-b-10">Vos réponses sont:</h2>
+		            				<h2 class="title-formulario m-b-10">Vos r&eacute;ponses sont:</h2>
 		            				<div class="contenedor-respuestas">
 	            						<div class="col-xs-12 p-0">
 			            					<div class="div-respuestas">
@@ -582,22 +582,22 @@
 			            				</div>
 		            				</div>
 		            				<div class="col-xs-12 p-0 text-right m-t-10">
-		            					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-confirmar" onclick="ConfirmarRespuestas()">Confirmer les  réponses</button>
+		            					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-confirmar" onclick="ConfirmarRespuestas()">Confirmer les  r&eacute;ponses</button>
 		            				</div>
 			            		</div>
 			            		<div class="mdl-back-respuestas">
 		        					<div class="mdl-back-contenido">
 		        						<span>10 511</span>
-		        						<p>sociétés dans votre région utilisent SAP Business One.</p>
+		        						<p>soci&eacute;t&eacute;s dans votre r&eacute;gion utilisent SAP Business One.</p>
 		        						<small>(Samuli Ajo, Global Customer Counting)</small>
 		        					</div>
 		        					<div class="mdl-back-contenido second">
-		        						<span>40% à 60%</span>
-		        						<p>de réduction de la charge administrative de votre entreprise.</p>
+		        						<span>40% &agrave; 60%</span>
+		        						<p>de r&eacute;duction de la charge administrative de votre entreprise.</p>
 		        					</div>
 		        					<div class="mdl-back-contenido">
 		        						<span>103</span>
-		        						<p>partenaires spécialisés sur SAP Business One dans votre région.</p>
+		        						<p>partenaires sp&eacute;cialis&eacute;s sur SAP Business One dans votre r&eacute;gion.</p>
 		        						<small>(Vinicius Ricarte, Channel Sales Development)</small>
 		        					</div>
 			            		</div>
@@ -645,7 +645,7 @@
 											<option value="Client">Client</option>
 											<option value="Client potentiel">Client potentiel</option>
 											<option value="Consultant">Consultant</option>
-											<option value="Employé SAP">Employé SAP</option>
+											<option value="Employé SAP">Employ&eacute; SAP</option>
 											<option value="Etudiant">Etudiant</option>
 											<option value="Partenaire">Partenaire</option>
 											<option value="Partenaire potentiel">Partenaire potentiel</option>
@@ -659,7 +659,7 @@
 									</div>
 		        				</div>
 		        				<div class="col-sm-6">
-		        					<p class="text-contacto">J'aimerais être recontacté par un représentant SAP:</p>
+		        					<p class="text-contacto">J'aimerais être recontact&eacute; par un repr&eacute;sentant SAP:</p>
 		        					<div class="mdl-input-label">
 		        						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-email">
 											<input type="radio" id="c-email" class="mdl-radio__button" name="options" value="1">
@@ -669,7 +669,7 @@
 		        					<div class="mdl-input-label">
 		        						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-telefono">
 											<input type="radio" id="c-telefono" class="mdl-radio__button" name="options" value="2">
-											<span class="mdl-radio__label">Par téléphone</span>
+											<span class="mdl-radio__label">Par t&eacute;l&eacute;phone</span>
 										</label>
 		        					</div>
 		        					<div class="mdl-input-label">
@@ -692,8 +692,8 @@
 	            		</div>
 	            	</div>
             		<div class="mdl-agradecimiento">
-            			<h2>Merci pour votre intérêt.</h2>
-            			<p>Un expert SAP vous recontactera pour vous aider dans votre réfléxion.</p>
+            			<h2>Merci pour votre int&eacute;r&ecirc;t.</h2>
+            			<p>Un expert SAP vous recontactera pour vous aider dans votre r&eacute;fl&eacute;xion.</p>
             		</div>
 				</div>
 				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect button-arrow button-prev" onclick="buttonQuestion(1)">
@@ -715,7 +715,7 @@
 						<img alt="" src="">
 					</div>
 				    <div class="mdl-card__supporting-text">
-                        <h2>Le saviez-vous?</h2>
+                        <h2>Le saviez-vous&#63;</h2>
                         <p></p>
                         <small></small>
 					</div> 
