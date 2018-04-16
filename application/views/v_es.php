@@ -40,18 +40,18 @@
 					<div class="mdl-idioma">
 						<select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdiomaHome()">
 							<option value="Español">Espa&ntilde;ol</option>
-							<option value="Francés">Français</option>
+							<option value="Francés">Fran&ccedil;ais</option>
 						</select>
     				</div>
 		    	</div>
     			<div class="mdl-container mdl-all-window">
 	    			<div class="first-eslogan">
     					<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_partner.png">
-	            		<h2 class="title-home">Escriba su eslogan aquí</h2>
+	            		<h2 class="title-home">Escriba su eslogan aqu&iacute;</h2>
     				</div>
 	    			<div class="second-eslogan">
 	    				<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
-	            		<h2 class="title-home">Diferentes escenarios, una solución.</h2>
+	            		<h2 class="title-home">Diferentes escenarios, una soluci&oacute;n.</h2>
 	    			</div>
 	    		</div>
 	    		<div class="background-body">
@@ -78,7 +78,7 @@
 	    				<div class="mdl-idioma">
 							<select class="selectpicker" id="Idioma"  name="Idioma" onchange="cambiarIdioma()">
 								<option value="Español">Espa&ntilde;ol</option>
-								<option value="Francés">Français</option>
+								<option value="Francés">Fran&ccedil;ais</option>
 							</select>
 	    				</div>
 						<div class="background3"></div>
