@@ -22,14 +22,14 @@
 	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>animate.css?v=<?php echo time();?>">
 	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
 	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.css?v=<?php echo time();?>">
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 			ga('create', 'UA-114404560-1', 'auto');
 			ga('send', 'pageview');
-	</script>
+	</script> -->
 </head>
 <body>
 	<section id="principal">
@@ -771,7 +771,7 @@
 				$('.header').addClass('opacity');
 				$('.logo-bottom').addClass('opacity');
 				$('#telefono').css('border-color','red');
-				$('#nombre_completo').val("<?php echo $nombre_comple ?>");
+				//$('#nombre_completo').val("<?php echo $nombre_comple ?>");
 				$('#email').val("<?php echo $email_link ?>");
 				$('#pais').val("<?php echo $pais_link ?>");
 				if("<?php echo $tit ?>" == '') {
