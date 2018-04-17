@@ -1,3 +1,15 @@
+var timeoutID;
+window.addEventListener("load", function() {
+    timeoutID = setTimeout(function() {
+    	$('.first-eslogan').addClass('animated fadeOutLeft');
+    	$('.second-eslogan').addClass('animated fadeInRight');
+    	$('.link-empezar').addClass('animate');
+    	$('buttonNextPartner').trigger('click');
+    },4000);
+    timeoutID = setTimeout(function() {
+    	$('#buttonNextPartner').trigger('click');
+    },10000);
+});
 function solicitarEstimacion(){
 	var nombre_completo = $('#nombre_completo').val(); 
 	var empresa  		= $('#empresa').val();
@@ -476,6 +488,7 @@ function enviarGracias(){
 /*BUTTONS NEXT - PREV */
 var m 			  = 1;
 var id_primero 	  = "";
+var partnerPage   = $('#partner');
 var homePage      = $('#home');
 var header        = $('.header');
 var footerLogo    = $('.logo-bottom');
@@ -484,6 +497,11 @@ var secondWindow  = $('#window2-page');
 var thirdWindow   = $('#window3-page');
 var fourthWindow  = $('#window4-page');
 var fifthWindow   = $('#window5-page');
+function buttonNextPartner(){
+	partnerPage.addClass('animated fadeOutLeft');
+	homePage.addClass('animated fadeInRight');
+	clearTimeout(timeoutID);
+}
 function buttonNext(){
 	if(pant1 == 0){
 		$('.button-next').prop("disabled", true);

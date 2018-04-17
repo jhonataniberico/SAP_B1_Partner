@@ -106,11 +106,11 @@
 	    		</div>
 	    		<div class="logo-bottom">
 		    		<div class="bottom-right">
-						<p>Puede seleccionar m&aacute;s de una opci&oacute;n</p>
+						<p>Vous pouvez sélectionner plusieurs options</p>
 		    		</div>
         		</div>
         		<div class="chat">
-        			<a href="https://z1.liveper.sn/api/account/81933160/route/campaign/194741814/engagement/250005114" target="_blank"><img src="<?php echo RUTA_IMG?>chat.png"><label>Chatea con nosotros</label></a>
+        			<a href="https://z1.liveper.sn/api/account/81933160/route/campaign/194741814/engagement/250005114" target="_blank"><img src="<?php echo RUTA_IMG?>chat.png"><label>Dialoguer avec nous</label></a>
         		</div>
 				<div id="window1-page" class="window-center opacity-done">
 					<div class="mdl-container text-center">
@@ -269,7 +269,7 @@
 			            				<div class="col-xs-12">
 			            					<div class="mdl-select">
 			            						<select class="selectpicker" id="facturacion" name="facturacion" title="Seleccione" onchange="selectFacturacion(this.id)">
-													<option value="< 1 Million d'Euro">< < 1 Million d'Euro</option>
+													<option value="< 1 Million d'Euro"> < 1 Million d'Euro</option>
 													<option value="1 - 3 Millions d'Euro">1 - 3 Millions d'Euro</option>
 													<option value="3 - 5  Millions d'Euro">3 - 5  Millions d'Euro</option>
 													<option value="5 - 10 Millions d'Euro">5 - 10 Millions d'Euro</option>
@@ -760,17 +760,6 @@
         } else {
             $('select').selectpicker();
         }
-        window.addEventListener("load", function() {
-            setTimeout(function() {
-            	$('.first-eslogan').addClass('animated fadeOutLeft');
-            	$('.second-eslogan').addClass('animated fadeInRight');
-            	$('.link-empezar').addClass('animate');
-            	$('buttonNextPartner').trigger('click');
-            },4000);
-            setTimeout(function() {
-            	$('#buttonNextPartner').trigger('click');
-            },10000);
-        });
         $(window).load(function() {
         	  /*if(<?php echo $pantalla1 ?> == 3) {
 				m = 5; 
