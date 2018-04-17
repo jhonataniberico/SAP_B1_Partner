@@ -1541,6 +1541,9 @@ span.number{
 	}
 }
 @media (max-width: 768px){
+	.link-empezar{
+		display: none;
+	}
 	.logo-home{
 		max-width: 250px;
 	}
