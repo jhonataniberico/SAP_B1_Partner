@@ -1569,6 +1569,7 @@ span.number{
 	}
 	#home.window-center.opacity-done .mdl-container{
 		height: initial;
+		padding-left: 0;
 	}
 	.window-center.opacity-done .mdl-container{
 		height: 100%;
@@ -1870,7 +1871,7 @@ span.number{
 	}
 	.fondo-bottom.fondo-partner{
 		background-size: 450px;
-    	height: 120px;
+    	height: 90px;
 	}
 }	
 @media(max-width: 320px){
