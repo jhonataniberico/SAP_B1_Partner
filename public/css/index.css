@@ -590,10 +590,6 @@ table.dataTable.no-footer{
 	justify-content: center;
 	flex-direction: row;
 }
-/*HOME*/
-#home{
-	z-index: 6;
-}
 /*QUESTIONS*/
 .question{
 	margin-bottom: 30px;
