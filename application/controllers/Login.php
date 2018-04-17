@@ -26,26 +26,21 @@ class Login extends CI_Controller {
 			$username = $this->M_usuario->verificarUsuario($usuario, $password);
 			if(count($username) != 0){
 				if(strtolower($username[0]->usuario) == strtolower($usuario)){
-					if($usuario == 'fradmin'){
-						$session = array('usuario' => $usuario,
-								 		 'Id_user' => $username[0]->Id,
-								 		 'Idioma'  => 'Francés');
-						$data['href'] = 'Admin';
-					}else if($usuario == 'sapadmin'){
-						$session = array('usuario' => $usuario,
-								 		 'Id_user' => $username[0]->Id,
-								 		 'Idioma'  => 'Todos');
-						$data['href'] = 'Admin';
-					}else if($usuario == 'fiadmin'){
-						$session = array('usuario' => $usuario,
-								 		 'Id_user' => $username[0]->Id,
-								 		 'Idioma'  => 'Sueco');
-						$data['href'] = 'Admin';
-					}else if($usuario == 'partnersap'){
+					if($usuario == 'partnersap'){
 						$session = array('usuario' => $usuario,
 								 		 'Id_user' => $username[0]->Id,
 								 		 'Idioma'  => '');
 						$data['href'] = 'Configuracion';
+					}else if($usuario == 'partneradmin'){
+						$session = array('usuario' => $usuario,
+								 		 'Id_user' => $username[0]->Id,
+								 		 'Idioma'  => 'Todos');
+						$data['href'] = 'Admin';
+					}else if($usuario == 'fradmin'){
+						$session = array('usuario' => $usuario,
+								 		 'Id_user' => $username[0]->Id,
+								 		 'Idioma'  => 'Francés');
+						$data['href'] = 'Admin';
 					}
 					$this->session->set_userdata($session);
 		          	$data['error'] = EXIT_SUCCESS;
