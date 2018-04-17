@@ -45,14 +45,14 @@ class Admin extends CI_Controller {
                     $contactado = 'Por Email y teléfono';
                 }
                 $html .= '<tr class="tr-cursor-pointer tr-ver-info-solicitud" data-idSolicitud="'.$cont.'">
-                            <td class="text-center">'.$key->nombre_completo.'</td>
-                            <td class="text-center">'.$key->Empresa.'</td>
-                            <td class="text-center">'.$key->Email.'</td>
-                            <td class="text-center">'.$key->Telefono.'</td>
-                            <td class="text-center">'.$key->Relacion.'</td>
-                            <td class="text-center">'.$key->Cargo.'</td>
-                            <td class="text-center">'.$contactado.'</td>
-                            <td class="text-center">'.$key->Pais.'</td>
+                            <td class="text-left min-width-180">'.$key->nombre_completo.'</td>
+                            <td class="text-left">'.$key->Empresa.'</td>
+                            <td class="text-left">'.$key->Email.'</td>
+                            <td class="text-left">'.$key->Telefono.'</td>
+                            <td class="text-left">'.$key->Relacion.'</td>
+                            <td class="text-left min-width-180">'.$key->Cargo.'</td>
+                            <td class="text-left">'.$contactado.'</td>
+                            <td class="text-left">'.$key->Pais.'</td>
                             <td class="text-center">'.$key->fecha_sol.' pe</td>
                             <td class="text-center" style="display: none">'.$key->Industria.'</td>
                             <td class="text-center" style="display: none">'.$key->Tamanio.' employees</td>

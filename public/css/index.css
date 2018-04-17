@@ -8,6 +8,19 @@ h2,p{
     font-family: 'RobotoRegular';
     color: #FFFFFF;
 }
+/*TABLE*/
+table.dataTable thead th,
+table.dataTable tbody td{
+	font-size: 13px !important;
+}
+.paginate_button,
+.dataTables_wrapper .dataTables_info{
+	font-size: 13px;
+}
+.min-width-180{
+	min-width: 180px;
+    white-space: inherit !important;
+}
 /*PARTNER*/
 #partner{
 	z-index: 7;

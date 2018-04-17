@@ -44,9 +44,9 @@
                     <?php } else { ?>
                     <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect admin-logout m-r-25" onclick="cerrarCesion()">Logout</a>
                     <?php } ?>
-                    <div class="background3"></div>
-                    <div class="background2"></div>
                     <div class="background1"></div>
+                    <div class="background2"></div>
+                    <div class="background3"></div>
                 </div>
             </div>
             <div class="mdl-card mdl-card-table contenido-admin">
@@ -55,14 +55,14 @@
                         <thead>
                             <?php if($idioma == 'Francés'){ ?>
                             <tr class="tr-header-reporte">
-                                <th class="text-center">Client</th>
-                                <th class="text-center">Société</th>
-                                <th class="text-center">E-mail</th>
-                                <th class="text-center">Téléphone</th>
-                                <th class="text-center">Relation avec SAP</th>
-                                <th class="text-center">Position</th>
-                                <th class="text-center">Je veux être contacté</th>
-                                <th class="text-center">Pays</th>
+                                <th class="text-left">Client</th>
+                                <th class="text-left">Société</th>
+                                <th class="text-left">E-mail</th>
+                                <th class="text-left">Téléphone</th>
+                                <th class="text-left">Relation avec SAP</th>
+                                <th class="text-left">Position</th>
+                                <th class="text-left">Je veux être contacté</th>
+                                <th class="text-left">Pays</th>
                                 <th class="text-center">Date</th>
                                 <th class="text-center" style="display: none">Industrie</th>
                                 <th class="text-center" style="display: none">Taille</th>
@@ -72,14 +72,14 @@
                             </tr>
                             <?php } else { ?>
                             <tr class="tr-header-reporte">
-                                <th class="text-center">Client</th>
-                                <th class="text-center">Company</th>
-                                <th class="text-center">E-mail</th>
-                                <th class="text-center">Phone</th>
-                                <th class="text-center">Relationship</th>
-                                <th class="text-center">Position</th>
-                                <th class="text-center">Contacted</th>
-                                <th class="text-center">Country</th>
+                                <th class="text-left">Client</th>
+                                <th class="text-left">Company</th>
+                                <th class="text-left">E-mail</th>
+                                <th class="text-left">Phone</th>
+                                <th class="text-left">Relationship</th>
+                                <th class="text-left">Position</th>
+                                <th class="text-left">Contacted</th>
+                                <th class="text-left">Country</th>
                                 <th class="text-center">Date</th>
                                 <th class="text-center" style="display: none">Industry</th>
                                 <th class="text-center" style="display: none">Size</th>
