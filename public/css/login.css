@@ -90,6 +90,15 @@ body{
 .mdl-card-login{
 	width: 100%;
 }
+.mdl-card__title{
+	display: block;
+}
+.mdl-card__title h2{
+	font-size: 22px;
+    margin: 0;
+    font-family: 'RobotoMedium';
+    line-height: 24px;
+}
 .mdl-card__title p{
 	font-size: 16px;
 	margin: 0;
