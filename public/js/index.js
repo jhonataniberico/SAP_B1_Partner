@@ -1,6 +1,5 @@
 var timeoutID;
 window.addEventListener("load", function() {
-	var timeoutID;
     timeoutID = setTimeout(function() {
     	$('.first-eslogan').addClass('animated fadeOutLeft');
     	$('.second-eslogan').addClass('animated fadeInRight');
@@ -548,7 +547,7 @@ var fifthWindow   = $('#window5-page');
 function buttonNextPartner(){
 	partnerPage.addClass('animated fadeOutLeft');
 	homePage.addClass('animated fadeInRight');
-	window.clearTimeout(timeoutID);
+	clearTimeout(timeoutID);
 }
 function buttonNext(){
 	if(pant1 == 0){
