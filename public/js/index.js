@@ -1,3 +1,16 @@
+var timeoutID;
+window.addEventListener("load", function() {
+	var timeoutID;
+    timeoutID = setTimeout(function() {
+    	$('.first-eslogan').addClass('animated fadeOutLeft');
+    	$('.second-eslogan').addClass('animated fadeInRight');
+    	$('.link-empezar').addClass('animate');
+    	$('buttonNextPartner').trigger('click');
+    },4000);
+    timeoutID = setTimeout(function() {
+    	$('#buttonNextPartner').trigger('click');
+    },10000);
+});
 function solicitarEstimacion(){
 	var nombre_completo = $('#nombre_completo').val(); 
 	var empresa  		= $('#empresa').val();
@@ -535,6 +548,7 @@ var fifthWindow   = $('#window5-page');
 function buttonNextPartner(){
 	partnerPage.addClass('animated fadeOutLeft');
 	homePage.addClass('animated fadeInRight');
+	window.clearTimeout(timeoutID);
 }
 function buttonNext(){
 	if(pant1 == 0){

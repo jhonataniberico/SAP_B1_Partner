@@ -767,17 +767,6 @@
         } else {
             $('select').selectpicker();
         }
-        window.addEventListener("load", function() {
-            setTimeout(function() {
-            	$('.first-eslogan').addClass('animated fadeOutLeft');
-            	$('.second-eslogan').addClass('animated fadeInRight');
-            	$('.link-empezar').addClass('animate');
-            	$('buttonNextPartner').trigger('click');
-            },4000);
-            setTimeout(function() {
-            	$('#buttonNextPartner').trigger('click');
-            },10000);
-        });
         $(window).load(function() {
         	  /*if(<?php echo $pantalla1 ?> == 3) {
 				m = 5; 
