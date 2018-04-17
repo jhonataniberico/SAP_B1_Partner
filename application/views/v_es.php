@@ -27,27 +27,32 @@
 	<section id="principal">
 	    <div class="section">
 	    	<div id="partner" class="window-center">
-				<div class="header-home partner">
-					<img src="<?php echo RUTA_IMG?>logo/categoria_gold.png">
-					<div class="mdl-idioma partner">
-						<select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdiomaHome()">
-							<option value="Español">Espa&ntilde;ol</option>
-							<option value="Inglés">English</option>
-							<option value="Portugués">Portugu&ecirc;s</option>
-						</select>
-    				</div>
-		    	</div>
+				<div class="header partner">
+	    			<div class="header-right">
+	    				<div class="mdl-idioma">
+							<select class="selectpicker" id="Idioma"  name="Idioma" onchange="cambiarIdioma()">
+								<option value="Español">Espa&ntilde;ol</option>
+								<option value="Francés">Fran&ccedil;ais</option>
+							</select>
+	    				</div>
+						<div class="background1"></div>
+						<div class="background2"></div>
+						<div class="background3"></div>
+	    			</div>
+	    		</div>
+	    		<div class="logo-top">
+	    			<img src="<?php echo RUTA_IMG?>logo/categoria_gold.png">
+	    		</div>
 	    		<div class="mdl-container mdl-all-window">
 	    			<img class="logo-home partner" src="<?php echo RUTA_IMG?>logo/partner.png">
-	            	<h2 class="title-home partner">Think</h2>
+	    			<div class="eslogan">
+	    				<h2 class="title-home partner first-eslogan">Tecnolog&iacute;a que impulsa tu negocio</h2>
+	            		<h2 class="title-home partner second-eslogan">¿Est&aacute; su empresa lista para SAP Business One&#63;</h2>
+	    			</div>
 	    		</div>
-	    		<div class="background-body">
-					<div class="background-body3"></div>
-					<div class="background-body2"></div>
-					<div class="background-body1"></div>
-	    		</div>
-	    		<div class="button-next-prev">
-	    			<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect button-arrow button-next" onclick="buttonNextPartner()">
+	    		<div class="button-next-prev partner">
+	    			<a class="link-empezar">Empezar</a>
+	    			<button id="buttonNextPartner" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect button-arrow button-next" onclick="buttonNextPartner()">
 						<div class="arrow arrow-right"></div>
 					</button>
 	    		</div>
@@ -55,7 +60,6 @@
 	    	</div>
     		<div id="home" class="window-center opacity-done">
     			<div class="header-home">
-					<img src="<?php echo RUTA_IMG?>logo/logo_home.png">
 					<div class="mdl-idioma">
 						<select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdiomaHome()">
 							<option value="Español">Espa&ntilde;ol</option>
@@ -95,13 +99,12 @@
 								<option value="Francés">Fran&ccedil;ais</option>
 							</select>
 	    				</div>
-						<div class="background3"></div>
-						<div class="background2"></div>
 						<div class="background1"></div>
+						<div class="background2"></div>
+						<div class="background3"></div>
 	    			</div>
 	    		</div>
 	    		<div class="logo-bottom">
-        			<img src="<?php echo RUTA_IMG?>logo/logo_home.png">
 		    		<div class="bottom-right">
 						<p>Puede seleccionar m&aacute;s de una opci&oacute;n</p>
 		    		</div>
@@ -764,6 +767,17 @@
         } else {
             $('select').selectpicker();
         }
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+            	$('.first-eslogan').addClass('animated fadeOutLeft');
+            	$('.second-eslogan').addClass('animated fadeInRight');
+            	$('.link-empezar').addClass('animate');
+            	$('buttonNextPartner').trigger('click');
+            },4000);
+            setTimeout(function() {
+            	$('#buttonNextPartner').trigger('click');
+            },10000);
+        });
         $(window).load(function() {
         	  /*if(<?php echo $pantalla1 ?> == 3) {
 				m = 5; 
