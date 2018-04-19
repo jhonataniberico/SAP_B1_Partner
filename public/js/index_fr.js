@@ -756,7 +756,7 @@ function returnHome(){
 function cambiarIdioma(){
 	var idioma = $('#Idioma').val();
 	if(idioma == 'Español'){
-		location.href = 'Es';
+		location.href = 'http://www.sap-latam.com/SAP_Business_One_Partner/Es';
 	}else if(idioma == 'Francés'){
 		location.href = 'Fr';
 	}
@@ -779,7 +779,7 @@ function cambiarIdioma(){
 function cambiarIdiomaHome(){
 	var idioma = $('#IdiomaHome').val();
 	if(idioma == 'Español'){
-		location.href = 'Es';
+		location.href = 'http://www.sap-latam.com/SAP_Business_One_Partner/Es';
 	}else if(idioma == 'Francés'){
 		location.href = 'Fr';
 	}
@@ -789,6 +789,29 @@ function cambiarIdiomaHome(){
 		type : 'POST'
 	}).done(function(data){
 		try{
+        data = JSON.parse(data);
+        if(data.error == 0){
+        }else{
+        	return;
+        }
+      } catch (err){
+        msj('error',err.message);
+      }
+	});
+}
+function cambiarIdiomaPartner(){
+	var idioma = $('#Idioma_partner').val();
+	if(idioma == 'Español'){
+		location.href = 'http://www.sap-latam.com/SAP_Business_One_Partner/Es';
+	}else if(idioma == 'Francés'){
+		location.href = 'fr';
+	}
+	$.ajax({
+		data  : {idioma : idioma},
+		url   : 'es/cambiarIdioma',
+		type  : 'POST'
+	}).done(function(data){
+	  try{
         data = JSON.parse(data);
         if(data.error == 0){
         }else{

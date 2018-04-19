@@ -94,7 +94,7 @@
 	    			<div class="header-right">
     					<button class="mdl-button mdl-js-button mdl-button--icon button-home" onclick="returnHome()"><i class="mdi mdi-home"></i></button>
 	    				<div class="mdl-idioma partner">
-							<select class="selectpicker" id="Idioma"  name="Idioma" onchange="cambiarIdioma()">
+							<select class="selectpicker" id="Idioma_partner"  name="Idioma" onchange="cambiarIdiomaPartner()">
 								<option value="Francés">Fran&ccedil;ais</option>
 								<option value="Español">Espa&ntilde;ol</option>
 							</select>

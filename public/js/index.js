@@ -315,10 +315,35 @@ function mostrarDatos(){
 }
 function cambiarIdioma(){
 	var idioma = $('#Idioma').val();
+	console.log(idioma);
+	return;
 	if(idioma == 'Español'){
 		location.href = 'Es';
 	}else if(idioma == 'Francés'){
-		location.href = 'Fr';
+		location.href = 'http://sapmarketing.net/SAP_Business_One_Partner/fr';
+	}
+	$.ajax({
+		data  : {idioma : idioma},
+		url   : 'es/cambiarIdioma',
+		type  : 'POST'
+	}).done(function(data){
+	  try{
+        data = JSON.parse(data);
+        if(data.error == 0){
+        }else{
+        	return;
+        }
+      } catch (err){
+        msj('error',err.message);
+      }
+	});
+}
+function cambiarIdiomaPartner(){
+	var idioma = $('#Idioma_partner').val();
+	if(idioma == 'Español'){
+		location.href = 'Es';
+	}else if(idioma == 'Francés'){
+		location.href = 'http://sapmarketing.net/SAP_Business_One_Partner/fr';
 	}
 	$.ajax({
 		data  : {idioma : idioma},
@@ -341,7 +366,7 @@ function cambiarIdiomaHome(){
 	if(idioma == 'Español'){
 		location.href = 'Es';
 	}else if(idioma == 'Francés'){
-		location.href = 'Fr';
+		location.href = 'http://sapmarketing.net/SAP_Business_One_Partner/fr';
 	}
 	$.ajax({
 		data : {idioma : idioma},
