@@ -162,6 +162,8 @@ var global_datos = null;
 var datos_array  = [];
 var array_3pant  = [];
 function guardarDatos(id,datos){
+	$('.logo-bottom').removeClass('dnone');
+	$('.chat').removeClass('dnone');
 	var buttonSelect = $('#'+id+'.select-one');
 	var buttonToggle = $('#'+id+'.select-prioridad');
 	var cardSelect   = $('#'+id+'.select-one').parent().find('.contenido');

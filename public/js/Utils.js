@@ -56,3 +56,14 @@ function msj(tipo, msj, cabecera){
 		toastr.success(msj, cabecera, {timeOut: 4000});
 	}
 }
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+	$('select').selectpicker('mobile');
+} else {
+    $('select').selectpicker();
+    $('#buttonCard1').click(function() {
+		$('.logo-bottom').addClass('dnone');
+	});
+	$('#buttonCard5').click(function() {
+		$('.chat').addClass('dnone');
+	});
+}
