@@ -386,6 +386,9 @@ table.dataTable.no-footer{
     opacity: 0;
     width: 100%;
 }
+.logo-bottom.opacity{
+	z-index: 5 !important;
+}
 .logo-bottom img{
 	max-width: 160px;
 }
@@ -850,7 +853,7 @@ span.number{
     transform: translateY(0);
 }
 .content-card .contenido-left{
-	width: 48px;
+	width: 39px;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -859,7 +862,7 @@ span.number{
 	width: 30px;
 }
 .content-card .contenido-left img{
-	max-width: 45px;
+	max-width: 42px;
 }
 .content-card.bottom .contenido-left img{
 	max-width: 35px;
@@ -869,7 +872,7 @@ span.number{
 	width: calc(100% - 35px);
 }
 .content-card .contenido-right{
-	width: calc(100% - 53px);
+	width: calc(100% - 43px);
 	display: inline-block;
 	text-align: left;
 	vertical-align: middle;
@@ -1655,6 +1658,9 @@ span.number{
 	}
 	.mdl-back-respuestas{
 		padding: 5px;
+	}
+	.logo-bottom.opacity{
+		z-index: 10 !important;
 	}
 }
 @media (max-width: 650px){
