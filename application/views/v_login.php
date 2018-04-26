@@ -29,7 +29,7 @@
             </div>
             <div class="contenido">
                 <img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
-                <h2>Diferentes escenarios. Una soluci&oacute;n</h2>
+                <h2>Different scenarios. One solution</h2>
             </div>
             <div class="contenido-bottom">
                 <img src="<?php echo RUTA_IMG?>fondo/fondo.png">
@@ -38,8 +38,8 @@
         <div class="card-login">
             <div class="mdl-card mdl-card-login">
                 <div class="mdl-card__title">
-                    <h2>Configurador SAP Business One</h2>
-                    <p>Administrador de Registros</p>
+                    <h2>SAP Business One Configurator</h2>
+                    <p>Registry Manager</p>
                 </div>
                 <div class="mdl-card__supporting-text">
                     <div class="mdl-input">
