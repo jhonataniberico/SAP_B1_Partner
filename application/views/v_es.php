@@ -88,7 +88,7 @@
 			<div class="mdl-container-question">
 				<div class="header">
 	    			<div class="header-left">
-	    				<img class="logo-header" src="<?php echo RUTA_IMG?>logo/partner.png">
+	    				<img class="logo-header" src="<?php echo RUTA_IMG?>logo/<?php echo $logo.'.png' ?>">
 	    				<img class="logo-partner" src="<?php echo RUTA_IMG?>logo/categoria_gold.png">
 	    			</div>
 	    			<div class="header-right">
