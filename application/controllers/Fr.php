@@ -31,9 +31,9 @@ class Fr extends CI_Controller {
     foreach ($explode as $key){
       $html .= '<li>'.$key.'</li>';
     }
-    $data['priori']        = $html;*///La technologie qui anime votre entreprise
-    $data['eslogan']       = base64_decode($_GET['a']);
-    $data['logo']          = $_GET['logo'];
+    $data['priori']        = $html;*/
+    $data['eslogan']       = base64_decode($_GET['a']) == '' ? 'La technologie qui anime votre entreprise' : base64_decode($_GET['a']);
+    $data['logo']          = $_GET['logo'] == '' ? 'partner' : $_GET['logo'];
     $session = array('partner' => base64_decode($_GET['partner']));
     $this->session->set_userdata($session);
     $datos_pais            = $this->M_solicitud->getDatosLenguaje('Francés');

@@ -13,7 +13,8 @@ class Login extends CI_Controller {
         $this->output->set_header('Pragma: no-cache');
     }
 	public function index(){
-		$session = array('partner' => base64_decode($_GET['partner']));
+		$session = array('partner' 		 => base64_decode($_GET['partner']),
+						 'partner_cript' => $_GET['partner']);
     	$this->session->set_userdata($session);
 		$this->session->unset_userdata('user');
 	    $this->session->unset_userdata('Id_user');
@@ -28,22 +29,6 @@ class Login extends CI_Controller {
 			$username = $this->M_usuario->verificarUsuario($usuario, $password);
 			if(count($username) != 0){
 				if(strtolower($username[0]->usuario) == strtolower($usuario)){
-					/*if($usuario == 'partnersap'){
-						$session = array('usuario' => $usuario,
-								 		 'Id_user' => $username[0]->Id,
-								 		 'Idioma'  => '');
-						$data['href'] = 'Configuracion';
-					}else if($usuario == 'partneradmin'){
-						$session = array('usuario' => $usuario,
-								 		 'Id_user' => $username[0]->Id,
-								 		 'Idioma'  => 'Todos');
-						$data['href'] = 'Admin';
-					}else if($usuario == 'fradmin'){
-						$session = array('usuario' => $usuario,
-								 		 'Id_user' => $username[0]->Id,
-								 		 'Idioma'  => 'Francés');
-						$data['href'] = 'Admin';
-					}*/
 					$session = array('usuario' => $usuario,
 							 		 'Id_user' => $username[0]->Id,
 							 		 'Idioma'  => $username[0]->idioma);
