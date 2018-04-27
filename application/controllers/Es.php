@@ -32,6 +32,12 @@ class Es extends CI_Controller {
       $html .= '<li>'.$key.'</li>';
     }
     $data['priori']        = $html;*/
+    /*echo print_r($_GET['a']);
+    exit;*/
+    $data['eslogan']       = base64_decode($_GET['a']);
+    $data['logo']          = $_GET['logo'];
+    $session = array('partner' => base64_decode($_GET['partner']));
+    $this->session->set_userdata($session);
     $data['confirmar']     = $this->session->userdata('confirmar') == null ? 0 : $this->session->userdata('confirmar');
     $data['pantalla']      = 0;
     $client_id             = "864xp2wdu9eghe";
@@ -132,6 +138,7 @@ class Es extends CI_Controller {
         $relacion        = $this->input->post('relacion');
         $contacto        = $this->input->post('contacto');//
         $term_cond       = $this->input->post('term_cond');
+        $id_cliente      = $this->M_solicitud->getIdCliente($this->session->userdata('partner'));
         $arrayInsert = array('nombre_completo' => $nombre_completo,
                              'Empresa'         => $empresa,
                              'Email'           => $email,
@@ -142,7 +149,8 @@ class Es extends CI_Controller {
                              'Relacion'        => $relacion,
                              'Contactado'      => $contacto,
                              'Id_solicitud'    => $_SESSION['id_sol'],
-                             'fecha_sol'       => date('Y-m-d H:i:s'));
+                             'fecha_sol'       => date('Y-m-d H:i:s'),
+                             'id_cliente'      => intval($id_cliente));
         $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'usuario');
         $session    = array('nombre_completo' => $nombre_completo,
                             'Empresa'         => $empresa,
@@ -200,7 +208,7 @@ class Es extends CI_Controller {
                             'newline'   => "\r\n");
        $this->email->initialize($configGmail);
        $this->email->from('info@sap-latam.com');
-       $this->email->to('jminaya@brainblue.com');
+       $this->email->to($_GET['correo']);
        $this->email->subject('Estoy interesado en SAP Business One para mi negocio.');
         $texto = '<!DOCTYPE html>
                   <html>

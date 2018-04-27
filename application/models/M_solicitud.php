@@ -67,4 +67,11 @@ class M_solicitud extends  CI_Model{
         $result = $this->db->query($sql, array($pais));
         return $result->result();
     }
+    function getIdCliente($cliente){
+      $sql = "SELECT c.Id
+                FROM clientes c
+               WHERE (c.Nombre LIKE '%".$cliente."%')";
+      $result = $this->db->query($sql);
+      return $result->row()->Id;
+    }
 }

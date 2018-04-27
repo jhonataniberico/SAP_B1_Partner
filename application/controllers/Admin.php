@@ -22,12 +22,13 @@ class Admin extends CI_Controller {
 		$this->load->view('v_admin', $data);
 	}
 	function getTable(){
+        $id_cliente = $this->M_solicitud->getIdCliente($this->session->userdata('partner'));
         if($this->session->userdata('Idioma') == 'Todos'){
-            $datos = $this->M_reportes->getDatosTabla();
+            $datos = $this->M_reportes->getDatosTabla($id_cliente);
         }else if($this->session->userdata('Idioma') == 'Francés'){
-            $datos = $this->M_reportes->getDatosTablaIdioma(4);
+            $datos = $this->M_reportes->getDatosTablaIdioma(4, $id_cliente);
         }else if($this->session->userdata('Idioma') == 'Sueco'){
-            $datos = $this->M_reportes->getDatosTablaIdioma(5);
+            $datos = $this->M_reportes->getDatosTablaIdioma(5, $id_cliente);
         }
 		$html  = '';
 		$cont  = 1;

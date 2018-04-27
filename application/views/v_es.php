@@ -44,9 +44,9 @@
 	    			<img src="<?php echo RUTA_IMG?>logo/categoria_gold.png">
 	    		</div>
 	    		<div class="mdl-container mdl-all-window">
-	    			<img class="logo-home partner" src="<?php echo RUTA_IMG?>logo/partner.png">
+	    			<img class="logo-home partner" src="<?php echo RUTA_IMG?>logo/<?php echo $logo.'.png' ?>">
 	    			<div class="eslogan">
-	    				<h2 class="title-home partner first-eslogan">Tecnolog&iacute;a que impulsa tu negocio</h2>
+	    				<h2 class="title-home partner first-eslogan"><?php echo $eslogan ?></h2>
 	            		<h2 class="title-home partner second-eslogan">¿Est&aacute; su empresa lista para SAP Business One&#63;</h2>
 	    			</div>
 	    		</div>
