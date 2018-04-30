@@ -1903,6 +1903,9 @@ span.number{
 		background-size: 450px;
     	height: 90px;
 	}
+	.logo-top{
+		left: 25px;
+	}
 }	
 @media(max-width: 320px){
 	.mdl-container {
