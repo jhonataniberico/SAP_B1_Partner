@@ -136,6 +136,7 @@ class Pt extends CI_Controller {
         $relacion        = $this->input->post('relacion');
         $contacto        = $this->input->post('contacto');
         $term_cond       = $this->input->post('term_cond');
+        $id_cliente      = $this->M_solicitud->getIdCliente($this->session->userdata('partner'));
         $arrayInsert = array('nombre_completo' => $nombre_completo,
                              'Empresa'         => $empresa,
                              'Email'           => $email,
@@ -146,7 +147,8 @@ class Pt extends CI_Controller {
                              'Relacion'        => $relacion,
                              'Contactado'      => $contacto,
                              'Id_solicitud'    => $_SESSION['id_sol'],
-                             'fecha_sol'       => date('Y-m-d H:i:s'));
+                             'fecha_sol'       => date('Y-m-d H:i:s'),
+                             'id_cliente'      => intval($id_cliente));
         $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'usuario');
         $session    = array('nombre_completo' => $nombre_completo,
                             'Empresa'         => $empresa,
@@ -205,7 +207,7 @@ class Pt extends CI_Controller {
                           'newline'   => "\r\n");    
      $this->email->initialize($configGmail);
      $this->email->from('info@sap-latam.com');
-     $this->email->to('jminaya@brainblue.com');//EMAIL AL QUIÉN IRÁ DIRIGIDO alejandra.cuellar@sap.com
+     $this->email->to($_GET['correo']);//EMAIL AL QUIÉN IRÁ DIRIGIDO alejandra.cuellar@sap.com
      $this->email->subject('Estou interessado no SAP Business One para o minha empresa.');
      $texto = '<!DOCTYPE html>
               <html>
