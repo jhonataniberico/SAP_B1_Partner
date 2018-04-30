@@ -29,12 +29,7 @@
 	    	<div id="partner" class="window-center">
 				<div class="header partner">
 	    			<div class="header-right">
-	    				<div class="mdl-idioma">
-							<select class="selectpicker" id="Idioma"  name="Idioma" onchange="cambiarIdioma()">
-								<option value="Español">Espa&ntilde;ol</option>
-								<option value="Francés">Fran&ccedil;ais</option>
-							</select>
-	    				</div>
+	    				<div class="mdl-idioma"></div>
 						<div class="background1"></div>
 						<div class="background2"></div>
 						<div class="background3"></div>
@@ -61,13 +56,7 @@
     		<div id="home" class="window-center opacity-done">
     			<div class="header-home">
 					<img src="<?php echo RUTA_IMG?>logo/logo_home.png">
-					<div class="mdl-idioma">
-						<select class="selectpicker" id="IdiomaHome" name="Idioma" onchange="cambiarIdiomaHome()">
-							<option value="Portugués">Portugu&ecirc;s</option>
-							<option value="Español">Espa&ntilde;ol</option>
-							<option value="Inglés">English</option>
-						</select>
-    				</div>
+					<div class="mdl-idioma"></div>
 		    	</div>
     			<div class="mdl-container mdl-all-window">
 	    			<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
@@ -93,15 +82,8 @@
 	    				<img class="logo-header" src="<?php echo RUTA_IMG?>logo/<?php echo $logo.'.png' ?>">
 	    				<img class="logo-partner" src="<?php echo RUTA_IMG?>logo/categoria_gold.png">
 	    			</div>
-	    			<div class="header-right">
+	    			<div class="header-right none-idioma">
 	    				<button class="mdl-button mdl-js-button mdl-button--icon button-home" onclick="returnHome()"><i class="mdi mdi-home"></i></button>
-	    				<div class="mdl-idioma">
-							<select class="selectpicker" id="Idioma" name="Idioma" onchange="cambiarIdioma()">
-								<option value="Portugués">Portugu&ecirc;s</option>
-								<option value="Español">Espa&ntilde;ol</option>
-								<option value="Inglés">English</option>
-							</select>
-	    				</div>
 						<div class="background1"></div>
 						<div class="background2"></div>
 						<div class="background3"></div>
