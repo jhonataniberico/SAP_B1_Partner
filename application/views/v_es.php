@@ -768,7 +768,7 @@
             $('select').selectpicker();
         }
         $(window).load(function() {
-        	  /*if(<?php echo $pantalla1 ?> == 3) {
+        	  if(<?php echo $pantalla1 ?> == 5) {
 				m = 5; 
 				if(<?php echo $confirmar ?> == 1) {
 					$('.button-arrow.button-prev').css("display","none");
@@ -786,7 +786,7 @@
 				}
 				$('.header').addClass('opacity');
 				$('.logo-bottom').addClass('opacity');
-				/*$('#telefono').css('border-color','red');
+				$('#telefono').css('border-color','red');
 				$('#nombre_completo').val("<?php echo $nombre_comple ?>");
 				$('#email').val("<?php echo $email_link ?>");
 				$('#pais').val("<?php echo $pais_link ?>");
@@ -802,8 +802,8 @@
 				$('#tamanio').text("<?php echo $Tamanio ?>");//falta agregar empleados
 				$('#factura').text("<?php echo $Factura_anual ?>");
 				$('#prioridad').append("<?php echo $priori ?>");
-				$('#infraestructura').text("<?php echo $Infraestructura ?>");*/
-			//}
+				$('#infraestructura').text("<?php echo $Infraestructura ?>");
+			}
 		});
     </script>
 </body>

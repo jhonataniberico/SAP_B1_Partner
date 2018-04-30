@@ -16,7 +16,7 @@ class Es extends CI_Controller {
 
   public function index(){
     //ELIMINAR DATOS EN SESIÓN AL CARGAR LA PÁGINA
-    /*$data['nombre_comple'] = $this->session->userdata('nombre_linke');
+    $data['nombre_comple'] = $this->session->userdata('nombre_linke');
     $data['email_link']      = $this->session->userdata('email_linke');
     $data['comp']            = $this->session->userdata('compania') == null ? '' : $this->session->userdata('compania');
     $data['tit']             = $this->session->userdata('titulo') == null ? '' : $this->session->userdata('titulo');
@@ -31,7 +31,7 @@ class Es extends CI_Controller {
     foreach ($explode as $key){
       $html .= '<li>'.$key.'</li>';
     }
-    $data['priori']        = $html;*/
+    $data['priori']        = $html;
     /*echo print_r($_GET['a']);
     exit;*///La tecnología que impulsa su negocio
     $data['eslogan']       = base64_decode($_GET['a']) == '' ? 'La tecnología que impulsa su negocio' : base64_decode($_GET['a']);
@@ -40,8 +40,8 @@ class Es extends CI_Controller {
     $this->session->set_userdata($session);
     $data['confirmar']     = $this->session->userdata('confirmar') == null ? 0 : $this->session->userdata('confirmar');
     $data['pantalla']      = 0;
-    $client_id             = "864xp2wdu9eghe";
-    $client_secret         = "M6NxoP4EWlaADF2U";
+    $client_id             = "770t6ws75n49yz";
+    $client_secret         = "PfTSjhgyMMNSdlwe";
     $redirect_uri          = "http://www.sap-latam.com/SAP_Business_One_Partner/callback";
     $csrf_token            = random_int(1111111, 9999999);
     $scopes                = "r_basicprofile%20r_emailaddress";
