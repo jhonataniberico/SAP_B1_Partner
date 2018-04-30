@@ -22,15 +22,6 @@
 	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>animate.css?v=<?php echo time();?>">
 	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
 	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.css?v=<?php echo time();?>">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117609338-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-117609338-1');
-	</script>
 </head>
 <body>
 	<section id="principal">
@@ -67,7 +58,7 @@
 	    		</div>
 	    		<div class="fondo-bottom fondo-partner continue"></div>
 	    	</div>
-    		<div id="home" class="window-center">
+    		<div id="home" class="window-center opacity-done">
     			<div class="header-home">
 					<img src="<?php echo RUTA_IMG?>logo/logo_home.png">
 					<div class="mdl-idioma">
