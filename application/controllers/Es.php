@@ -39,7 +39,7 @@ class Es extends CI_Controller {
     $session = array('partner' => base64_decode($_GET['partner']));
     $this->session->set_userdata($session);
     $data['confirmar']     = $this->session->userdata('confirmar') == null ? 0 : $this->session->userdata('confirmar');
-    $data['pantalla']      = 0;
+    //$data['pantalla']      = 0;
     $client_id             = "770t6ws75n49yz";
     $client_secret         = "PfTSjhgyMMNSdlwe";
     $redirect_uri          = "http://www.sap-latam.com/SAP_Business_One_Partner/callback";
@@ -177,8 +177,8 @@ class Es extends CI_Controller {
         $this->session->unset_userdata('Tamanio');
         $this->session->unset_userdata('Prioridad');
         $this->session->unset_userdata('idioma');
-      //$this->sendGmailSap($email);
-      //$this->emailClienteSap($email);
+        $this->sendGmailSap($email);
+        $this->emailClienteSap($email);
       //$this->emailPartner();
       $data['msj']  = $datoInsert['msj'];
       $data['error'] = $datoInsert['error'];
