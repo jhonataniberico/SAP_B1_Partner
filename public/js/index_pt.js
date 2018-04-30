@@ -808,7 +808,7 @@ function returnHome(){
 		try{
         data = JSON.parse(data);
         if(data.error == 0){
-        	location.href = 'pt';
+        	location.href = 'pt?a=U2ltcGxpZmljYW5kbyBhIHZpZGEgZG9zIG5vc3NvcyBjbGllbnRlcywgdG9ybmFuZG8gb3MgcHJvY2Vzc29zIG1haXMgw6FnZWlzIGUgZWZpY2llbnRlcy4=&logo=partner&correo=cmFmYWVsYS5zYW50b3NAb2tzZXIuY29tLmJy==&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB';
         }else{
         	return;
         }

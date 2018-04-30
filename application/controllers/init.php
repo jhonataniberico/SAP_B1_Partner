@@ -2,9 +2,9 @@
 
 session_start();
 
-$client_id     = "864xp2wdu9eghe";
-$client_secret = "M6NxoP4EWlaADF2U";
-$redirect_uri  = "http://www.sap-latam.com/SAP_Business_One_Partner/callback";
+$client_id             = "770t6ws75n49yz";
+$client_secret         = "PfTSjhgyMMNSdlwe";
+$redirect_uri          = "http://www.sap-latam.com/SAP_Business_One_Partner/callback";
 $csrf_token    = random_int(1111111, 9999999);
 $scopes        = "r_basicprofile%20r_emailaddress";
 
@@ -23,8 +23,8 @@ function curl($url, $parameters){
 }
 
 function getCallback(){
-    $client_id     = "864xp2wdu9eghe";
-    $client_secret = "M6NxoP4EWlaADF2U";
+    $client_id     = "770t6ws75n49yz";
+    $client_secret = "PfTSjhgyMMNSdlwe";
     $redirect_uri  = "http://www.sap-latam.com/SAP_Business_One_Partner/callback";
     $csrf_token    = random_int(1111111, 9999999);
     $scopes        = "r_basicprofile%20r_emailaddress";
