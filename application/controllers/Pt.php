@@ -38,9 +38,9 @@ class Pt extends CI_Controller {
     $this->session->set_userdata($session);
     $data['confirmar']     = $this->session->userdata('confirmar') == null ? 0 : $this->session->userdata('confirmar');
     $data['pantalla1']     = 0;
-    $client_id             = "864l1al3s2s1dc";
-    $client_secret         = "P7Cr42nbQBe6ggQn";
-    $redirect_uri          = "http://www.sapmarketing.net/SAP_Business_One_Partner/callback";
+    $client_id             = "864xp2wdu9eghe";
+    $client_secret         = "M6NxoP4EWlaADF2U";
+    $redirect_uri          = "http://www.sap-latam.com/SAP_Business_One_Partner/callback";
     $csrf_token            = random_int(1111111, 9999999);
     $scopes                = "r_basicprofile%20r_emailaddress";
     $data['client_id']     = $client_id;
@@ -67,11 +67,11 @@ class Pt extends CI_Controller {
         if($pantalla == 1){
           $idIdioma    = $this->M_solicitud->getDatosPais($idioma);
           $arrayInsert = array('Industria'   => $datos,
-                               'Id_lenguaje' => $idIdioma);
+                               'Id_lenguaje' => 3);
           $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
           $session    = array('industria' => $datos,
                               'id_sol'    => $datoInsert['Id'],
-                              'idioma'    => $idioma);
+                              'idioma'    => 'Portugués');
           $this->session->set_userdata($session);
         }else {
           if($pantalla == 2){
