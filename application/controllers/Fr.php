@@ -36,12 +36,12 @@ class Fr extends CI_Controller {
     $data['logo']          = $_GET['logo'] == '' ? 'partner' : $_GET['logo'];
     $session = array('partner' => base64_decode($_GET['partner']));
     $this->session->set_userdata($session);
-    $datos_pais            = $this->M_solicitud->getDatosLenguaje('Francés');
+    /*$datos_pais            = $this->M_solicitud->getDatosLenguaje('Francés');
     if(count($datos_pais) == 0) {
       $data['eslogan']     = '-';
     }else {
       $data['eslogan']     = $datos_pais[0]->eslogan;
-    }
+    }*/
     $data['confirmar']     = $this->session->userdata('confirmar') == null ? 0 : $this->session->userdata('confirmar');
     $data['pantalla1']     = 0;
     $client_id             = "864l1al3s2s1dc";
