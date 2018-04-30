@@ -42,7 +42,7 @@
 	    			<img class="logo-home partner" src="<?php echo RUTA_IMG?>logo/<?php echo $logo.'.png' ?>">
 	    			<div class="eslogan">
 	    				<h2 class="title-home partner first-eslogan"><?php echo $eslogan ?></h2>
-	            		<h2 class="title-home partner second-eslogan">¿Est&aacute; su empresa lista para SAP Business One&#63;</h2>
+	            		<h2 class="title-home partner second-eslogan">A sua empresa est&aacute; pronta para o SAP Business One&#63;</h2>
 	    			</div>
 	    		</div>
 	    		<div class="button-next-prev partner">
