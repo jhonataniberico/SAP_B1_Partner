@@ -33,6 +33,7 @@ table.dataTable tbody td{
 }
 .title-home.partner{
 	color: #000000;
+	max-width: 800px;
 }
 /*CLASES GENERALES*/
 .opacity{
@@ -1486,6 +1487,10 @@ span.number{
 	}
 	.dnone{
 		display: none !important;
+	}
+	.fondo-bottom.fondo-partner{
+		background-size: 1000px;
+		height: 200px;
 	}
 }
 @media (max-width: 1200px){
