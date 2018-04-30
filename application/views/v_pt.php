@@ -15,7 +15,7 @@
 	<link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/material.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
-    <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/bootstrap.min.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>roboto.css?v=<?php echo time();?>">
@@ -35,6 +35,38 @@
 <body>
 	<section id="principal">
 	    <div class="section">
+	    	<div id="partner" class="window-center">
+				<div class="header partner">
+	    			<div class="header-right">
+	    				<div class="mdl-idioma">
+							<select class="selectpicker" id="Idioma"  name="Idioma" onchange="cambiarIdioma()">
+								<option value="Español">Espa&ntilde;ol</option>
+								<option value="Francés">Fran&ccedil;ais</option>
+							</select>
+	    				</div>
+						<div class="background1"></div>
+						<div class="background2"></div>
+						<div class="background3"></div>
+	    			</div>
+	    		</div>
+	    		<div class="logo-top">
+	    			<img src="<?php echo RUTA_IMG?>logo/categoria_gold.png">
+	    		</div>
+	    		<div class="mdl-container mdl-all-window">
+	    			<img class="logo-home partner" src="<?php echo RUTA_IMG?>logo/logo_header.png">
+	    			<div class="eslogan">
+	    				<h2 class="title-home partner first-eslogan">Simplificando a vida dos nossos clientes</h2>
+	            		<h2 class="title-home partner second-eslogan">¿Est&aacute; su empresa lista para SAP Business One&#63;</h2>
+	    			</div>
+	    		</div>
+	    		<div class="button-next-prev partner">
+	    			<a class="link-empezar">Empezar</a>
+	    			<button id="buttonNextPartner" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect button-arrow button-next" onclick="buttonNextPartner()">
+						<div class="arrow arrow-right"></div>
+					</button>
+	    		</div>
+	    		<div class="fondo-bottom fondo-partner continue"></div>
+	    	</div>
     		<div id="home" class="window-center">
     			<div class="header-home">
 					<img src="<?php echo RUTA_IMG?>logo/logo_home.png">
@@ -728,7 +760,7 @@
 	<script src="<?php echo RUTA_JS?>jquery-1.11.2.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>jquery-ui.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>jquery-migrate-1.2.1.min.js?v=<?php echo time();?>"></script>
-	<script src="<?php echo RUTA_PLUGINS?>bootstrap/bootstrap.min.js?v=<?php echo time();?>"></script>
+	<script src="<?php echo RUTA_PLUGINS?>bootstrap/js/bootstrap.min.js?v=<?php echo time();?>"></script>
 	<script src="<?php echo RUTA_PLUGINS?>bootstrap-select/js/bootstrap-select.min.js?v=<?php echo time();?>"></script>
 	<script src="<?php echo RUTA_PLUGINS?>bootstrap-select/js/i18n/defaults-es_ES.min.js?v=<?php echo time();?>"></script>
 	<script src="<?php echo RUTA_PLUGINS?>mdl/material.min.js?v=<?php echo time();?>"></script>
