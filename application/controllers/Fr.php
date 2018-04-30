@@ -74,12 +74,13 @@ class Fr extends CI_Controller {
             if($pantalla == 1){
               $idIdioma    = $this->M_solicitud->getDatosPais($idioma);
               $arrayInsert = array('Industria'   => $datos,
-                                   'Id_lenguaje' => $idIdioma);
+                                   'Id_lenguaje' => /*$idIdioma*/3);
               $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
               $session    = array('industria' => $datos,
                                   'id_sol'    => $datoInsert['Id'],
                                   'idioma'    => 'Francés');
               $this->session->set_userdata($session);
+              print_r($session);
             }else {
               if($pantalla == 2){
                 $arrayUpdate = array($columna  => $facturacion,

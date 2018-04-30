@@ -65,7 +65,7 @@ class Pt extends CI_Controller {
         $columna     = null;
         if($pantalla == 2) {$columna = 'Factura_anual';} elseif ($pantalla == 3) {$columna = 'Prioridad';}elseif ($pantalla == 4) {$columna = 'Infraestructura';}
         if($pantalla == 1){
-          $idIdioma    = $this->M_solicitud->getDatosPais($idioma);
+          $idIdioma    = $this->M_solicitud->getDatosPais('Portugués');
           $arrayInsert = array('Industria'   => $datos,
                                'Id_lenguaje' => 3);
           $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');

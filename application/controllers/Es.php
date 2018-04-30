@@ -64,10 +64,12 @@ class Es extends CI_Controller {
         $datos_prio  = $this->input->post('datos_prio');
         $operar      = $this->input->post('operar');
         $facturacion = $this->input->post('facturacion');
+        $session     = array('idioma' => 'Español');
+        $this->session->set_userdata($session);
         $columna     = null;
         if($pantalla == 2) {$columna = 'Factura_anual';} elseif ($pantalla == 3) {$columna = 'Prioridad';}elseif ($pantalla == 4) {$columna = 'Infraestructura';}
         if($pantalla == 1){
-          $idIdioma    = $this->M_solicitud->getDatosPais($idioma);
+          $idIdioma    = $this->M_solicitud->getDatosPais('Español');
           $arrayInsert = array('Industria'   => $datos,
                                'Id_lenguaje' => $idIdioma);
           $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
@@ -540,6 +542,18 @@ class Es extends CI_Controller {
     try {
       $idioma  = $this->input->post('idioma');
       $session = array('idioma' => $idioma);
+      $this->session->set_userdata($session);
+      $data['error'] = EXIT_SUCCESS;
+    }catch(Exception $e) {
+      $data['msj'] = $e->getMessage();
+    }
+    echo json_encode($data);
+  }
+  function returnHome(){
+    $data['error'] = EXIT_ERROR;
+    $data['msj'] = null;
+    try {
+      $session = array('pantalla' => 0);
       $this->session->set_userdata($session);
       $data['error'] = EXIT_SUCCESS;
     }catch(Exception $e) {
