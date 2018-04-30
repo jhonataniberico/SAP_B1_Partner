@@ -179,9 +179,8 @@ class Es extends CI_Controller {
         $this->session->unset_userdata('idioma');
         $this->sendGmailSap($email);
         $this->emailClienteSap($email);
-      //$this->emailPartner();
-      $data['msj']  = $datoInsert['msj'];
-      $data['error'] = $datoInsert['error'];
+        $data['msj']  = $datoInsert['msj'];
+        $data['error'] = $datoInsert['error'];
     } catch (Exception $e) {
         $data['msj'] = $e->getMessage();
     }
