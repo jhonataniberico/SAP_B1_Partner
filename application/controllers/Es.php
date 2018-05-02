@@ -221,7 +221,7 @@ class Es extends CI_Controller {
                             'newline'   => "\r\n");
        $this->email->initialize($configGmail);
        $this->email->from('info@sap-latam.com');
-       $this->email->to($_GET['correo']);
+       $this->email->to('jhonatanibericom@gmail.com');
        $this->email->subject('Estoy interesado en SAP Business One para mi negocio.');
         $texto = '<!DOCTYPE html>
                   <html>
@@ -360,7 +360,6 @@ class Es extends CI_Controller {
                   </html>';
         $this->email->message($texto);
         $this->email->send();
-        $this->session->unset_userdata('id_persona');
         $data['error'] = EXIT_SUCCESS;
       }catch (Exception $e){
         $data['msj'] = $e->getMessage();
@@ -451,12 +450,13 @@ class Es extends CI_Controller {
                                   <tbody>
                                     <tr>
                                       <td style="padding: 20px 40px 10px 40px;">
-                                        <font style="color: #000000;font-weight: bold;font-size: 20px;">Gracias por su interés</font>
+                                        <font style="color: #000000;font-weight: bold;font-size: 20px;">Agradecemos su interés</font>
                                       </td>
                                     </tr>
                                     <tr>
                                       <td style="padding:10px 40px 20px 40px;">
-                                        <font style="color: #000000;">Un representante de SAP se pondrá en contacto con Usted para ayudarlo a dar el primer paso.</font>
+                                        <font style="color: #000000;">En '.$this->session->userdata('partner').' estamos seguros que podemos preparar un paquete de SAP Business One a su medida.</font>
+                                        <font style="color: #000000;">Uno de nuestros especialistas se pondrá en contacto con usted para dar el primer paso.</font>
                                       </td>
                                     </tr>
                                   </tbody>
