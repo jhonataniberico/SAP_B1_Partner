@@ -34,10 +34,23 @@ class Es extends CI_Controller {
     $data['priori']        = $html;
     /*echo print_r($_GET['a']);
     exit;*///La tecnología que impulsa su negocio
-    $data['eslogan']       = base64_decode($_GET['a']) == '' ? 'La tecnología que impulsa su negocio' : base64_decode($_GET['a']);
-    $data['logo']          = $_GET['logo'] == '' ? 'partner' : $_GET['logo'];
-    $session = array('partner' => base64_decode($_GET['partner']));
-    $this->session->set_userdata($session);
+    if(isset($_GET['a'])){
+      $data['eslogan'] = base64_decode($_GET['a']) == '' ? 'La tecnología que impulsa su negocio' : base64_decode($_GET['a']);
+    }else {
+      $data['eslogan'] = 'La tecnología que impulsa su negocio';
+    }
+    if(isset($_GET['logo'])){
+      $data['logo'] = $_GET['logo'] == '' ? 'partner' : $_GET['logo'];
+    }else {
+      $data['logo'] = 'partner';
+    }
+    if(isset($_GET['partner'])){
+      $session = array('partner' => base64_decode($_GET['partner']));
+      $this->session->set_userdata($session);
+    }else {
+      $session = array('partner' => 'partner');
+      $this->session->set_userdata($session);
+    }
     $data['confirmar']     = $this->session->userdata('confirmar') == null ? 0 : $this->session->userdata('confirmar');
     //$data['pantalla']      = 0;
     $client_id             = "770t6ws75n49yz";

@@ -27,12 +27,22 @@ class callback extends CI_Controller {
 				 		 'pantalla'     => 5);
 		echo print_r($_SESSION['idioma']);
 		$this->session->set_userdata($session);
-		//if($_SESSION['idioma'] == 'Español') {
-			header("location: es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw==&logo=logo_actualisap&correo=YXNhbmppbmVzQGFjdHVhbGlzYXBib2xpdmlhLmNvbQ==&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB");
-		/*}else if($_SESSION['idioma'] == 'Francés') {
-			header("location: fr");
-		}else if($_SESSION['idioma'] == 'Portugués') {
-			header("location: pt?a=U2ltcGxpZmljYW5kbyBhIHZpZGEgZG9zIG5vc3NvcyBjbGllbnRlcywgdG9ybmFuZG8gb3MgcHJvY2Vzc29zIG1haXMgw6FnZWlzIGUgZWZpY2llbnRlcy4=&logo=partner&correo=cmFmYWVsYS5zYW50b3NAb2tzZXIuY29tLmJy==&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB");
-		}*/
+		if($_SESSION['partner'] == 'partner'){
+			if($_SESSION['idioma'] == 'Español') {
+				header("location: es");
+			}else if($_SESSION['idioma'] == 'Francés') {
+				header("location: fr");
+			}else if($_SESSION['idioma'] == 'Portugués') {
+				header("location: pt");
+			}
+		}else {
+			if($_SESSION['idioma'] == 'Español') {
+				header("location: es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw==&logo=logo_actualisap&correo=YXNhbmppbmVzQGFjdHVhbGlzYXBib2xpdmlhLmNvbQ==&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB");
+			}else if($_SESSION['idioma'] == 'Francés') {
+				header("location: fr");
+			}else if($_SESSION['idioma'] == 'Portugués') {
+				header("location: pt?a=U2ltcGxpZmljYW5kbyBhIHZpZGEgZG9zIG5vc3NvcyBjbGllbnRlcywgdG9ybmFuZG8gb3MgcHJvY2Vzc29zIG1haXMgw6FnZWlzIGUgZWZpY2llbnRlcy4=&logo=partner&correo=cmFmYWVsYS5zYW50b3NAb2tzZXIuY29tLmJy==&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB");
+			}
+		}
     } 
 }
