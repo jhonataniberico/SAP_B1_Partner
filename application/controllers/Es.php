@@ -41,8 +41,12 @@ class Es extends CI_Controller {
     }
     if(isset($_GET['logo'])){
       $data['logo'] = $_GET['logo'] == '' ? 'partner' : $_GET['logo'];
+      $session = array('logo' => $_GET['logo']);
+      $this->session->set_userdata($session);
     }else {
       $data['logo'] = 'partner';
+      $session = array('logo' => 'partner');
+      $this->session->set_userdata($session);
     }
     if(isset($_GET['partner'])){
       $session = array('partner' => base64_decode($_GET['partner']));
@@ -449,13 +453,16 @@ class Es extends CI_Controller {
                                 <table align="center" cellspacing="0" cellpadding="0" style="text-align: center;margin: auto;">
                                   <tbody>
                                     <tr>
+                                      <td style="text-align: left;padding: 20px;"><img width="150" src="http://www.sap-latam.com/SAP_Business_One_Partner/public/img/logo/'.$this->session->userdata('logo').'.png"></td>
+                                    </tr>
+                                    <tr>
                                       <td style="padding: 20px 40px 10px 40px;">
                                         <font style="color: #000000;font-weight: bold;font-size: 20px;">Agradecemos su interés</font>
                                       </td>
                                     </tr>
                                     <tr>
                                       <td style="padding:10px 40px 20px 40px;">
-                                        <font style="color: #000000;">En <font style="font-weight: bold">'.$this->session->userdata('partner').'</font> estamos seguros que podemos preparar un paquete de SAP Business One a su medida.</font>
+                                        <font style="color: #000000;">En '.$this->session->userdata('partner').' estamos seguros que podemos preparar un paquete de SAP Business One a su medida.</font>
                                         <font style="color: #000000;">Uno de nuestros especialistas se pondrá en contacto con usted para dar el primer paso.</font>
                                       </td>
                                     </tr>
