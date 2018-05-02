@@ -566,6 +566,11 @@ class Es extends CI_Controller {
     try {
       $session = array('pantalla' => 0);
       $this->session->set_userdata($session);
+      if($this->session->userdata('partner') == 'partner'){
+        $data['url'] = 'es';
+      }else {
+       $data['url'] = 'es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw==&logo=logo_actualisap&correo=YXNhbmppbmVzQGFjdHVhbGlzYXBib2xpdmlhLmNvbQ==&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB';
+      }
       $data['error'] = EXIT_SUCCESS;
     }catch(Exception $e) {
       $data['msj'] = $e->getMessage();

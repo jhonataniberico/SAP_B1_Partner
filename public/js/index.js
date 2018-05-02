@@ -830,7 +830,7 @@ function returnHome(){
 		try{
         data = JSON.parse(data);
         if(data.error == 0){
-        	location.href = 'es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw==&logo=logo_actualisap&correo=YXNhbmppbmVzQGFjdHVhbGlzYXBib2xpdmlhLmNvbQ==&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB';
+        	location.href = data.url;
         }else{
         	return;
         }
