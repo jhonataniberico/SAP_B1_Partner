@@ -52,7 +52,6 @@ class Es extends CI_Controller {
       $this->session->set_userdata($session);
     }
     $data['confirmar']     = $this->session->userdata('confirmar') == null ? 0 : $this->session->userdata('confirmar');
-    //$data['pantalla']      = 0;
     $client_id             = "770t6ws75n49yz";
     $client_secret         = "PfTSjhgyMMNSdlwe";
     $redirect_uri          = "http://www.sap-latam.com/SAP_Business_One_Partner/callback";
