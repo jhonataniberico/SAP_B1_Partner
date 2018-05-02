@@ -214,8 +214,8 @@ class Es extends CI_Controller {
        $configGmail = array('protocol'  => 'smtp',
                             'smtp_host' => 'smtpout.secureserver.net',
                             'smtp_port' => 3535,
-                            'smtp_user' => 'info@sap-latam.com',
-                            'smtp_pass' => 'sapinfo18',
+                            'smtp_user' => 'info@marketinghpe.com',
+                            'smtp_pass' => 'hpeinfo18',
                             'mailtype'  => 'html',
                             'charset'   => 'utf-8',
                             'newline'   => "\r\n");
@@ -382,8 +382,8 @@ class Es extends CI_Controller {
        $configGmail = array('protocol'  => 'smtp',
                             'smtp_host' => 'smtpout.secureserver.net',
                             'smtp_port' => 3535,
-                            'smtp_user' => 'info@sap-latam.com',
-                            'smtp_pass' => 'sapinfo18',
+                            'smtp_user' => 'info@marketinghpe.com',
+                            'smtp_pass' => 'hpeinfo18',
                             'mailtype'  => 'html',
                             'charset'   => 'utf-8',
                             'newline'   => "\r\n");    
@@ -455,7 +455,7 @@ class Es extends CI_Controller {
                                     </tr>
                                     <tr>
                                       <td style="padding:10px 40px 20px 40px;">
-                                        <font style="color: #000000;">En '.$this->session->userdata('partner').' estamos seguros que podemos preparar un paquete de SAP Business One a su medida.</font>
+                                        <font style="color: #000000;">En <font style="font-weight: bold">'.$this->session->userdata('partner').'</font> estamos seguros que podemos preparar un paquete de SAP Business One a su medida.</font>
                                         <font style="color: #000000;">Uno de nuestros especialistas se pondrá en contacto con usted para dar el primer paso.</font>
                                       </td>
                                     </tr>
