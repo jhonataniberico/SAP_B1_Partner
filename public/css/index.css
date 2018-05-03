@@ -978,6 +978,13 @@ span.number{
 .mdl-idioma.partner .bootstrap-select .btn-default{
     color: #000000;
 }
+.partner .bootstrap-select .btn-default.active, 
+.partner .bootstrap-select .btn-default:active, 
+.partner .bootstrap-select.open>.dropdown-toggle.btn-default,
+.partner .bootstrap-select .btn-default:focus,
+.partner .bootstrap-select .btn-default{
+    color: #FFFFFF;
+}
 .mdl-select.mdl-standar .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
 	width: 100%;
 }
