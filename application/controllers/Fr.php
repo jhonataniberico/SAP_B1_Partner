@@ -68,55 +68,53 @@ class Fr extends CI_Controller {
     $data['nombre_linke']  = $this->session->userdata('emailAddress');
     $this->load->view('v_fr', $data);
   }
-
   function Savedatos(){
-        $data['error'] = EXIT_ERROR;
-        $data['msj']   = null;
-        try {
-            $this->session->unset_userdata('Infraestructura');
-            $datos       = $this->input->post('global_datos');
-            $pantalla    = $this->input->post('pantalla');
-            $idioma      = $this->input->post('idioma');
-            $datos_prio  = $this->input->post('datos_prio');
-            $operar      = $this->input->post('operar');
-            $facturacion = $this->input->post('facturacion');
-            $columna     = null;
-            if($pantalla == 2) {$columna = 'Factura_anual';} elseif ($pantalla == 3) {$columna = 'Prioridad';}elseif ($pantalla == 4) {$columna = 'Infraestructura';}
-            if($pantalla == 1){
-              $idIdioma    = $this->M_solicitud->getDatosPais($idioma);
-              $arrayInsert = array('Industria'   => $datos,
-                                   'Id_lenguaje' => /*$idIdioma*/3);
-              $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
-              $session    = array('industria' => $datos,
-                                  'id_sol'    => $datoInsert['Id'],
-                                  'idioma'    => 'Francés');
-              $this->session->set_userdata($session);
-              print_r($session);
-            }else {
-              if($pantalla == 2){
-                $arrayUpdate = array($columna  => $facturacion,
-                                     'Tamanio' => $operar);
-                $session     = array($columna  => $facturacion,
-                                     'Tamanio' => $operar);
-              }else {
-                if($pantalla == 3){
-                  $arrayUpdate = array($columna => $datos_prio);
-                  $session     = array($columna => $datos_prio);
-                }else if($pantalla == 4){
-                  $arrayUpdate = array($columna          => $datos);
-                  $session     = array('Infraestructura' => $datos);
-                }
-              }
-              $this->M_solicitud->updateDatos($arrayUpdate, $_SESSION['id_sol'], 'solicitud', 'Id');
-              $this->session->set_userdata($session);
+    $data['error'] = EXIT_ERROR;
+    $data['msj']   = null;
+    try {
+        $this->session->unset_userdata('Infraestructura');
+        $datos       = $this->input->post('global_datos');
+        $pantalla    = $this->input->post('pantalla');
+        $idioma      = $this->input->post('idioma');
+        $datos_prio  = $this->input->post('datos_prio');
+        $operar      = $this->input->post('operar');
+        $facturacion = $this->input->post('facturacion');
+        $columna     = null;
+        if($pantalla == 2) {$columna = 'Factura_anual';} elseif ($pantalla == 3) {$columna = 'Prioridad';}elseif ($pantalla == 4) {$columna = 'Infraestructura';}
+        if($pantalla == 1){
+          $idIdioma    = $this->M_solicitud->getDatosPais($idioma);
+          $arrayInsert = array('Industria'   => $datos,
+                               'Id_lenguaje' => /*$idIdioma*/3);
+          $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
+          $session    = array('industria' => $datos,
+                              'id_sol'    => $datoInsert['Id'],
+                              'idioma'    => 'Francés');
+          $this->session->set_userdata($session);
+          print_r($session);
+        }else {
+          if($pantalla == 2){
+            $arrayUpdate = array($columna  => $facturacion,
+                                 'Tamanio' => $operar);
+            $session     = array($columna  => $facturacion,
+                                 'Tamanio' => $operar);
+          }else {
+            if($pantalla == 3){
+              $arrayUpdate = array($columna => $datos_prio);
+              $session     = array($columna => $datos_prio);
+            }else if($pantalla == 4){
+              $arrayUpdate = array($columna          => $datos);
+              $session     = array('Infraestructura' => $datos);
             }
-            $data['error'] = EXIT_SUCCESS;
-          }catch(Exception $e) {
-           $data['msj'] = $e->getMessage();
+          }
+          $this->M_solicitud->updateDatos($arrayUpdate, $_SESSION['id_sol'], 'solicitud', 'Id');
+          $this->session->set_userdata($session);
         }
-        echo json_encode($data);
+        $data['error'] = EXIT_SUCCESS;
+      }catch(Exception $e) {
+       $data['msj'] = $e->getMessage();
+    }
+    echo json_encode($data);
   }
-
   function mostrarDatos(){
         $data['error'] = EXIT_ERROR;
         $data['msj']   = null;
@@ -143,7 +141,6 @@ class Fr extends CI_Controller {
         }
         echo json_encode($data);
   }
-
   function solicitarEstimacion() {
         $data['error']  = EXIT_ERROR;
         $data['msj']    = null;
@@ -203,7 +200,6 @@ class Fr extends CI_Controller {
         }
         echo json_encode($data);
   }
-
   function sendGmailSap($email) {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
@@ -227,7 +223,7 @@ class Fr extends CI_Controller {
                             'newline'   => "\r\n");    
         $this->email->initialize($configGmail);
         $this->email->from('info@sap-latam.com');
-        $this->email->to($_GET['correo']);//jhonatanibericom@gmail.com
+        $this->email->to($_GET['correo']);
         $this->email->subject('Je suis intéressé par SAP Business One pour mon entreprise.');
         $texto = '<!DOCTYPE html>
                     <html>
