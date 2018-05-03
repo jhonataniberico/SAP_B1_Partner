@@ -113,15 +113,32 @@ table.dataTable tbody td{
 	color: #757575;
 }
 .mdl-card-table .dataTables_filter{
-    position: relative;
+    position: absolute;
+    top: 0;
     right: 15px;
     margin-top: 15px;
 }
 .mdl-card-table .dt-buttons{
 	padding: 15px;
 }
+.mdl-card-table .dt-buttons button{
+	height: 38px;
+}
+.mdl-card-table .dt-buttons button .fa-file-excel-o{
+	color: #207245;
+}
+div.dt-button-background{
+	display:  none !important;
+}
 table.dataTable.no-footer{
 	margin-bottom: 30px;
+}
+table thead tr{
+	background-color: #f5f5f5;
+}
+.table-bordered>thead>tr>td, 
+.table-bordered>thead>tr>th{
+	border-bottom-width: 0;
 }
 .dataTables_wrapper .dataTables_paginate{
     position: relative;
@@ -182,6 +199,13 @@ table.dataTable.no-footer{
     font-family: 'RobotoMedium';
     padding: 0 14px;
     width: 100%;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+	background-color: #000000;
+	border-color: #000000;
+}
+.pagination>li>a, .pagination>li>span{
+	color: #000000;
 }
 /*GENERAL*/
 .window-center{
