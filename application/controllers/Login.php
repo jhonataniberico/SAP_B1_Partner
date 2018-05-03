@@ -13,8 +13,13 @@ class Login extends CI_Controller {
         $this->output->set_header('Pragma: no-cache');
     }
 	public function index(){
-		$session = array('partner' 		 => base64_decode($_GET['partner']),
-						 'partner_cript' => $_GET['partner']);
+		if(isset($_GET['partner'])){
+			$session = array('partner' 	 => base64_decode($_GET['partner']),
+						     'partner_cript' => $_GET['partner']);
+		}else {
+			$session = array('partner' 	 => 'partner',
+						     'partner_cript' => '');
+		}
     	$this->session->set_userdata($session);
 		$this->session->unset_userdata('user');
 	    $this->session->unset_userdata('Id_user');
