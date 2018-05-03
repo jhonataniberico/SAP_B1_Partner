@@ -70,7 +70,11 @@ class Admin extends CI_Controller {
         $data['error'] = EXIT_ERROR;
         $data['msj']   = null;
         try {
-            $data['url'] = $this->session->userdata('partner_cript');
+            if($this->session->userdata('partner_cript') == ''){
+                $data['url'] = '';
+            }else {
+                $data['url'] = $this->session->userdata('partner_cript');
+            }
             $this->session->unset_userdata('usuario');
             $this->session->unset_userdata('Id_user');
             $data['error'] = EXIT_SUCCESS;
