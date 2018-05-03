@@ -215,6 +215,9 @@ class Fr extends CI_Controller {
         }else if($_SESSION['Contacto'] == 1){
           $contact = 'Par email';
         }
+        if(isset($_GET['correo'])){
+          $email = $_GET['correo'];
+        }
         $respuestas = $this->M_solicitud->getRespUsuario($_SESSION['id_persona']);
        $this->load->library("email");
        $configGmail = array('protocol'  => 'smtp',
@@ -227,7 +230,7 @@ class Fr extends CI_Controller {
                             'newline'   => "\r\n");    
        $this->email->initialize($configGmail);
        $this->email->from('info@sap-latam.com');
-       $this->email->to($_GET['correo']);
+       $this->email->to($email);
        $this->email->subject('Je suis intéressé par SAP Business One pour mon entreprise.');
        $texto = '<!DOCTYPE html>
                   <html>
