@@ -335,7 +335,7 @@ table thead tr{
 	position: fixed;
     top: 0;
     width: 100%;
-    padding: 40px;
+    padding: 50px 40px 40px 40px;
     opacity: 1;
     -webkit-transition: opacity .3s ease-in-out;
 	-moz-transition: opacity .3s ease-in-out;
