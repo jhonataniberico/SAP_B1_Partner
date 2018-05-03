@@ -42,6 +42,8 @@ class callback extends CI_Controller {
 				header("location: fr");
 			}else if($_SESSION['idioma'] == 'Portugués') {
 				header("location: pt?a=U2ltcGxpZmljYW5kbyBhIHZpZGEgZG9zIG5vc3NvcyBjbGllbnRlcywgdG9ybmFuZG8gb3MgcHJvY2Vzc29zIG1haXMgw6FnZWlzIGUgZWZpY2llbnRlcy4=&logo=partner&correo=cmFmYWVsYS5zYW50b3NAb2tzZXIuY29tLmJy==&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB");
+			}else if($_SESSION['idioma'] == 'Finlandés') {
+				header("location: fi");
 			}
 		}
     } 

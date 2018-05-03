@@ -366,7 +366,7 @@ class Fr extends CI_Controller {
         $data['msj'] = $e->getMessage();
       }
       return json_encode(array_map('utf8_encode', $data));
-    }
+  }
   function emailClienteSap($email){
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
@@ -517,7 +517,7 @@ class Fr extends CI_Controller {
         $data['msj'] = $e->getMessage();
       }
       return json_encode(array_map('utf8_encode', $data));
-    }
+  }
   function EditQuestion(){
     $data['error'] = EXIT_ERROR;
     $data['msj']   = null;

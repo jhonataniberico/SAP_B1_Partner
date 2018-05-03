@@ -8,10 +8,10 @@
     <meta name="keywords"               content="SAP,producto wizard">
     <meta name="robots"                 content="Index,Follow">
     <meta name="date"                   content="January 25, 2018"/>
-    <meta name="language"               content="es">
+    <meta name="language"               content="fi">
     <meta name="theme-color"            content="#000000">
 	<title>SAP Business One</title>
-    <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/logo_favicon.ico">
+    <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/logo_favicon.png">
 	<link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/material.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
@@ -22,6 +22,7 @@
 	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>animate.css?v=<?php echo time();?>">
 	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
 	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.css?v=<?php echo time();?>">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 </head>
 <body>
 	<section id="principal">
@@ -31,9 +32,9 @@
 	    			<div class="header-right">
 	    				<div class="mdl-idioma">
 							<select class="selectpicker" id="Idioma"  name="Idioma" onchange="cambiarIdioma()">
-								<option value="Francés">Fran&ccedil;ais</option>
-								<option value="Español">Espa&ntilde;ol</option>
 								<option value="Finlandés">Suomalainen</option>
+								<option value="Español">Espa&ntilde;ol</option>
+								<option value="Francés">Fran&ccedil;ais</option>
 							</select>
 	    				</div>
 						<div class="background1"></div>
@@ -48,30 +49,30 @@
 	    			<img class="logo-home partner" src="<?php echo RUTA_IMG?>logo/<?php echo $logo.'.png' ?>">
 	    			<div class="eslogan">
 	    				<h2 class="title-home partner first-eslogan"><?php echo $eslogan ?></h2>
-	            		<h2 class="title-home partner second-eslogan">¿Etes-vous prêt pour SAP Business One &#63;</h2>
+	            		<h2 class="title-home partner second-eslogan">Onko yrityksesi valmis SAP Business One&#63;</h2>
 	    			</div>
 	    		</div>
 	    		<div class="button-next-prev partner">
-	    			<a class="link-empezar">Début</a>
+	    			<a class="link-empezar">alku</a>
 	    			<button id="buttonNextPartner" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect button-arrow button-next" onclick="buttonNextPartner()">
-						<div class="arrow arrow-right"></div>
-					</button>
-	    		</div>
+	    				<div class="arrow arrow-right"></div>
+	    			</button>
+    			</div>
 	    		<div class="fondo-bottom fondo-partner continue"></div>
 	    	</div>
     		<div id="home" class="window-center opacity-done">
     			<div class="header-home">
 					<div class="mdl-idioma">
 						<select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdiomaHome()">
-							<option value="Francés">Fran&ccedil;ais</option>
-							<option value="Español">Espa&ntilde;ol</option>
 							<option value="Finlandés">Suomalainen</option>
+							<option value="Español">Espa&ntilde;ol</option>
+							<option value="Francés">Fran&ccedil;ais</option>
 						</select>
     				</div>
 		    	</div>
 	    		<div class="mdl-container mdl-all-window">
 	    			<img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
-	            	<h2 class="title-home">Différents scénarios, une seule solution.</h2>
+	            	<h2 class="title-home">Eri skenaarioita Ratkaisu</h2>
 	    		</div>
 	    		<div class="background-body">
 					<div class="background-body3"></div>
@@ -92,14 +93,15 @@
 	    			<div class="header-left">
 	    				<img class="logo-header" src="<?php echo RUTA_IMG?>logo/<?php echo $logo.'.png' ?>">
 	    				<img class="logo-partner" src="<?php echo RUTA_IMG?>logo/categoria_gold.png">
+	    				<!-- <h2>Etes-vous prêt pour SAP Business One &#63;</h2> -->
 	    			</div>
 	    			<div class="header-right">
-    					<button class="mdl-button mdl-js-button mdl-button--icon button-home" onclick="returnHome()"><i class="mdi mdi-home"></i></button>
+	    				<button class="mdl-button mdl-js-button mdl-button--icon button-home" onclick="returnHome()"><i class="mdi mdi-home"></i></button>
 	    				<div class="mdl-idioma partner">
 							<select class="selectpicker" id="Idioma_partner"  name="Idioma" onchange="cambiarIdiomaPartner()">
-								<option value="Francés">Fran&ccedil;ais</option>
-								<option value="Español">Espa&ntilde;ol</option>
 								<option value="Finlandés">Suomalainen</option>
+								<option value="Español">Espa&ntilde;ol</option>
+								<option value="Francés">Fran&ccedil;ais</option>
 							</select>
 	    				</div>
 						<div class="background1"></div>
@@ -108,36 +110,37 @@
 	    			</div>
 	    		</div>
 	    		<div class="logo-bottom">
+        			<img src="http://www.sap-latam.com/sap_business_one/public/img/logo/logo_home.png">
 		    		<div class="bottom-right">
-						<p>Vous pouvez sélectionner plusieurs options</p>
+						<p>Du kan välja mer än ett alternativ</p>
 		    		</div>
         		</div>
         		<div class="chat">
-        			<a href="https://z1.liveper.sn/api/account/81933160/route/campaign/194741814/engagement/250005114" target="_blank"><img src="<?php echo RUTA_IMG?>chat.png"><label>Dialoguer avec nous</label></a>
+        			<a href="https://z1.liveper.sn/api/account/81933160/route/campaign/194741814/engagement/476282014" target="_blank"><img src="<?php echo RUTA_IMG?>chat.png"><label>Keskustele kanssamme</label></a>
         		</div>
 				<div id="window1-page" class="window-center opacity-done">
 					<div class="mdl-container text-center">
 						<div class="question">
 			        		<span class="number">01/05</span>
-			        		<h2>Quelle est votre industrie &#63;</h2>
+			        		<h2>Mik&auml; on toimialasi&#63;</h2>
 			        	</div>
 			        	<div class="mdl-card-question">
 			        		<div class="flip-card">
 			        			<div class="card-front card-front-none">
 			        				<img src="<?php echo RUTA_IMG?>cards/card-profesional.png">
-			        				<p>Services professionnels</p>
+			        				<p>Asiantuntijapalvelut</p>
 			        			</div>
 			        		</div>
 			        		<div class="content-card">
-			        			<button id="buttonCard1" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Servicios Profesionales')">Sélectionner</button>
+			        			<button id="buttonCard1" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Asiantuntijapalvelut')">Valitse</button>
 			        			<div class="contenido">
 			        				<div class="contenido-left">
 			        					<img src="<?php echo RUTA_IMG?>cards/card-contenido.png">
 			        				</div>
 			        				<div class="contenido-right">
-			    						<h2>Le saviez-vous ?</h2>
-			    						<p>... Les entreprises leaders de conseil et de services professionnels utilisent la technologie de manière innovante pour perfectionner les pratiques commerciales, renforcer l’agilité et améliorer le service client.</p>
-			    						<small>(IDC, septembre 2016)</small>
+			    						<h2>Tiesitk&ouml; ett&auml;...</h2>
+			    						<p>... menestyv&auml;t asiantuntijapalvelujen tarjoajat hy&ouml;dynt&auml;v&auml;t teknologiaa uudella tavalla liiketoiminnassaan, parantavat joustavuutta ja tarjoavat parempaa asiakaspalvelua.</p>
+			    						<small>(IDC, syyskuu 2016)</small>
 			        				</div>
 			        			</div>
 			        		</div>
@@ -146,19 +149,19 @@
 			        		<div class="flip-card">
 			    				<div class="card-front card-front-none">
 			        				<img src="<?php echo RUTA_IMG?>cards/card-retail.png">
-			        				<p>Retail</p>
+			        				<p>V&auml;hitt&auml;ismyynti</p>
 			        			</div>
 			        		</div>
 			        		<div class="content-card">
-			        			<button id="buttonCard2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Retail')">Sélectionner</button>
+			        			<button id="buttonCard2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Vähittäismyynti')">Valitse</button>
 			        			<div class="contenido">
 			        				<div class="contenido-left">
 			        					<img src="<?php echo RUTA_IMG?>cards/card-contenido.png">
 			        				</div>
 			        				<div class="contenido-right">
-			    						<h2>Le saviez-vous ?</h2>
-			    						<p>Pour chaque nouvel innovateur qui propose un nouveau marché ou type de produit, une centaine de marchés sont réduits ou paralysés.</p>
-			    						<small>(IDC, septembre 2016)</small>
+			    						<h2>Tiesitk&ouml; ett&auml;...</h2>
+			    						<p>...  jokainen joka l&auml;htee luomaan uutta markkinaa tai tuotetta kohtaa ainakin sata vastaavaa jotka eiv&auml;t ole menestyneet tai ovat ep&auml;onnistuneet.</p>
+			    						<small>(IDC, syyskuu 2016)</small>
 			        				</div>
 			        			</div>
 			        		</div>
@@ -167,19 +170,19 @@
 			        		<div class="flip-card">
 			        			<div class="card-front card-front-none">
 			        				<img src="<?php echo RUTA_IMG?>cards/card-distribucion.png">
-			        				<p>Distribution</p>
+			        				<p>Jakelu</p>
 			        			</div>
 			        		</div>
 			        		<div class="content-card">
-			        			<button id="buttonCard3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Distribution')">Sélectionner</button>
+			        			<button id="buttonCard3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Jakelu')">Valitse</button>
 			        			<div class="contenido">
 			        				<div class="contenido-left">
 			        					<img src="<?php echo RUTA_IMG?>cards/card-contenido.png">
 			        				</div>
 			        				<div class="contenido-right">
-			    						<h2>Le saviez-vous ?</h2>
-			    						<p>Vous pouvez augmenter de manière générale l’expérience client en utilisant des processus rapides et en mettant en place une prise de commande multicanal.</p>
-			    						<small>(IDC, septembre 2016)</small>
+			    						<h2>Tiesitk&ouml; ett&auml;...</h2>
+			    						<p>... k&auml;ytt&auml;m&auml;ll&auml; monikanavaista ja nopeaa tilaustenk&auml;sittely&auml; voit parantaa asiakaskokemusta.</p>
+			    						<small>(SAP Performance Benchmarking))</small>
 			        				</div>
 			        			</div>
 			        		</div>
@@ -188,19 +191,19 @@
 			    			<div class="flip-card">
 			    				<div class="card-front card-front-none">
 			        				<img src="<?php echo RUTA_IMG?>cards/card-producto.png">
-			        				<p>Biens de consommation</p>
+			        				<p>Kuluttajatuotteet</p>
 			        			</div>
 			    			</div>
 			    			<div class="content-card">
-			        			<button id="buttonCard4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Biens de consommation')">Sélectionner</button>
+			        			<button id="buttonCard4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Kuluttajatuotteet')">Valitse</button>
 			        			<div class="contenido">
 			        				<div class="contenido-left">
 			        					<img src="<?php echo RUTA_IMG?>cards/card-contenido.png">
 			        				</div>
 			        				<div class="contenido-right">
-			    						<h2>Le saviez-vous ?</h2>
-			    						<p>Les leaders de cette industrie réinventent leurs manières d’opérer et utilisent la technologie comme outil pour perfectionner leurs pratiques commerciales et renforcer la satisfaction de leurs clients et distributeurs.</p>
-			    						<small>(IDC, septembre 2016)</small>
+			    						<h2>Tiesitk&ouml; ett&auml;...</h2>
+			    						<p>... menestyv&auml;t yritykset uudistavat toimintatapojaan hy&ouml;dynt&auml;m&auml;ll&auml; teknologiaa, parhaita k&auml;yt&auml;nt&ouml;j&auml;, parantamalla reagointikykyään ja tarjoamalla parempaa palvelua asiakkailleen ja jakelijoilleen.</p>
+			    						<small>(IDC, syyskuu 2016)</small>
 			        				</div>
 			        			</div>
 			        		</div>
@@ -208,20 +211,20 @@
 			        	<div class="mdl-card-question">
 			        		<div class="flip-card">
 			        			<div class="card-front card-front-none">
-			        				<img src="<?php echo RUTA_IMG?>cards/card-proceso.png">
-			        				<p>Production/Industriel</p>
+			        				<img class="m-b-0" src="<?php echo RUTA_IMG?>cards/card-proceso.png">
+			        				<p>Prosessi/valmistava teollisuus</p>
 			        			</div>
 			        		</div>
 			        		<div class="content-card">
-			        			<button id="buttonCard5" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Production/Industriel')">Sélectionner</button>
+			        			<button id="buttonCard5" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select select-one" onclick="guardarDatos(this.id,'Prosessi/valmistava teollisuus')">Valitse</button>
 			        			<div class="contenido">
 			        				<div class="contenido-left">
 			        					<img src="<?php echo RUTA_IMG?>cards/card-contenido.png">
 			        				</div>
 			        				<div class="contenido-right">
-			    						<h2>Le saviez-vous ?</h2>
-			    						<p>Les coûts de fabrication peuvent être réduits de 19% avec un suivi en temps réel des différentes variables agissant sur les coûts de production.</p>
-			    						<small>(IDC, septembre 2016)</small>
+			    						<h2>Tiesitk&ouml; ett&auml;...</h2>
+			    						<p>... valmistuskuluja voidaan v&auml;hent&auml;&auml; 19 %.:a tosiaikaisella tuotantokustannusten ja muuttujien seurannalla. </p>
+			    						<small>(IDC, syyskuu 2016)</small>
 			        				</div>
 			        			</div>
 			        		</div>
@@ -232,20 +235,20 @@
 					<div class="mdl-container mdl-tablet text-center">
 						<div class="question">
 		            		<span class="number">02/05</span>
-		            		<h2>Quelle est la taille de votre entreprise &#63;</h2>
+		            		<h2>Yrityksesi koko&#63;</h2>
 		            	</div>
 		            	<div class="mdl-flex">
 	            			<div class="mdl-card-question">
 		            			<div class="flip-card">
 		            				<div class="card-front card-front-none">
 			            				<img src="<?php echo RUTA_IMG?>cards/card-empleados.png">
-			            				<p>Nombre d’employés</p>
+			            				<p>Ty&ouml;ntekij&ouml;iden m&auml;&auml;r&auml;</p>
 			            			</div>
 		            			</div>
 		            			<div class="content-card">
 		            				<div class="select-empleados">
 		            					<button id="buttonMenos" class="mdl-button mdl-js-button mdl-button--icon select-one" onclick="operar(this.id,1)"><i class="mdi mdi-remove"></i></button>
-		            					<span id="textOperar">Sélectionner</span>
+		            					<span id="textOperar">Valitse</span>
 		            					<button id="buttonMas" class="mdl-button mdl-js-button mdl-button--icon select-one" onclick="operar(this.id,2)"><i class="mdi mdi-add"></i></button>
 		            				</div>
 			            			<div class="contenido">
@@ -253,9 +256,9 @@
 			            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 			            				</div>
 			            				<div class="contenido-right">
-		            						<h2>Le saviez-vous ? </h2>
-		            						<p>La qualité des échanges avec les clients et les consommateurs est le point de départ pour augmenter le résultat des petites et moyennes entreprises de biens de consommation.</p>
-		            						<small>(IDC, septembre 2016)</small>
+		            						<h2>Tiesitk&ouml; ett&auml;...</h2>
+		            						<p>... vuorovaikutus asiakkaiden ja kuluttajien kanssa on l&auml;ht&ouml;kohta liikevaihdon kasvattamiselle kasvavissa ja keskisuurissa yrityksiss&auml;.</p>
+		            						<small>(IDC, syyskuu 2016)</small>
 			            				</div>
 			            			</div>
 			            		</div>
@@ -264,21 +267,21 @@
 			            		<div class="flip-card">
 			            			<div class="card-front card-front-none">
 			            				<img src="<?php echo RUTA_IMG?>cards/card-facturacion.png">
-			            				<p>Facturation annuelle</p>
+			            				<p>Vuosittainen laskutus</p>
 			            			</div>
 			            		</div>
 			            		<div class="content-card">
 			            			<div class="row">
 			            				<div class="col-xs-12">
 			            					<div class="mdl-select">
-			            						<select class="selectpicker" id="facturacion" name="facturacion" title="Seleccione" onchange="selectFacturacion(this.id)">
-													<option value="< 1 Million d'Euro"> < 1 Million d'Euro</option>
-													<option value="1 - 3 Millions d'Euro">1 - 3 Millions d'Euro</option>
-													<option value="3 - 5  Millions d'Euro">3 - 5  Millions d'Euro</option>
-													<option value="5 - 10 Millions d'Euro">5 - 10 Millions d'Euro</option>
-													<option value="10 - 20 Millions d'Euro">10 - 20 Millions d'Euro</option>
-													<option value="20 - 40  Millions d'Euro">20 - 40  Millions d'Euro</option>
-													<option value="Je n'ai pas l'information">Je n'ai pas l'information</option>
+			            						<select class="selectpicker" id="facturacion" name="facturacion" title="Valitse" onchange="selectFacturacion(this.id)">
+													<option value="< Miljoonaa euroa">< Miljoonaa euroa</option>
+													<option value="1 - 3 Miljoonaa euroa">1 - 3 Miljoonaa euroa</option>
+													<option value="3 -  5 Miljoonaa euroa">3 -  5 Miljoonaa euroa</option>
+													<option value="5 - 10 Miljoonaa euroa">5 - 10 Miljoonaa euroa</option>
+													<option value="10 - 20 Miljoonaa euroa">10 - 20 Miljoonaa euroa</option>
+													<option value="20 - 40 Miljoonaa euroa">20 - 40 Miljoonaa euroa</option>
+													<option value="Ei tiedossa">Ei tiedossa</option>
 												</select>
 			            					</div>
 				            			</div>
@@ -288,9 +291,9 @@
 			            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 			            				</div>
 			            				<div class="contenido-right">
-		            						<h2>Le saviez-vous ? </h2>
-		            						<p>L’augmentation des emails commerciaux représente aujourd'hui un peu plus de 10% des ventes globales.</p>
-		            						<small>(IDC, septembre 2016)</small>
+		            						<h2>Tiesitk&ouml; ett&auml;...</h2>
+		            						<p>... myynti s&auml;hk&ouml;postin v&auml;lityksell&auml; on t&auml;ll&auml; hetkell&auml; enemm&auml;n kuin 10 %:a kokonaismyynnist&auml;.</p>
+		            						<small>(IDC, syyskuu 2016)</small>
 			            				</div>
 			            			</div>
 			            		</div>
@@ -302,30 +305,30 @@
 					<div class="mdl-container text-center">
 						<div class="question">
 		            		<span class="number">03/05</span>
-		            		<h2>Quelle(s) est(sont) votre(vos) priorité(s) &#63;</h2>
+		            		<h2>Liiketoimintasi prioriteetit&#63;</h2>
 		            	</div>
 		            	<div class="mdl-card-question mdl-card-3">
 		            		<div class="flip-card">
 		            			<div class="card-front">
 		            				<img src="<?php echo RUTA_IMG?>cards/card-cloud.png">
-		            				<p>Cloud</p> 
+		            				<p>Pilviratkaisut</p> 
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Utiliser le Cloud pour se concentrer sur la croissance plutôt que l’implémentation et la gestion IT.</label>
+		            				<label>K&auml;ytt&auml;m&auml;ll&auml; pilviratkaisuja voit keskitty&auml; liiketoimintasi kasvattamiseen sen sijaan ett&auml; investoit tietoj&auml;rjestelmiesi k&auml;ytt&ouml;&ouml;nottoon ja hallinnointiin.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card">
-		            			<button id="buttonCloud" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Cloud')">Sélectionner</button>
+		            			<button id="buttonCloud" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Pilviratkaisut')">Valitse</button>
 		            			<div class="contenido">
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 		            				</div>
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Plus de 90% des entreprises utilisent déjà la technologie Cloud dans un environnement public, privé ou hybride.</p>
-	            						<small>(IDC, septembre 2016)</small>
+	            						<h2>Tiesitk&ouml; ett&auml;...</h2>
+	            						<p>...  yli 90 %:a yrityksist&auml; k&auml;ytt&auml;&auml; jo nyt pilviteknologiaa joko julkisessa-, yksityisess&auml;- tai yhdistelm&auml;pilviymp&auml;rist&ouml;ss&auml;.</p>
+	            						<small>(IDC, syyskuu 2016)</small>
 		            				</div>
 		            			</div>
 		            		</div>
@@ -334,24 +337,24 @@
 		            		<div class="flip-card">
 		            			<div class="card-front">
 		            				<img src="<?php echo RUTA_IMG?>cards/card-anywhere.png">
-		            				<p>Mobilité</p>
+		            				<p>Mobiiliratkaisut</p>
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Offrir aux employés un accès au logiciel par le biais d'une application mobile intuitive.</label>
+		            				<label>Mahdollista ty&ouml;ntekij&ouml;ittesi p&auml;&auml;sy ratkaisuun mobiililaitteilta.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card">
-		            			<button id="buttonAnywhere" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Mobilité')">Sélectionner</button>
+		            			<button id="buttonAnywhere" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Mobiiliratkaisut')">Valitse</button>
 		            			<div class="contenido">
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 		            				</div>
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Vous pouvez accéder à une analyse intégrée pour une prise de décision en temps réel.</p>
-	            						<small>(IDC, spetembre 2016)</small>
+	            						<h2>Tiesitk&ouml; ett&auml;...</h2>
+	            						<p>... voit hy&ouml;dynt&auml;&auml; tosiaikaista analytiikkaa p&auml;&auml;t&ouml;ksenteossasi.</p>
+	            						<small>(IDC, syyskuu 2016)</small>
 		            				</div>
 		            			</div>
 		            		</div>
@@ -360,24 +363,24 @@
 		            		<div class="flip-card">
 		            			<div class="card-front">
 		            				<img class="m-b-0" src="<?php echo RUTA_IMG?>cards/card-sap.png">
-		            				<p>Analyse en temps réel avec SAP HANA</p>
+		            				<p>SAP HANA tosiaikainen analytiikka</p>
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Votre temps d’analyse peut être réduit de 70% avec la puissance de SAP HANA.</label>
+		            				<label>Hy&ouml;dynt&auml;m&auml;ll&auml; SAP HANA:aa voit nopeuttaa analyysej&auml; 70 %:lla</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card">
-		            			<button id="buttonSap" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Analyse en temps réel avec SAP HANA')">Sélectionner</button>
+		            			<button id="buttonSap" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'SAP HANA tosiaikainen analytiikka')">Valitse</button>
 		            			<div class="contenido">
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 		            				</div>
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>SAP Business One utilise la technologie In-Memory Computing pour créer des rapports et analyses.</p>
-	            						<small>(IDC, septembre 2016)</small>
+	            						<h2>Tiesitk&ouml; ett&auml;...</h2>
+	            						<p>... SAP Business One hy&ouml;dynt&auml;&auml; raportoinnissa ja analytiikassa muistinvaraista tietojenk&auml;sittelyteknologiaa.</p>
+	            						<small>(IDC, syyskuu 2016)</small>
 		            				</div>
 		            			</div>
 		            		</div>
@@ -386,24 +389,24 @@
 		            		<div class="flip-card">
 		            			<div class="card-front">
 		            				<img class="m-b-0" src="<?php echo RUTA_IMG?>cards/card-analytics.png">
-		            				<p>Une analyse prédictive avec l'analytique</p>
+		            				<p>Ennustava analytiikka</p>
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Anticiper les résultats avec des analyses prédictives et orienter votre entreprise vers la bonne direction.</label>
+		            				<label>Hy&ouml;dynn&auml; ennustavan analytiikan tuloksia ohjaamalla liiketoimintaasi oikeaan suuntaan.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card">
-		            			<button id="buttonAnalytics" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Une analyse prédictive avec l&acute;analytique')">Sélectionner</button>
+		            			<button id="buttonAnalytics" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Ennustava analytiikka')">Valitse</button>
 		            			<div class="contenido">
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 		            				</div>
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Vous obtiendrez les moyens pour explorer, augmenter et analyser instantanément les données pratiquement en temps réel.</p>
-	            						<small>(IDC, septembre 2016)</small>
+	            						<h2>Tiesitk&ouml; ett&auml;...</h2>
+	            						<p>... pystyt v&auml;litt&ouml;m&auml;sti tutkimaan ja analysoimaan kaikkia tietojasi.</p>
+	            						<small>(IDC, syyskuu 2016)</small>
 		            				</div>
 		            			</div>
 		            		</div>
@@ -412,24 +415,24 @@
 		            		<div class="flip-card">
 		            			<div class="card-front">
 		            				<img src="<?php echo RUTA_IMG?>cards/card-starup.png">
-		            				<p>Entreprenariat</p>
+		            				<p>Yritt&auml;j&auml;t</p>
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Avoir un allié pour faire face aux défis de l’ère digitale et atteindre vos objectifs.</label>
+		            				<label>Kohtaa digitaalisen liiketoiminnan haasteet, voita ne ja saavuta tavoitteesi.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card">
-		            			<button id="buttonStarup" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Entreprenariat')">Sélectionner</button>
+		            			<button id="buttonStarup" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Yrittäjät')">Valitse</button>
 		            			<div class="contenido">
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 		            				</div>
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Une plateforme lexible qui vous fera découvrir tout le potentiel de votre écosystème.</p>
-	            						<small>(IDC, septembre 2016)</small>
+	            						<h2>Tiesitk&ouml; ett&auml;...</h2>
+	            						<p>... 35 % v&auml;hitt&auml;ismyyjist&auml; ovat investoineet liikevaihtoa kasvattavaan teknologiaan.</p>
+	            						<small>(IDC, syyskuu 2016)</small>
 		            				</div>
 		            			</div>
 		            		</div>
@@ -438,24 +441,24 @@
 		            		<div class="flip-card">
 		            			<div class="card-front">
 		            				<img src="<?php echo RUTA_IMG?>cards/card-subsidaries.png">
-		            				<p>Filiales et succursales</p>
+		            				<p>Toimipisteet ja tyt&auml;ryhti&ouml;t</p>
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label style="font-size: 16px;">Créer rapidement des rapports précis sur les livraisons entrantes et sortantes, les inventaires et la traçabilité des produits.</label>
+		            				<label>Luo nopeasti t&auml;sm&auml;llisi&auml; raportteja saapuvista ja l&auml;htevist&auml; toimituksista, varastotilanteista ja tuotteiden sijainneista.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card">
-		            			<button id="buttonSubsidaries" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Filiales et succursales')">Seleccione</button>
+		            			<button id="buttonSubsidaries" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-prioridad" onclick="guardarDatos(this.id,'Toimipisteet ja tytäryhtiöt')">Valitse</button>
 		            			<div class="contenido">
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido3.png">
 		            				</div>
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Une plateforme lexible qui vous fera découvrir tout le potentiel de votre écosystème.</p>
-	            						<small>(IDC, septembre 2016)</small>
+	            						<h2>Tiesitk&ouml; ett&auml;...</h2>
+	            						<p>... joustava liiketoiminta-alusta auttaa sinua selvitt&auml;m&auml;&auml;n potentiaalin ekosysteemiss&auml;si.</p>
+	            						<small>(IDC, syyskuu 2016)</small>
 		            				</div>
 		            			</div>
 		            		</div>
@@ -466,27 +469,27 @@
 					<div class="mdl-container text-center">
 						<div class="question">
 		            		<span class="number">04/05</span>
-		            		<h2 class="unique">Quel type d’infrastructure recherchez-vous &#63;</h2>
+		            		<h2 class="unique">Millaista infrastuktuuria etsit&#63;</h2>
 		            	</div>
 		            	<div class="mdl-card-question">
 		            		<div class="flip-card">
 		            			<div class="card-front">
 		            				<img src="<?php echo RUTA_IMG?>cards/card-local.png">
-		            				<p>Local</p>
+		            				<p>Paikallinen</p>
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Implémenter dans votre infrastructure actuelle ou investir dans des options hardwares certifiées.</label>
+		            				<label>Ota ratkaisu käyttöön nykyisessä infratruktuurissasi tai valitse yksi sertifioiduista vaihtoehdoistamme.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card bottom">
-		            			<button id="buttonLocal" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-one select-infraestructura" onclick="guardarDatos(this.id,'Local')">Sélectionner</button>
+		            			<button id="buttonLocal" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-one select-infraestructura" onclick="guardarDatos(this.id,'Paikallinen')">Valitse</button>
 		            			<div class="contenido">
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Ces applications (e-commerce, point de vente, place de marché, CRM, etc.) peuvent facilement être connectées à SAP Business One quand cela est réalisé On-Premise.</p>
-	            						<small>(IDC, septembre 2016)</small>
+	            						<h2>Tiesitk&ouml; ett&auml;...</h2>
+	            						<p>... sovellukset kuten s&auml;hk&ouml;inen kaupank&auml;ynti, kassap&auml;&auml;tteet, markkinapaikat, asiakkuudenhallinta tms. ovat helposti liitettävissä paikallisesti asennettuun SAP Business One -ratkaisuun.</p>
+	            						<small>(IDC, syyskuu 2016)</small>
 		            				</div>
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido4.png">
@@ -498,21 +501,21 @@
 		            		<div class="flip-card">
 		            			<div class="card-front">
 		            				<img src="<?php echo RUTA_IMG?>cards/card-cloud.png">
-		            				<p>Cloud</p>
+		            				<p>Pilviratkaisu</p>
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Combiner les deux infrastructures pour que vos informations sensibles demeurent dans votre environnement IT local.</label>
+		            				<label>K&auml;yt&auml; liiketoimintasi tiedot sis&auml;lt&auml;v&auml;&auml; ratkaisua pilvest&auml;.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card bottom">
-		            			<button id="buttonCloudI" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-one select-infraestructura" onclick="guardarDatos(this.id,'Cloud')">Sélectionner</button>
+		            			<button id="buttonCloudI" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-one select-infraestructura" onclick="guardarDatos(this.id,'Pilviratkaisu')">Valitse</button>
 		            			<div class="contenido">
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Les sociétés envisagent sereinement l’avenir depuis que les logiciels de management Cloud se développent pour pouvoir gérer du Cloud privé en même temps qu’elles acquirent des ressources auprès de large fournisseurs publics.</p>
-	            						<small>(IDC, septembre 2016)</small>
+	            						<h2>Tiesitk&ouml; ett&auml;...</h2>
+	            						<p>... 21 % yrityksist&auml; on enemm&auml;n ja enemm&auml;n kiinnostuneita vaihtoehdoista paikallisesti asennetulle ratkaisulle.</p>
+	            						<small>(IDC, syyskuu 2016)</small>
 		            				</div>
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido4.png">
@@ -524,21 +527,21 @@
 		            		<div class="flip-card">
 		            			<div class="card-front">
 		            				<img src="<?php echo RUTA_IMG?>cards/card-hibrida.png">
-		            				<p>Hybride</p>
+		            				<p>Yhdistelm&auml;</p>
 									<i class="mdi mdi-add"></i>
 		            			</div>
 		            			<div class="card-back">
-		            				<label>Combiner les deux infrastructures pour que vos informations sensibles demeurent dans votre environnement IT local.</label>
+		            				<label>Yhdistä molemmat infrastuktuurivaihtoehdot jotta luottamuksellinen tieto pysyy oman IT:n hallinnassa.</label>
 									<i class="mdi mdi-remove"></i>
 		            			</div>
 		            		</div>
 		            		<div class="content-card bottom">
-		            			<button id="buttonHibrida" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-one select-infraestructura" onclick="guardarDatos(this.id,'Hybride')">Sélectionner</button>
+		            			<button id="buttonHibrida" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect select-one select-infraestructura" onclick="guardarDatos(this.id,'Yhdistelmä')">Valitse</button>
 		            			<div class="contenido">
 		            				<div class="contenido-right">
-	            						<h2>Le saviez-vous ?</h2>
-	            						<p>Les sociétés envisagent sereinement l’avenir depuis que les logiciels de management Cloud se développent pour pouvoir gérer du Cloud privé en même temps qu’elles acquirent des ressources auprès de large fournisseurs publics.</p>
-	            						<small>(IDC, septembre 2016)</small>
+	            						<h2>Tiesitk&ouml; ett&auml;...</h2>
+	            						<p>... l&auml;hitulevaisuudessa yleistyy malli jossa osaa ratkaisusta k&auml;ytet&auml;&auml;n yksityisess&auml; pilvess&auml; ja samalla osa toiminnallisuudesta hankitaan palveluna julkisesta pilvest&auml;.</p>
+	            						<small>(IDC, syyskuu 2016)</small>
 		            				</div>
 		            				<div class="contenido-left">
 		            					<img src="<?php echo RUTA_IMG?>cards/card-contenido4.png">
@@ -553,20 +556,20 @@
 						<div class="question">
 		            		<span class="number">05/05</span>
 		            		<div class="question-respuestas">
-		            			<p><span>Selon vos réponses,</span> nous avons une solution idéale pour votre entreprise.</p>
+		            			<p><span>Perustuen vastauksiisi</span> meill&auml; on tarjota sinulle sopiva ratkaisu.</p>
 		            		</div>
 		            	</div>
 		            	<div class="mdl-solicitud">
 			            	<div class="mdl-card-confirmacion">
 		            			<div class="mdl-respuestas text-left">
-		            				<h2 class="title-formulario m-b-10">Vos réponses sont:</h2>
+		            				<h2 class="title-formulario m-b-10">Vastasit:</h2>
 		            				<div class="contenedor-respuestas">
 	            						<div class="col-xs-12 p-0">
 			            					<div class="div-respuestas">
 			            						<ul>
 			            							<li id="industria">Retail</li>
 			            						</ul>
-			            						<button id="window1" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 1)">Editer</button>
+			            						<button id="window1" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 1)">Muokkaa</button>
 			            					</div>
 			            				</div>
 			            				<div class="col-xs-12 p-0">
@@ -574,22 +577,22 @@
 			            						<ul>
 			            							<li id="tamanio">1 - 50</li>
 			            						</ul>
-			            						<button id="window2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 2)">Editer</button>
+			            						<button id="window2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 2)">Muokkaa</button>
 			            					</div>
 			            				</div>
 			            				<div class="col-xs-12 p-0">
 			            					<div class="div-respuestas">
 			            						<ul>
-			            							<li id="factura">1 -3 Millions d'Euro</li>
+			            							<li id="factura">1-3 Millones de D&oacute;lares</li>
 			            						</ul>
-			            						<button id="window2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 2)">Editer</button>
+			            						<button id="window2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 2)">Muokkaa</button>
 			            					</div>
 			            				</div>
 			            				<div class="col-xs-12 p-0">
 			            					<div class="div-respuestas">
 			            						<ul id="prioridad">
 			            						</ul>
-			            						<button id="window3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 3)">Editer</button>
+			            						<button id="window3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 3)">Muokkaa</button>
 			            					</div>
 			            				</div>
 			            				<div class="col-xs-12 p-0">
@@ -597,27 +600,27 @@
 			            						<ul>
 			            							<li id="infraestructura">Local</li>
 			            						</ul>
-			            						<button id="window4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 4)">Editer</button>
+			            						<button id="window4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 4)">Muokkaa</button>
 			            					</div>
 			            				</div>
 		            				</div>
 		            				<div class="col-xs-12 p-0 text-right m-t-10">
-		            					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-confirmar" onclick="ConfirmarRespuestas()">Confirmer les  réponses</button>
+		            					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-confirmar" onclick="ConfirmarRespuestas()">Vahvista</button>
 		            				</div>
 			            		</div>
 			            		<div class="mdl-back-respuestas">
 		        					<div class="mdl-back-contenido">
 		        						<span>10,511</span>
-		        						<p>sociétés dans votre région utilisent SAP Business One.</p>
-		        						<small>(Samuli Ajo, Global Customer Counting)</small>
+		        						<p>yrityst&auml; alueellamme k&auml;ytt&auml;&auml; SAP Business One'a.</p>
+		        						<small>(Samuli Ajo, Global Customer Accounting)</small>
 		        					</div>
 		        					<div class="mdl-back-contenido second">
-		        						<span>40 à 60%</span>
-		        						<p>de réduction de la charge administrative de votre entreprise</p>
+		        						<span>40 a 60%</span>
+		        						<p>v&auml;hemm&auml;n liiketoimintasi hallintaan.</p>
 		        					</div>
 		        					<div class="mdl-back-contenido">
 		        						<span>103</span>
-		        						<p>partenaires spécialisés sur SAP Business One dans votre région.</p>
+		        						<p>Alueellamme on SAP Business One'en erikoistunutta kumppania.</p>
 		        						<small>(Vinicius Ricarte, Channel Sales Development)</small>
 		        					</div>
 			            		</div>
@@ -625,95 +628,95 @@
 		            		<form class="mdl-formulario disabled text-left">
 		            			<div class="content-datos">
 		            				<div class="content-personal">
-		            					<p><i class="mdi mdi-arrow_downward"></i>Entrer vos informations</p>
+		            					<p><i class="mdi mdi-arrow_downward"></i>Anna yhteystietosi</p>
 		            				</div>
 		            				<div class="content-separacion">
-		            					<p>o</p>
+		            					<p>tai</p>
 		            				</div>
 		            				<div class="content-linkedin">
-		            					<a class="button-linkedin" href="<?php  echo "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id={$client_id}&redirect_uri={$redirect_uri}&state={$csrf_token}&scope={$scopes}"; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i> Connecter vous via LinkedIn</a>
+		            					<a class="button-linkedin" href="<?php  echo "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id={$client_id}&redirect_uri={$redirect_uri}&state={$csrf_token}&scope={$scopes}"; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn-yhteystietosi</a>
 		            				</div>
 		            			</div>
 		        				<div class="col-sm-6">
 		        					<div class="mdl-input">
-									    <input type="text" class="form-control" id="nombre_completo" maxlength="50" onkeypress="return soloLetras(event);" onchange="validarCampos()" placeholder=" connecter vous via LinkedIn">
+									    <input type="text" class="form-control" id="nombre_completo" maxlength="50" onkeypress="return soloLetras(event);" onchange="validarCampos()" placeholder="Koko nimi">
 									</div>
 		        				</div>
 		        				<div class="col-sm-6">
 		        					<div class="mdl-input">
-								    	<input type="text" class="form-control NEGRO_FONDO" id="cargo" maxlength="50" onkeypress="return soloLetras(event);"  onchange="validarCampos()" placeholder="Poste">
+								    	<input type="text" class="form-control NEGRO_FONDO" id="cargo" maxlength="50" onkeypress="return soloLetras(event);"  onchange="validarCampos()" placeholder="Ammattinimike">
 								  	</div>
 		        				</div>
 		        				<div class="col-sm-6">
 		        					<div class="mdl-input">
-										<input type="text" class="form-control" id="empresa" maxlength="50" onkeypress="return soloLetras(event);" onchange="validarCampos()" placeholder="Société">
+										<input type="text" class="form-control" id="empresa" maxlength="50" onkeypress="return soloLetras(event);" onchange="validarCampos()" placeholder="Yritys">
 									</div>
 		        				</div>
 		        				<div class="col-sm-6">
 		        					<div class="mdl-input">
-										<input type="text" class="form-control" id="telefono" onchange="validarCampos()" placeholder="Téléphone">
+										<input type="text" class="form-control" id="telefono" onchange="validarCampos()" placeholder="Puhelin">
 									</div>
 		        				</div>
 		        				<div class="col-sm-6">
 		        					<div class="mdl-input">
-										<input type="email" class="form-control" id="email" maxlength="50" aria-describedby="emailHelp" placeholder="Email">
+										<input type="email" class="form-control" id="email" maxlength="50" aria-describedby="emailHelp" placeholder="S&auml;hk&ouml;posti">
 									</div>
 		        				</div>
 		        				<div class="col-sm-6">
 		        					<div class="mdl-select mdl-standar">
-										<select class="selectpicker" id="relacion" name="relacion" title="Relation avec SAP">
-											<option value="Client">Client</option>
-											<option value="Client potentiel">Client potentiel</option>
-											<option value="Consultant">Consultant</option>
-											<option value="Employé SAP">Employé SAP</option>
-											<option value="Etudiant">Etudiant</option>
-											<option value="Partenaire">Partenaire</option>
-											<option value="Partenaire potentiel">Partenaire potentiel</option>
-											<option value="Presse/Analyste">Presse/Analyste</option>
+										<select class="selectpicker" id="relacion" name="relacion" title="Suhteesi SAP:iin">
+											<option value="Customer">Asiakas</option>
+											<option value="Potential customer">Mahdollinen asiakas</option>
+											<option value="Consultant">konsultti</option>
+											<option value="SAP employee">SAPin ty&ouml;ntekij&auml;</option>
+											<option value="Student">Opiskelija</option>
+											<option value="Partner">kumppan</option>
+											<option value="Potential Partner">Mahdollinen kumppani</option>
+											<option value="Press/Analyst">Lehdist&ouml;n edustaja/Analyytikko</option>
 										</select>
 									</div>
 		        				</div>
 		        				<div class="col-sm-6">
 		        					<div class="mdl-input">
-										<input type="text" class="form-control" id="pais" maxlength="100" onkeypress="return soloLetras(event);"  onchange="validarCampos()" placeholder="Pays">
+										<input type="text" class="form-control" id="pais" maxlength="100" onkeypress="return soloLetras(event);"  onchange="validarCampos()" placeholder="Maa">
 									</div>
 		        				</div>
 		        				<div class="col-sm-6">
-		        					<p class="text-contacto">J'aimerais être recontacté par un représentant SAP:</p>
+		        					<p class="text-contacto">Haluan yhteydenottoa</p>
 		        					<div class="mdl-input-label">
 		        						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-email">
 											<input type="radio" id="c-email" class="mdl-radio__button" name="options" value="1">
-											<span class="mdl-radio__label">Par email</span>
+											<span class="mdl-radio__label">S&auml;hk&ouml;postitse</span>
 										</label>
 		        					</div>
 		        					<div class="mdl-input-label">
 		        						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-telefono">
 											<input type="radio" id="c-telefono" class="mdl-radio__button" name="options" value="2">
-											<span class="mdl-radio__label">Par téléphone</span>
+											<span class="mdl-radio__label">Puhelimitse</span>
 										</label>
 		        					</div>
 		        					<div class="mdl-input-label">
 		        						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-ambos">
 											<input type="radio" id="c-ambos" class="mdl-radio__button" name="options" value="3">
-											<span class="mdl-radio__label">Les deux</span>
+											<span class="mdl-radio__label">Molemmilla tavoilla</span>
 										</label>
 		        					</div>
 		        				</div>
 		        				<div class="col-xs-12 mdl-label m-t-10">
 		    						<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
 										<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-										<span class="mdl-checkbox__label f-s-14" style="">J'ai lu et accepte les <a class="FONDO_TERMINOS" href="https://www.sap.com/corporate/en/legal/terms-of-use.html" target="_blank" style="">termes et conditions SAP</a></span>
+										<span class="mdl-checkbox__label f-s-14" style="">Olen lukenut ja hyv&auml;ksyn <a class="FONDO_TERMINOS" href="https://www.sap.com/corporate/en/legal/terms-of-use.html" target="_blank" style="">SAPin ehdot ja s&auml;&auml;nn&ouml;t</a></span>
 									</label>
 		        				</div>
 		        				<div class="col-xs-12 text-right m-t-25">
-									<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-confirmar" onclick="solicitarEstimacion();">Envoyer les informations</button>
+									<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-confirmar" onclick="solicitarEstimacion();">L&auml;het&auml; tiedot</button>
 		        				</div>
 		            		</form>
 	            		</div>
 	            	</div>
             		<div class="mdl-agradecimiento">
-            			<h2>Merci pour votre intérêt.</h2>
-            			<p>Un expert SAP vous recontactera pour vous aider dans votre réfléxion.</p>
+            			<h2>Kiitos mielenkiinnostasi</h2>
+            			<p>SAPin edustaja ottaa sinuun yhteyttä sopiaksemme jatkosta.</p>
             		</div>
 				</div>
 				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect button-arrow button-prev" onclick="buttonQuestion(1)">
@@ -735,7 +738,7 @@
 						<img alt="" src="">
 					</div>
 				    <div class="mdl-card__supporting-text">
-                        <h2>Le saviez-vous ?</h2>
+                        <h2>Tiesitk&ouml; ett&auml;...</h2>
                         <p></p>
                         <small></small>
 					</div> 
@@ -756,7 +759,7 @@
 	<script src="<?php echo RUTA_PLUGINS?>mdl/material.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
-    <script src="<?php echo RUTA_JS?>index_fr.js?v=<?php echo time();?>"></script>
+    <script src="<?php echo RUTA_JS?>index_fi.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">
     	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
         	$('select').selectpicker('mobile');
@@ -764,7 +767,7 @@
             $('select').selectpicker();
         }
         $(window).load(function() {
-        	  /*if(<?php echo $pantalla1 ?> == 3) {
+        	  if(<?php echo $pantalla1 ?> == 5) {
 				m = 5; 
 				if(<?php echo $confirmar ?> == 1) {
 					$('.button-arrow.button-prev').css("display","none");
@@ -782,7 +785,7 @@
 				}
 				$('.header').addClass('opacity');
 				$('.logo-bottom').addClass('opacity');
-				/*$('#telefono').css('border-color','red');
+				$('#telefono').css('border-color','red');
 				$('#nombre_completo').val("<?php echo $nombre_comple ?>");
 				$('#email').val("<?php echo $email_link ?>");
 				$('#pais').val("<?php echo $pais_link ?>");
@@ -798,8 +801,8 @@
 				$('#tamanio').text("<?php echo $Tamanio ?>");//falta agregar empleados
 				$('#factura').text("<?php echo $Factura_anual ?>");
 				$('#prioridad').append("<?php echo $priori ?>");
-				$('#infraestructura').text("<?php echo $Infraestructura ?>");*/
-			//}
+				$('#infraestructura').text("<?php echo $Infraestructura ?>");
+			}
 		});
     </script>
 </body>

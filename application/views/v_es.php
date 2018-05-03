@@ -33,6 +33,7 @@
 							<select class="selectpicker" id="Idioma"  name="Idioma" onchange="cambiarIdioma()">
 								<option value="Español">Espa&ntilde;ol</option>
 								<option value="Francés">Fran&ccedil;ais</option>
+								<option value="Finlandés">Suomalainen</option>
 							</select>
 	    				</div>
 						<div class="background1"></div>
@@ -64,6 +65,7 @@
 						<select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdiomaHome()">
 							<option value="Español">Espa&ntilde;ol</option>
 							<option value="Francés">Fran&ccedil;ais</option>
+							<option value="Finlandés">Suomalainen</option>
 						</select>
     				</div>
 		    	</div>
@@ -97,6 +99,7 @@
 							<select class="selectpicker" id="Idioma_partner"  name="Idioma" onchange="cambiarIdiomaPartner()">
 								<option value="Español">Espa&ntilde;ol</option>
 								<option value="Francés">Fran&ccedil;ais</option>
+								<option value="Finlandés">Suomalainen</option>
 							</select>
 	    				</div>
 						<div class="background1"></div>

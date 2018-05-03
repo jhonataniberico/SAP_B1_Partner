@@ -90,7 +90,7 @@ function solicitarEstimacion(){
 				relacion 		: relacion,
 				contacto 		: contacto,
 				term_cond       : term_cond},
-		url  : 'fr/solicitarEstimacion',
+		url  : 'fi/solicitarEstimacion',
 		type : 'POST'
 	}).done(function(data){
 		try{
@@ -235,7 +235,7 @@ function saveDatos(pantalla){
 				datos_prio   : datos_array.toString(),
 				operar       : operar,
 				facturacion  : facturacion},
-		url  : 'fr/Savedatos',
+		url  : 'fi/Savedatos',
 		type : 'POST'
 	}).done(function(data){
 		try{
@@ -291,7 +291,7 @@ function mostrarDatos(){
 	$.ajax({
 		data : {array_ids   : array_ids,
 				array_3pant : array_3pant},
-		url  : 'fr/mostrarDatos',
+		url  : 'fi/mostrarDatos',
 		type : 'POST'
 	}).done(function(data){
 		try{
@@ -442,7 +442,7 @@ function ConfirmarRespuestas(){
 	$('.mdl-formulario').removeClass('disabled');
 	$.ajax({
 		data : {confirmar : confirmar},
-		url  : 'fr/ConfirmarRespuestas',
+		url  : 'fi/ConfirmarRespuestas',
 		type : 'POST'
 	}).done(function(data){
 		try{
@@ -704,7 +704,7 @@ function EditQuestion(id, pant){
 	windowQestion.addClass('animated fadeInLeft');
 	$('.button-arrow.button-next').css("display","block");
 	$.ajax({
-		url  : 'fr/EditQuestion',
+		url  : 'fi/EditQuestion',
 		type : 'POST'
 	}).done(function(data){
 		try{
@@ -752,7 +752,7 @@ function resizeContent(){
 function returnHome(){
 	global_datos = null;
 	$.ajax({
-		url  : 'fr/returnHome',
+		url  : 'fi/returnHome',
 		type : 'POST'
 	}).done(function(data){
 		try{
@@ -778,7 +778,7 @@ function cambiarIdioma(){
 	}
 	$.ajax({
 		data  : {idioma : idioma},
-		url   : 'fr/cambiarIdioma',
+		url   : 'fi/cambiarIdioma',
 		type  : 'POST'
 	}).done(function(data){
 	  try{
@@ -803,7 +803,7 @@ function cambiarIdiomaHome(){
 	}
 	$.ajax({
 		data : {idioma : idioma},
-		url  : 'fr/cambiarIdioma',
+		url  : 'fi/cambiarIdioma',
 		type : 'POST'
 	}).done(function(data){
 		try{
@@ -828,7 +828,7 @@ function cambiarIdiomaPartner(){
 	}
 	$.ajax({
 		data  : {idioma : idioma},
-		url   : 'fr/cambiarIdioma',
+		url   : 'fi/cambiarIdioma',
 		type  : 'POST'
 	}).done(function(data){
 	  try{
