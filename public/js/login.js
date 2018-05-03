@@ -46,7 +46,11 @@ function cerrarCesion(){
 		try{
         data = JSON.parse(data);
         if(data.error == 0){
-        	location.href = 'Login'+'?partner='+data.url;
+          if(data.url == ''){
+            location.href = 'Login';
+          }else {
+            location.href = 'Login'+'?partner='+data.url;
+          }
         }else {
         	return;
         }
