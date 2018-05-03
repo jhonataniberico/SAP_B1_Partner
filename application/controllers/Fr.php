@@ -538,7 +538,6 @@ class Fr extends CI_Controller {
       }
       echo json_encode($data);
   }
-
   function cambiarIdioma(){
     $data['error'] = EXIT_ERROR;
     $data['msj']   = null;
@@ -551,5 +550,22 @@ class Fr extends CI_Controller {
         $data['msj'] = $e->getMessage();
       }
       echo json_encode($data);
+  }
+  function returnHome(){
+    $data['error'] = EXIT_ERROR;
+    $data['msj'] = null;
+    try {
+      $session = array('pantalla' => 0);
+      $this->session->set_userdata($session);
+      if($this->session->userdata('partner') == 'partner'){
+        $data['url'] = 'fr';
+      }else {
+       $data['url'] = 'fr?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw==&logo=logo_actualisap&correo=YXNhbmppbmVzQGFjdHVhbGlzYXBib2xpdmlhLmNvbQ==&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB';
+      }
+      $data['error'] = EXIT_SUCCESS;
+    }catch(Exception $e) {
+      $data['msj'] = $e->getMessage();
+    }
+    echo json_encode($data);
   }
 }
