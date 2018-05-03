@@ -436,6 +436,9 @@ table thead tr{
     border-bottom: 1px solid #000000;
     background-color: #FFFFFF;
     z-index: 5;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
     -webkit-transition: opacity .5s ease-in-out .2s;
 	-moz-transition: opacity .5s ease-in-out .2s;
 	-ms-transition: opacity .5s ease-in-out .2s;
@@ -446,12 +449,15 @@ table thead tr{
 .header.partner{
 	opacity: 1;
 	background-color: #000000;
+	display: block;
 }
 .header-left{
-    padding: 12px 0 12px 25px;
+    padding: 0 0 0 25px;
     float: left;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
+    width: 100%;
 }
 .header-right.admin{
 	max-width: 240px;
