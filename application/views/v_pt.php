@@ -46,7 +46,7 @@
 	    			</div>
 	    		</div>
 	    		<div class="button-next-prev partner">
-	    			<a class="link-empezar">come&ccedil;ar</a>
+	    			<a class="link-empezar">Come&ccedil;ar</a>
 	    			<button id="buttonNextPartner" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect button-arrow button-next" onclick="buttonNextPartner()">
 						<div class="arrow arrow-right"></div>
 					</button>
