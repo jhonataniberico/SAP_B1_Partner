@@ -90,7 +90,6 @@ class Fr extends CI_Controller {
                               'id_sol'    => $datoInsert['Id'],
                               'idioma'    => 'Francés');
           $this->session->set_userdata($session);
-          print_r($session);
         }else {
           if($pantalla == 2){
             $arrayUpdate = array($columna  => $facturacion,
@@ -116,30 +115,30 @@ class Fr extends CI_Controller {
     echo json_encode($data);
   }
   function mostrarDatos(){
-        $data['error'] = EXIT_ERROR;
-        $data['msj']   = null;
-        try {
-          $ids_array   = $this->input->post('array_ids');
-          $array_3pant = $this->input->post('array_3pant');
-          $explode = explode(",", $this->session->userdata('Prioridad'));
-          $html    = '';
-          foreach ($explode as $key) {
-            $html .= '<li>'.$key.'</li>';
-          }
-          $session = array('ids_array'   => $ids_array,
-                           'array_3pant' => $array_3pant);
-          $this->session->set_userdata($session);
-          $tamanio = $this->session->userdata('Tamanio') == null ? '-' : $this->session->userdata('Tamanio').' employés';
-          $data['Industria']       = $this->session->userdata('industria') == null ? '-' : $this->session->userdata('industria');
-          $data['Factura_anual']   = $this->session->userdata('Factura_anual') == null ? '-' : $this->session->userdata('Factura_anual');
-          $data['Tamanio']         = $tamanio;
-          $data['Prioridad']       = $html;
-          $data['Infraestructura'] = $this->session->userdata('Infraestructura') == null ? '-' : $this->session->userdata('Infraestructura');
-          $data['error']           = EXIT_SUCCESS;
-        } catch (Exception $e) {
-            $data['msj'] = $e->getMessage();
+      $data['error'] = EXIT_ERROR;
+      $data['msj']   = null;
+      try {
+        $ids_array   = $this->input->post('array_ids');
+        $array_3pant = $this->input->post('array_3pant');
+        $explode = explode(",", $this->session->userdata('Prioridad'));
+        $html    = '';
+        foreach ($explode as $key) {
+          $html .= '<li>'.$key.'</li>';
         }
-        echo json_encode($data);
+        $session = array('ids_array'   => $ids_array,
+                         'array_3pant' => $array_3pant);
+        $this->session->set_userdata($session);
+        $tamanio = $this->session->userdata('Tamanio') == null ? '-' : $this->session->userdata('Tamanio').' employés';
+        $data['Industria']       = $this->session->userdata('industria') == null ? '-' : $this->session->userdata('industria');
+        $data['Factura_anual']   = $this->session->userdata('Factura_anual') == null ? '-' : $this->session->userdata('Factura_anual');
+        $data['Tamanio']         = $tamanio;
+        $data['Prioridad']       = $html;
+        $data['Infraestructura'] = $this->session->userdata('Infraestructura') == null ? '-' : $this->session->userdata('Infraestructura');
+        $data['error']           = EXIT_SUCCESS;
+      } catch (Exception $e) {
+          $data['msj'] = $e->getMessage();
+      }
+      echo json_encode($data);
   }
   function solicitarEstimacion() {
       $data['error']  = EXIT_ERROR;
@@ -193,9 +192,9 @@ class Fr extends CI_Controller {
           $this->session->unset_userdata('idioma');
           $this->sendGmailSap($email);
           $this->emailClienteSap($email);
-        $data['msj']   = $datoInsert['msj'];
-        $data['error'] = $datoInsert['error'];
-      } catch (Exception $e){
+          $data['msj']   = $datoInsert['msj'];
+          $data['error'] = $datoInsert['error'];
+      }catch (Exception $e){
           $data['msj'] = $e->getMessage();
       }
       echo json_encode($data);
@@ -362,7 +361,6 @@ class Fr extends CI_Controller {
                     </html>';
         $this->email->message($texto);
         $this->email->send();
-        print_r($this->email->send());
         $data['error'] = EXIT_SUCCESS;
       }catch (Exception $e){
         $data['msj'] = $e->getMessage();
