@@ -32,7 +32,7 @@
 <body>
     <section id="principal">
         <div id="content" class="mdl-container">
-            <div class="header partner" style="opacity: 1;">
+            <div class="header" style="opacity: 1;background-color: #000000;">
                 <div class="header-left">
                     <img class="logo-header" src="<?php echo RUTA_IMG?>logo/logo_header.png">
                 </div>
