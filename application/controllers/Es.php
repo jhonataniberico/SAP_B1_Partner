@@ -570,7 +570,7 @@ class Es extends CI_Controller {
   function returnHome(){
     $data['error'] = EXIT_ERROR;
     $data['msj'] = null;
-    try {
+    try { 
       $session = array('pantalla' => 0);
       $this->session->set_userdata($session);
       if($this->session->userdata('partner') == 'partner'){

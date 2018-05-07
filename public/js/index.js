@@ -831,7 +831,7 @@ function returnHome(){
         data = JSON.parse(data);
         if(data.error == 0){
         	location.href = data.url;
-        }else{
+        }else{ 
         	return;
         }
       } catch (err){

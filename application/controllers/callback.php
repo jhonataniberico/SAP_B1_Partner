@@ -25,7 +25,6 @@ class callback extends CI_Controller {
 						 'titulo'    	=> isset($user->positions->values) == true ? $user->positions->values[0]->title : null,
 				 		 'pais_linke' 	=> $user->location->name,
 				 		 'pantalla'     => 5);
-		echo print_r($_SESSION['idioma']);
 		$this->session->set_userdata($session);
 		if($_SESSION['partner'] == 'partner'){
 			if($_SESSION['idioma'] == 'Español') {
@@ -36,6 +35,10 @@ class callback extends CI_Controller {
 				header("location: pt");
 			}else if($_SESSION['idioma'] == 'Finlandés') {
 				header("location: fi");
+			}
+		}else if($_SESSION['partner'] == 'Seidor'){
+			if($_SESSION['idioma'] == 'Español') {
+				header("location: es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw==&logo=seidor&correo=amhvbmF0YW5pYmVyaWNvbUBnbWFpbC5jb20=&partner=U2VpZG9y");
 			}
 		}else {
 			if($_SESSION['idioma'] == 'Español') {
