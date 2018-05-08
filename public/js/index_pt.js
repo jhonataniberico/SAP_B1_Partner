@@ -634,7 +634,6 @@ function buttonQuestion(direction){
 			fourthWindow.addClass('animated fadeOutLeft');
 			fifthWindow.addClass('animated fadeInRight');
 			$('.button-arrow.button-next').css("display","none");
-			$('.chat').css("display","none");
 			var id_button = $('.mdl-card-question .content-card').find('.select-infraestructura.select-one.button-select').attr('id');
     		array_ids.push(id_button);
     		saveDatos(4);
@@ -652,7 +651,6 @@ function buttonQuestion(direction){
 			fourthWindow.addClass('animated fadeInLeft');
 			fifthWindow.addClass('animated fadeOutRight');
 			$('.button-arrow.button-next').css("display","block");
-			$('.chat').css("display","block");
 			if(data_ids_arr == 5){
 				$('#'+global_array[3]).addClass('button-select');
 			}
