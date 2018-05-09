@@ -307,7 +307,7 @@
 					<div class="mdl-container text-center">
 						<div class="question">
 		            		<span class="number">03/05</span>
-		            		<h2>¿Cu&aacute;l es la prioridad de su negocio&#63;</h2>
+		            		<h2>¿Cu&aacute;l es su proceso de negocio&#63;</h2>
 		            	</div>
 		            	<div class="mdl-card-question mdl-card-3">
 		            		<div class="flip-card">
