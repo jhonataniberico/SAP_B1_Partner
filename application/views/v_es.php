@@ -42,7 +42,7 @@
 	    			</div>
 	    		</div>
 	    		<div class="logo-top">
-	    			<img src="<?php echo RUTA_IMG?>logo/categoria_gold.png">
+	    			<img src="<?php echo RUTA_IMG?>logo/<?php echo $cate ?>">
 	    		</div>
 	    		<div class="mdl-container mdl-all-window">
 	    			<img class="logo-home partner" src="<?php echo RUTA_IMG?>logo/<?php echo $logo.'.png' ?>">
@@ -91,7 +91,7 @@
 				<div class="header">
 	    			<div class="header-left">
 	    				<img class="logo-header" src="<?php echo RUTA_IMG?>logo/<?php echo $logo.'.png' ?>">
-	    				<img class="logo-partner" src="<?php echo RUTA_IMG?>logo/categoria_gold.png">
+	    				<img class="logo-partner" src="<?php echo RUTA_IMG?>logo/<?php echo $cate ?>">
 	    			</div>
 	    			<div class="header-right">
     					<button class="mdl-button mdl-js-button mdl-button--icon button-home" onclick="returnHome()"><i class="mdi mdi-home"></i></button>
