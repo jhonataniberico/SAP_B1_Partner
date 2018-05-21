@@ -32,7 +32,11 @@ class Es extends CI_Controller {
       $html .= '<li>'.$key.'</li>';
     }
     $data['priori']        = $html;
-    $data['cate']          = $_GET['cate'] == '' ? 'categoria_gold.png' : $_GET['cate'].'.png';
+    if(isset($_GET['cate'])){
+      $data['cate']          = $_GET['cate'] == '' ? 'categoria_gold.png' : $_GET['cate'].'.png';
+    }else {
+      $data['cate']          = 'categoria_gold.png';
+    }
     /*echo print_r($_GET['a']);
     exit;*///La tecnología que impulsa su negocio
     if(isset($_GET['a'])){

@@ -285,7 +285,7 @@ table thead tr{
     max-width: 250px;
 }
 .logo-home.partner{
-	max-width: 250px;
+	max-width: 500px;
 	width: 100%;
 }
 .bottom-right{
@@ -363,8 +363,8 @@ table thead tr{
 .fondo-bottom.fondo-partner{
     background: url(../img/fondo/fondo_blanco.png) repeat-x;
     width: 100%;
-    background-size: 1550px;
-    height: 310px;
+    background-size: 1450px;
+    height: 300px;
     left: 0;
     right: 0;
     background-position: 2000px;
@@ -464,6 +464,7 @@ table thead tr{
 }
 .header-right.none-idioma{
 	max-width: 95px;
+	justify-content: flex-end;
 }
 .header-right.none-idioma .button-home{
 	margin-right: 10px;
@@ -1799,6 +1800,9 @@ span.number{
 	}
 	.logo-partner{
 		max-width: 70px;
+	}
+	.logo-home.partner{
+		max-width: 250px
 	}
 }
 @media (max-width: 420px){
