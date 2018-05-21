@@ -821,8 +821,9 @@ function resizeContent(){
 }
 function returnHome(){
 	global_datos = null;
+	console.log('entra');
 	$.ajax({
-		url  : 'pt/returnHome',
+		url  : 'es/returnHome',
 		type : 'POST'
 	}).done(function(data){
 		try{

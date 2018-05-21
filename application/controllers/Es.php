@@ -578,10 +578,15 @@ class Es extends CI_Controller {
     try { 
       $session = array('pantalla' => 0);
       $this->session->set_userdata($session);
+      print_r($this->session->userdata('partner'));
       if($this->session->userdata('partner') == 'partner'){
         $data['url'] = 'es';
-      }else {
-       $data['url'] = 'es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw==&logo=logo_actualisap&correo=YXNhbmppbmVzQGFjdHVhbGlzYXBib2xpdmlhLmNvbQ==&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB';
+      }else if($this->session->userdata('partner') == 'AGASYS'){
+       $data['url'] = 'es?a=RXZvbHVjaW9uYW5kbyBsYSBlZmljaWVuY2lhIGVuIGVsIG11bmRv==&logo=logo-agasys&correo=YWZsb3Jlc0BhZ2FzeXMubXg=&partner=QUdBU1lT';
+      }else if($this->session->userdata('partner') == 'Seidor'){
+       $data['url'] = 'es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw%3D%3D&logo=seidor&correo=amhvbmF0YW5pYmVyaWNvbUBnbWFpbC5jb20%3D&partner=U2VpZG9y&utm_source=SAP%20Business%20one%20Partner&utm_medium=Banner&utm_campaign=sap_business_one&utm_term=Registro&utm_content=CRM-XL18-GIC-B1CONFIB1S';
+      }else if($this->session->userdata('partner') == 'ACTUALISAP CONSULTORES BOLIVIA'){
+       $data['url'] = 'es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw%3D%3D&logo=logo_actualisap&correo=YXNhbmppbmVzQGFjdHVhbGlzYXBib2xpdmlhLmNvbQ%3D%3D&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB&utm_source=SAP%20Business%20one%20Partner&utm_medium=Banner&utm_campaign=sap_business_one&utm_term=Registro&utm_content=CRM-XL18-GIC-B1CONFIACT';
       }
       $data['error'] = EXIT_SUCCESS;
     }catch(Exception $e) {
