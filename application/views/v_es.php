@@ -112,9 +112,11 @@
 						<p>Puede seleccionar m&aacute;s de una opci&oacute;n</p>
 		    		</div>
         		</div>
+        		<?php if($partner != 'AGASYS') { ?>
         		<div class="chat">
         			<a href="https://z1.liveper.sn/api/account/81933160/route/campaign/194741814/engagement/250005114" target="_blank"><img src="<?php echo RUTA_IMG?>chat.png"><label>Chatea con nosotros</label></a>
         		</div>
+        		<?php } ?>
 				<div id="window1-page" class="window-center opacity-done">
 					<div class="mdl-container text-center">
 						<div class="question">
@@ -810,6 +812,7 @@
 		});
     </script>
     <script type="text/javascript">
+    	if( "<?php echo $partner ?>" == 'AGASYS') {
 		window.$zopim||(function(d,s){
 			var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];
 			z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];
@@ -818,6 +821,7 @@
 			$.src="https://v2.zopim.com/?258JwomwrBXzjL4B1eHQV7eyntLOdH9y";z.t=+new Date;
 			$.type="text/javascript";e.parentNode.insertBefore($,e)
 		})(document,"script");
+		}
 </script>
 </body>
 </html>

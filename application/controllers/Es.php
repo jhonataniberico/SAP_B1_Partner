@@ -56,9 +56,11 @@ class Es extends CI_Controller {
     if(isset($_GET['partner'])){
       $session = array('partner' => base64_decode($_GET['partner']));
       $this->session->set_userdata($session);
+      $data['partner'] = base64_decode($_GET['partner']);
     }else {
       $session = array('partner' => 'partner');
       $this->session->set_userdata($session);
+      $data['partner'] = '-';
     }
     $data['confirmar']     = $this->session->userdata('confirmar') == null ? 0 : $this->session->userdata('confirmar');
     $client_id             = "770t6ws75n49yz";
@@ -578,7 +580,6 @@ class Es extends CI_Controller {
     try { 
       $session = array('pantalla' => 0);
       $this->session->set_userdata($session);
-      print_r($this->session->userdata('partner'));
       if($this->session->userdata('partner') == 'partner'){
         $data['url'] = 'es';
       }else if($this->session->userdata('partner') == 'AGASYS'){
