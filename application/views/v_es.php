@@ -311,6 +311,7 @@
 		            		<span class="number">03/05</span>
 		            		<h2>¿Cu&aacute;l es su proceso de negocio&#63;</h2>
 		            	</div>
+		            	<?php if($partner != 'AGASYS') { ?>
 		            	<div class="mdl-card-question mdl-card-3">
 		            		<div class="flip-card">
 		            			<div class="card-front">
@@ -337,6 +338,7 @@
 		            			</div>
 		            		</div>
 		            	</div>
+		            	<?php } ?>
 		            	<div class="mdl-card-question mdl-card-3">
 		            		<div class="flip-card">
 		            			<div class="card-front">
