@@ -226,7 +226,7 @@
 			        				</div>
 			        				<div class="contenido-right">
 			    						<h2>Sab&iacute;a que...</h2>
-			    						<p>... se reduce el 19% en el costo de fabricaci&oacute;n con un monitorio en tiempo real de costo de producci&oacute;n y variantes.</p>
+			    						<p>... se reduce el 19% en el costo de fabricaci&oacute;n con un monitoreo en tiempo real de costo de producci&oacute;n y variantes.</p>
 			    						<small>(IDC, septiembre 2016)</small>
 			        				</div>
 			        			</div>
