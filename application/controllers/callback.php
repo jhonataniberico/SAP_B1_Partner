@@ -40,6 +40,10 @@ class callback extends CI_Controller {
 			if($_SESSION['idioma'] == 'Español') {
 				header("location: es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw==&logo=seidor&correo=amhvbmF0YW5pYmVyaWNvbUBnbWFpbC5jb20=&partner=U2VpZG9y");
 			}
+		}else if($_SESSION['partner'] == 'AGASYS'){
+			if($_SESSION['idioma'] == 'Español') {
+				header("location: es?a=RXZvbHVjaW9uYW5kbyBsYSBlZmljaWVuY2lhIGVuIGVsIG11bmRv%3D%3D&logo=logo-agasys&correo=YWZsb3Jlc0BhZ2FzeXMubXg%3D&partner=QUdBU1lT&cate=categoria_silver&utm_source=SAP%20Business%20one%20Partner&utm_medium=Banner&utm_campaign=sap_business_one&utm_term=Registro&utm_content=CRM-XL18-GIC-B1CONFIAGA");
+			}
 		}else {
 			if($_SESSION['idioma'] == 'Español') {
 				header("location: es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw==&logo=logo_actualisap&correo=YXNhbmppbmVzQGFjdHVhbGlzYXBib2xpdmlhLmNvbQ==&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB");
