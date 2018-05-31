@@ -837,3 +837,17 @@ function returnHome(){
       }
 	});
 }
+function closePoliticas(){
+	$('#checkbox-1').prop('checked', false);
+	$('#checkbox-1').parent().removeClass('is-checked');
+	$('#ModalPoliticas').modal('hide');
+}
+function acceptPoliticas(){
+	$('#checkbox-1').prop('checked', true);
+	$('#ModalPoliticas').modal('hide');
+}
+$('#checkbox-1').change(function(){
+	if($('#checkbox-1').prop('checked', true)){
+		$('#ModalPoliticas').modal('show');
+	}
+})

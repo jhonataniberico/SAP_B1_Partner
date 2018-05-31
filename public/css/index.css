@@ -1123,6 +1123,28 @@ span.number{
 #ModalQuestion .mdl-card .mdl-card__menu button i{
 	color: #FFFFFF;
 }
+#ModalPoliticas .modal-dialog{
+	max-width: 320px;
+}
+#ModalPoliticas .mdl-card{
+	width: 100%;
+}
+#ModalPoliticas .mdl-card__title h2{
+	color: #000000;
+	font-size: 24px;
+	margin: 5px 0;
+}
+#ModalPoliticas .mdl-card__suppoerting-text{
+	width: 100%;
+}
+#ModalPoliticas .mdl-card__actions{
+	text-align: right;
+	padding: 16px;
+}
+#ModalPoliticas .mdl-card__actions button{
+	text-transform: initial;
+	font-family: 'RobotoMedium';
+}
 .modal.fade .modal-dialog{
     position: absolute;
     top: 50%;
@@ -1336,7 +1358,7 @@ span.number{
     border-radius: 0;
 }
 .mdl-formulario .text-contacto{
-    font-size: 15px;
+    font-size: 14px;
     margin: 5px 0;
     line-height: 20px;
 }
@@ -1349,8 +1371,8 @@ span.number{
 }
 .mdl-formulario .mdl-radio{
 	font-size: 12px;
-	font-family: 'RobotoLight';
 	color: #FFFFFF;
+	font-weight: 100;
 }
 .mdl-formulario .col-xs-4{
 	padding: 0 5px;
@@ -1397,9 +1419,10 @@ span.number{
     max-width: 235px;
 }
 .mdl-label .mdl-checkbox__label{
-	font-size: 13px;
+	font-size: 14px;
     line-height: 18px;
     color: #FFFFFF;
+    font-weight: 100;
 }
 .mdl-label .mdl-checkbox__label a{
 	font-size: 14px;
@@ -1420,6 +1443,20 @@ span.number{
 .mdl-radio__ripple-container .mdl-ripple,
 .mdl-radio__inner-circle{
 	background: #4983B6;
+}
+.js-label{
+	height: 100%;
+	margin: 5px 0;
+}
+.js-label span{
+	font-family: 'RobotoBold';
+}
+.js-label .mdl-checkbox__label{
+	font-size: 14px;
+	color: #000000;
+	line-height: 18px;
+    font-family: 'RobotoRegular';
+    font-weight: 100;
 }
 /*CHAT*/
 .chat{
