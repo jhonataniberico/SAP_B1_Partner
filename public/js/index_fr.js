@@ -89,7 +89,8 @@ function solicitarEstimacion(){
 				telefono 		: telefono,
 				relacion 		: relacion,
 				contacto 		: contacto,
-				term_cond       : term_cond},
+				term_cond       : term_cond,
+				checks 			: checks},
 		url  : 'fr/solicitarEstimacion',
 		type : 'POST'
 	}).done(function(data){
