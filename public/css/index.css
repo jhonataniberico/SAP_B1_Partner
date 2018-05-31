@@ -1451,6 +1451,9 @@ span.number{
 .js-label span{
 	font-family: 'RobotoBold';
 }
+.js-label span a{
+    color: #008FD3 !important;
+}
 .js-label .mdl-checkbox__label{
 	font-size: 14px;
 	color: #000000;
