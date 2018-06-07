@@ -590,6 +590,8 @@ class Es extends CI_Controller {
        $data['url'] = 'es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw%3D%3D&logo=seidor&correo=amhvbmF0YW5pYmVyaWNvbUBnbWFpbC5jb20%3D&partner=U2VpZG9y&utm_source=SAP%20Business%20one%20Partner&utm_medium=Banner&utm_campaign=sap_business_one&utm_term=Registro&utm_content=CRM-XL18-GIC-B1CONFIB1S';
       }else if($this->session->userdata('partner') == 'ACTUALISAP CONSULTORES BOLIVIA'){
        $data['url'] = 'es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw%3D%3D&logo=logo_actualisap&correo=YXNhbmppbmVzQGFjdHVhbGlzYXBib2xpdmlhLmNvbQ%3D%3D&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB&utm_source=SAP%20Business%20one%20Partner&utm_medium=Banner&utm_campaign=sap_business_one&utm_term=Registro&utm_content=CRM-XL18-GIC-B1CONFIACT';
+      }else if($this->session->userdata('partner') == 'CORENET'){
+       $data['url'] = 'es?a=MTQgYcOxb3MgYXl1ZGFuZG8gYSBsYXMgUFlNRVMgYSBwZW5zYXIgZW4gR1JBTkRF&logo=logo_corenet&correo=SWxpYW5hLmFyYW5kYUBjb3Jwb25ldC5jb20ubXg=&partner=Q09SRU5FVA==';
       }
       $data['error'] = EXIT_SUCCESS;
     }catch(Exception $e) {
