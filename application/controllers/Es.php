@@ -62,6 +62,8 @@ class Es extends CI_Controller {
       $this->session->set_userdata($session);
       $data['partner'] = '-';
     }
+    $session = array('email_partner' => $_GET['email']);
+    $this->session->set_userdata($session);
     $data['confirmar']     = $this->session->userdata('confirmar') == null ? 0 : $this->session->userdata('confirmar');
     $client_id             = "770t6ws75n49yz";
     $client_secret         = "PfTSjhgyMMNSdlwe";
@@ -234,7 +236,7 @@ class Es extends CI_Controller {
                             'newline'    => "\r\n");
        $this->email->initialize($configGmail);
        $this->email->from('info@sap-latam.com');
-       $this->email->to('jhonatanibericom@gmail.com');
+       $this->email->to(/*$this->session->userdata('email_partner')*/'jhonatanibericom@gmail.com');
        $this->email->subject('Estoy interesado en SAP Business One para mi negocio.');
         $texto = '<!DOCTYPE html>
                   <html>
