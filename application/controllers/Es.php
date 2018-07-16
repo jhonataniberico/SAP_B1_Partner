@@ -54,7 +54,7 @@ class Es extends CI_Controller {
       $this->session->set_userdata($session);
     }
     if(isset($_GET['partner'])){
-      $session = array('email_partner' => isset($_GET['correo']) == FALSE ? 'jhonatanibericom@gmail.com' : base64_decode($_GET['correo']));
+      $session = array('partner' => base64_decode($_GET['partner']));
       $this->session->set_userdata($session);
       $data['partner'] = base64_decode($_GET['partner']);
     }else {
@@ -62,7 +62,7 @@ class Es extends CI_Controller {
       $this->session->set_userdata($session);
       $data['partner'] = '-';
     }
-    $session = array('email_partner' => $_GET['email']);
+    $session = array('email_partner' => isset($_GET['correo']) == FALSE ? 'jhonatanibericom@gmail.com' : base64_decode($_GET['correo']));
     $this->session->set_userdata($session);
     $data['confirmar']     = $this->session->userdata('confirmar') == null ? 0 : $this->session->userdata('confirmar');
     $client_id             = "770t6ws75n49yz";
