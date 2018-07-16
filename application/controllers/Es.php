@@ -53,7 +53,7 @@ class Es extends CI_Controller {
       $session = array('logo' => 'partner');
       $this->session->set_userdata($session);
     }
-    if(isset($_GET['partner'])){
+     if(isset($_GET['partner'])){
       $session = array('partner' => base64_decode($_GET['partner']));
       $this->session->set_userdata($session);
       $data['partner'] = base64_decode($_GET['partner']);
@@ -217,12 +217,16 @@ class Es extends CI_Controller {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
       try {  
-        if($_SESSION['Contacto'] == 3){
-          $contact = 'por email y teléfono';
-        }else if($_SESSION['Contacto'] == 2){
-          $contact = 'por teléfono';
-        }else if($_SESSION['Contacto'] == 1){
-          $contact = 'por Email';
+        if($_SESSION['Contacto'] == '' || $_SESSION['Contacto'] == null){
+          $contact = '-';
+        }else {
+          if($_SESSION['Contacto'] == 3){
+            $contact = 'por email y teléfono';
+          }else if($_SESSION['Contacto'] == 2){
+            $contact = 'por teléfono';
+          }else if($_SESSION['Contacto'] == 1){
+            $contact = 'por Email';
+          }
         }
         $respuestas = $this->M_solicitud->getRespUsuario($_SESSION['id_persona']);
         $this->load->library("email");
