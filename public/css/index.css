@@ -453,11 +453,11 @@ table thead tr{
 }
 .header-left{
     padding: 0 0 0 25px;
-    float: left;
     display: flex;
     display: -webkit-flex;
     align-items: center;
     width: 100%;
+    justify-content: flex-start;
 }
 .header-right.admin{
 	max-width: 240px;
@@ -470,18 +470,17 @@ table thead tr{
 	margin-right: 10px;
 }
 .header-right{
-    float: right;
     height: 62px;
-    max-width: 215px;
     width: 100%;
     display: flex;
     display: -webkit-flex;
-    align-items: center
+    align-items: center;
+    justify-content: flex-end;
 }
-.header-right .mdl-idioma{
+/*.header-right .mdl-idioma{
 	float: left;
 	width: 100%;
-}
+}*/
 .header-right .background1,
 .header-right .background2,
 .header-right .background3{
