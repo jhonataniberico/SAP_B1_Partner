@@ -1,14 +1,6 @@
 <?php
 
-if(!isset($_SESSION)) 
-{ 
-    session_start(); 
-}
-else
-{
-    session_destroy();
-    session_start(); 
-}
+session_start();
 
 $client_id             = "770t6ws75n49yz";
 $client_secret         = "PfTSjhgyMMNSdlwe";

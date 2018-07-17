@@ -53,7 +53,7 @@ class Es extends CI_Controller {
       $session = array('logo' => 'partner');
       $this->session->set_userdata($session);
     }
-     if(isset($_GET['partner'])){
+    if(isset($_GET['partner'])){
       $session = array('partner' => base64_decode($_GET['partner']));
       $this->session->set_userdata($session);
       $data['partner'] = base64_decode($_GET['partner']);

@@ -5,11 +5,10 @@ class callback extends CI_Controller {
     
     function __construct() {
         parent::__construct();
-	$this->load->library('session');
+		$this->load->library('session');
     }
 
-    public function index()
-    {    
+    public function index() {
     	require_once "init.php";
 		$user = getCallback();
 		$_SESSION['user'] 	  			= $user;
@@ -27,7 +26,8 @@ class callback extends CI_Controller {
 				 		 'pantalla'     => 5);
 		$this->session->set_userdata($session);
 		if($_SESSION['partner'] == 'partner'){
-			if($_SESSION['idioma'] == 'Español') {
+			header("location: es");
+			/*if($_SESSION['idioma'] == 'Español') {
 				header("location: es");
 			}else if($_SESSION['idioma'] == 'Francés') {
 				header("location: fr");
@@ -35,7 +35,7 @@ class callback extends CI_Controller {
 				header("location: pt");
 			}else if($_SESSION['idioma'] == 'Finlandés') {
 				header("location: fi");
-			}
+			}*/
 		}
 		if($_SESSION['partner'] == 'Seidor'){
 			if($_SESSION['idioma'] == 'Español') {
@@ -52,9 +52,9 @@ class callback extends CI_Controller {
 				header("location: es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw%3D%3D&logo=logo_actualisap&correo=YXNhbmppbmVzQGFjdHVhbGlzYXBib2xpdmlhLmNvbQ%3D%3D&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB&utm_source=SAP%20Business%20one%20Partner&utm_medium=Banner&utm_campaign=sap_business_one&utm_term=Registro&utm_content=CRM-XL18-GIC-B1CONFIACT");
 			}
 		}
-		if($_SESSION['partner'] == 'CORENET'){
+		if($_SESSION['partner'] == 'CORPONET'){
 			if($_SESSION['idioma'] == 'Español') {
-				header("location: es?a=MTQgYcOxb3MgYXl1ZGFuZG8gYSBsYXMgUFlNRVMgYSBwZW5zYXIgZW4gR1JBTkRF&logo=logo_corenet&correo=SWxpYW5hLmFyYW5kYUBjb3Jwb25ldC5jb20ubXg=&partner=Q09SRU5FVA==");
+				header("location: es?a=MTQgYcOxb3MgYXl1ZGFuZG8gYSBsYXMgUFlNRVMgYSBwZW5zYXIgZW4gR1JBTkRF&logo=logotipo_Corponet&correo=SWxpYW5hLmFyYW5kYUBjb3Jwb25ldC5jb20ubXg=&partner=Q09SUE9ORVQ=");
 			}
 		}/*else {
 			if($_SESSION['idioma'] == 'Español') {
