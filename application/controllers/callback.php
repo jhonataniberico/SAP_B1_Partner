@@ -56,6 +56,11 @@ class callback extends CI_Controller {
 			if($_SESSION['idioma'] == 'Español') {
 				header("location: es?a=MTQgYcOxb3MgYXl1ZGFuZG8gYSBsYXMgUFlNRVMgYSBwZW5zYXIgZW4gR1JBTkRF&logo=logotipo_Corponet&correo=SWxpYW5hLmFyYW5kYUBjb3Jwb25ldC5jb20ubXg=&partner=Q09SUE9ORVQ=");
 			}
+		}
+		if($_SESSION['partner'] == 'AJAM'){
+			if($_SESSION['idioma'] == 'Español') {
+				header("location: es?a=bGliZXJhIHR1IHBvdGVuY2lhIGNvbiBlbCBzaXN0ZW1hIHF1ZSBjcmVjZSBjb250aWdv&logo=ijam&correo=bWFpbHRvOmNvbnRhY3RvQGlqYW0uY29tLm14&partner=SUpBTQ==");
+			}
 		}/*else {
 			if($_SESSION['idioma'] == 'Español') {
 				header("location: es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw==&logo=logo_actualisap&correo=YXNhbmppbmVzQGFjdHVhbGlzYXBib2xpdmlhLmNvbQ==&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB");

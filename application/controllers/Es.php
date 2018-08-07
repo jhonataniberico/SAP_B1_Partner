@@ -198,7 +198,7 @@ class Es extends CI_Controller {
         $this->session->unset_userdata('pais_linke');
         $this->session->unset_userdata('titulo');
         $this->session->unset_userdata('compania');
-        $this->session->unset_userdata('Industria');
+        /*$this->session->unset_userdata('Industria');*/
         $this->session->unset_userdata('Infraestructura');
         $this->session->unset_userdata('Factura_anual');
         $this->session->unset_userdata('Tamanio');
@@ -216,7 +216,7 @@ class Es extends CI_Controller {
   function sendGmailSap($email){
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
-      try {  
+      try {
         if($_SESSION['Contacto'] == '' || $_SESSION['Contacto'] == null){
           $contact = '-';
         }else {
@@ -234,7 +234,7 @@ class Es extends CI_Controller {
                             'smtp_host'  => 'smtpout.secureserver.net',
                             'smtp_port'  => 3535,
                             'smtp_user'  => 'info@marketinghpe.com',
-                            'smtp_pass'  => 'hpeinfo18',
+                            'smtp_pass'  => 'hpEmSac$18',
                             'mailtype'   => 'html',
                             'charset'    => 'utf-8',
                             'newline'    => "\r\n");
@@ -389,6 +389,7 @@ class Es extends CI_Controller {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
       try {  
+       $pdf = '';
        $this->load->library("email");
        if($_SESSION['Contacto'] == 3){
           $contact = 'por email y teléfono';
@@ -397,12 +398,76 @@ class Es extends CI_Controller {
         }else if($_SESSION['Contacto'] == 1){
           $contact = 'por Email';
         }
+        if($this->session->userdata('confirmar') == 'IJAM') {
+          if($this->session->userdata('industria') == 'Servicios Profesionales'){
+            $pdf = '<tr>
+                      <td>
+                        <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr style="padding: 5px 20px;">
+                              <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios.<a href="'.RUTA_PDF.'Comercio.pdf">Comercio</a></font></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>';
+          }else if($this->session->userdata('industria') == 'Retail'){
+            $pdf = '<tr>
+                      <td>
+                        <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr style="padding: 5px 20px;">
+                              <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios.<a href="'.RUTA_PDF.'Comercio.pdf">Comercio</a></font></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>';
+          }else if($this->session->userdata('industria') == 'Distribución'){
+            $pdf = '<tr>
+                      <td>
+                        <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr style="padding: 5px 20px;">
+                              <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios.<a href="'.RUTA_PDF.'Distribucion.pdf">Distribución</a></font></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>';
+          }else if($this->session->userdata('industria') == 'Productos de consumo'){
+            $pdf = '<tr>
+                      <td>
+                        <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr style="padding: 5px 20px;">
+                              <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios.<a href="'.RUTA_PDF.'Fabricacion.pdf">Procesos/Manufactura</a></font></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>';
+          }else if($this->session->userdata('industria') == 'Procesos/Manufactura'){
+            $pdf = '<tr>
+                      <td>
+                        <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr style="padding: 5px 20px;">
+                              <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios.<a href="'.RUTA_PDF.'Productos_de_Consumo.pdf">Productos de consumo</a></font></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>';
+
+          }
+        }
         $respuestas = $this->M_solicitud->getRespUsuario($_SESSION['id_persona']);
        $configGmail = array('protocol'  => 'smtp',
                             'smtp_host' => 'smtpout.secureserver.net',
                             'smtp_port' => 3535,
                             'smtp_user' => 'info@marketinghpe.com',
-                            'smtp_pass' => 'hpeinfo18',
+                            'smtp_pass' => 'hpEmSac$18',
                             'mailtype'  => 'html',
                             'charset'   => 'utf-8',
                             'newline'   => "\r\n");    
@@ -528,6 +593,7 @@ class Es extends CI_Controller {
                                 </table>
                               </td>
                             </tr>
+                            '.$pdf.'
                           </tbody>
                         </table>
                       </td>
