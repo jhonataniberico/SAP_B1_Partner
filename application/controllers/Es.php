@@ -240,7 +240,7 @@ class Es extends CI_Controller {
                             'newline'    => "\r\n");
        $this->email->initialize($configGmail);
        $this->email->from('info@sap-latam.com');
-       $this->email->to(/*$this->session->userdata('email_partner')*/'jhonatanibericom@gmail.com');
+       $this->email->to(/*$this->session->userdata('email_partner')*/'pyf136@gmail.com');
        $this->email->subject('Estoy interesado en SAP Business One para mi negocio.');
         $texto = '<!DOCTYPE html>
                   <html>
@@ -386,228 +386,228 @@ class Es extends CI_Controller {
       return json_encode(array_map('utf8_encode', $data));
     }
     function emailClienteSap($email){
-      $data['error'] = EXIT_ERROR;
-      $data['msj']   = null;
-      try {  
-       $pdf = '';
-       $this->load->library("email");
-       if($_SESSION['Contacto'] == 3){
-          $contact = 'por email y teléfono';
-        }else if($_SESSION['Contacto'] == 2){
-          $contact = 'por teléfono';
-        }else if($_SESSION['Contacto'] == 1){
-          $contact = 'por Email';
-        }
-        if($this->session->userdata('confirmar') == 'IJAM') {
-          if($this->session->userdata('industria') == 'Servicios Profesionales'){
-            $pdf = '<tr>
-                      <td>
-                        <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
-                          <tbody>
-                            <tr style="padding: 5px 20px;">
-                              <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios.<a href="'.RUTA_PDF.'Comercio.pdf">Comercio</a></font></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>';
-          }else if($this->session->userdata('industria') == 'Retail'){
-            $pdf = '<tr>
-                      <td>
-                        <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
-                          <tbody>
-                            <tr style="padding: 5px 20px;">
-                              <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios.<a href="'.RUTA_PDF.'Comercio.pdf">Comercio</a></font></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>';
-          }else if($this->session->userdata('industria') == 'Distribución'){
-            $pdf = '<tr>
-                      <td>
-                        <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
-                          <tbody>
-                            <tr style="padding: 5px 20px;">
-                              <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios.<a href="'.RUTA_PDF.'Distribucion.pdf">Distribución</a></font></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>';
-          }else if($this->session->userdata('industria') == 'Productos de consumo'){
-            $pdf = '<tr>
-                      <td>
-                        <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
-                          <tbody>
-                            <tr style="padding: 5px 20px;">
-                              <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios.<a href="'.RUTA_PDF.'Fabricacion.pdf">Procesos/Manufactura</a></font></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>';
-          }else if($this->session->userdata('industria') == 'Procesos/Manufactura'){
-            $pdf = '<tr>
-                      <td>
-                        <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
-                          <tbody>
-                            <tr style="padding: 5px 20px;">
-                              <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios.<a href="'.RUTA_PDF.'Productos_de_Consumo.pdf">Productos de consumo</a></font></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>';
+        $data['error'] = EXIT_ERROR;
+        $data['msj']   = null;
+        try {  
+            $pdf = '';
+            $this->load->library("email");
+            if($_SESSION['Contacto'] == 3){
+                $contact = 'por email y teléfono';
+            }else if($_SESSION['Contacto'] == 2){
+                $contact = 'por teléfono';
+            }else if($_SESSION['Contacto'] == 1){
+                $contact = 'por Email';
+            }
+            if($this->session->userdata('partner') == 'IJAM') {
+                if($this->session->userdata('industria') == 'Servicios Profesionales'){
+                    $pdf = '<tr>
+                                <td>
+                                    <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr style="padding: 5px 20px;">
+                                                <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios. <a href="'.RUTA_PDF.'Comercio.pdf">Descargue aquí.</a></font></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>';
+                }else if($this->session->userdata('industria') == 'Retail'){
+                    $pdf = '<tr>
+                                <td>
+                                    <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr style="padding: 5px 20px;">
+                                                <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios. <a href="'.RUTA_PDF.'Comercio.pdf">Descargue aquí.</a></font></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>';
+                }else if($this->session->userdata('industria') == 'Distribución'){
+                    $pdf = '<tr>
+                                <td>
+                                    <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr style="padding: 5px 20px;">
+                                                <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios. <a href="'.RUTA_PDF.'Distribucion.pdf">Descargue aquí.</a></font></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>';
+                }else if($this->session->userdata('industria') == 'Productos de consumo'){
+                    $pdf = '<tr>
+                                <td>
+                                    <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr style="padding: 5px 20px;">
+                                                <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios. <a href="'.RUTA_PDF.'Fabricacion.pdf">Descargue aquí.</a></font></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>';
+                }else if($this->session->userdata('industria') == 'Procesos/Manufactura'){
+                    $pdf = '<tr>
+                                <td>
+                                    <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr style="padding: 5px 20px;">
+                                                <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios. <a href="'.RUTA_PDF.'Productos_de_Consumo.pdf">Descargue aquí.</a></font></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>';
 
-          }
+                }
+            }
+            $respuestas = $this->M_solicitud->getRespUsuario($_SESSION['id_persona']);
+            $configGmail = array('protocol'  => 'smtp',
+                                'smtp_host' => 'smtpout.secureserver.net',
+                                'smtp_port' => 3535,
+                                'smtp_user' => 'info@marketinghpe.com',
+                                'smtp_pass' => 'hpEmSac$18',
+                                'mailtype'  => 'html',
+                                'charset'   => 'utf-8',
+                                'newline'   => "\r\n");    
+            $this->email->initialize($configGmail);
+            $this->email->from('info@sap-latam.com');
+            $this->email->to($email);
+            $this->email->subject('Gracias por su interés en SAP Business One.');
+            $texto = '<!DOCTYPE html>
+                    <html>
+                    <head>
+                      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                        <meta name="viewport" content="width=device-width">
+                      <title></title>
+                      <style type="text/css">
+                        table,tbody,tr,td,th{padding: 0;margin: 0;border-spacing: 0;border-collapse: inherit;}
+                        body{margin: 0;padding: 0; height: 100vh;}
+                        table.body{background-color: #F3F3F3;width: 100%;height: 100%;border:0;}
+                        h2,p{font-family: "Open Sans",Arial,Helvetica,sans-serif;margin: 0;}
+                      </style>
+                    </head>
+                    <body>
+                      <table class="body" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <td>
+                            <table align="center" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 600px;margin: 0 auto;background-color: #000000;text-align: center;float: none;">
+                              <tbody>
+                                <tr>
+                                  <th>
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                      <tbody>
+                                        <tr>
+                                          <th style="width: 525px;text-align: left;padding-left: 20px;">
+                                            <table cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr style="text-align: left;">
+                                                  <th style="text-align: left;"><img width="150" src="http://www.sap-latam.com/sap_business_one/public/img/logo/logo_header.png"></th>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </th>
+                                          <th style="width: 75px;">
+                                            <table cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="height: 100px;width: 25px;background-color: #54442E;"></td>
+                                                  <td style="height: 100px;width: 25px;background-color: #8D6832;"></td>
+                                                  <td style="height: 100px;width: 25px;background-color: #E29D2E;"></td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </th>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table align="center" cellspacing="0" cellpadding="0" style="width: 100%;border:1px solid #000000;max-width: 600px;margin: 5px auto;;text-align: center;float: none;background-color: #FFFFFF;">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <table align="center" cellspacing="0" cellpadding="0" style="text-align: center;margin: auto;">
+                                      <tbody>
+                                        <tr>
+                                          <td style="text-align: left;padding: 20px;"><img width="150" src="http://www.sap-latam.com/SAP_Business_One_Partner/public/img/logo/'.$this->session->userdata('logo').'.png"></td>
+                                        </tr>
+                                        <tr>
+                                          <td style="padding: 20px 40px 10px 40px;">
+                                            <font style="color: #000000;font-weight: bold;font-size: 20px;">Agradecemos su interés</font>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td style="padding:10px 40px 20px 40px;">
+                                            <font style="color: #000000;">En '.$this->session->userdata('partner').' estamos seguros que podemos preparar un paquete de SAP Business One a su medida.</font>
+                                            <font style="color: #000000;">Uno de nuestros especialistas se pondrá en contacto con usted para dar el primer paso.</font>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="padding-bottom: 20px;">
+                                    <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr style="padding: 5px 20px;">
+                                          <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/1.jpg"></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿En qué industria se desempeña?</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Industria.'</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/2.jpg"></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿De qué tamaño es su empresa?</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Tamanio.' empleados</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/3.jpg"></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Su facturación</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Factura_anual.'</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/4.jpg"></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿Cual es la prioridad de su negocio?</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Prioridad.'</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/5.jpg"></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿Qué tipo de infraestructura está buscando?</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Infraestructura.'</font></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                '.$pdf.'
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </body>
+                    </html>';
+            $this->email->message($texto);
+            $this->email->send();
+            $data['error'] = EXIT_SUCCESS;
+        }catch (Exception $e){
+            $data['msj'] = $e->getMessage();
         }
-        $respuestas = $this->M_solicitud->getRespUsuario($_SESSION['id_persona']);
-       $configGmail = array('protocol'  => 'smtp',
-                            'smtp_host' => 'smtpout.secureserver.net',
-                            'smtp_port' => 3535,
-                            'smtp_user' => 'info@marketinghpe.com',
-                            'smtp_pass' => 'hpEmSac$18',
-                            'mailtype'  => 'html',
-                            'charset'   => 'utf-8',
-                            'newline'   => "\r\n");    
-       $this->email->initialize($configGmail);
-       $this->email->from('info@sap-latam.com');
-       $this->email->to($email);
-       $this->email->subject('Gracias por su interés en SAP Business One.');
-        $texto = '<!DOCTYPE html>
-                <html>
-                <head>
-                  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-                    <meta name="viewport" content="width=device-width">
-                  <title></title>
-                  <style type="text/css">
-                    table,tbody,tr,td,th{padding: 0;margin: 0;border-spacing: 0;border-collapse: inherit;}
-                    body{margin: 0;padding: 0; height: 100vh;}
-                    table.body{background-color: #F3F3F3;width: 100%;height: 100%;border:0;}
-                    h2,p{font-family: "Open Sans",Arial,Helvetica,sans-serif;margin: 0;}
-                  </style>
-                </head>
-                <body>
-                  <table class="body" cellspacing="0" cellpadding="0" border="0">
-                    <tr>
-                      <td>
-                        <table align="center" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 600px;margin: 0 auto;background-color: #000000;text-align: center;float: none;">
-                          <tbody>
-                            <tr>
-                              <th>
-                                <table cellspacing="0" cellpadding="0" border="0">
-                                  <tbody>
-                                    <tr>
-                                      <th style="width: 525px;text-align: left;padding-left: 20px;">
-                                        <table cellspacing="0" cellpadding="0" border="0">
-                                          <tbody>
-                                            <tr style="text-align: left;">
-                                              <th style="text-align: left;"><img width="150" src="http://www.sap-latam.com/sap_business_one/public/img/logo/logo_header.png"></th>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </th>
-                                      <th style="width: 75px;">
-                                        <table cellspacing="0" cellpadding="0" border="0">
-                                          <tbody>
-                                            <tr>
-                                              <td style="height: 100px;width: 25px;background-color: #54442E;"></td>
-                                              <td style="height: 100px;width: 25px;background-color: #8D6832;"></td>
-                                              <td style="height: 100px;width: 25px;background-color: #E29D2E;"></td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </th>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </th>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <table align="center" cellspacing="0" cellpadding="0" style="width: 100%;border:1px solid #000000;max-width: 600px;margin: 5px auto;;text-align: center;float: none;background-color: #FFFFFF;">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <table align="center" cellspacing="0" cellpadding="0" style="text-align: center;margin: auto;">
-                                  <tbody>
-                                    <tr>
-                                      <td style="text-align: left;padding: 20px;"><img width="150" src="http://www.sap-latam.com/SAP_Business_One_Partner/public/img/logo/'.$this->session->userdata('logo').'.png"></td>
-                                    </tr>
-                                    <tr>
-                                      <td style="padding: 20px 40px 10px 40px;">
-                                        <font style="color: #000000;font-weight: bold;font-size: 20px;">Agradecemos su interés</font>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td style="padding:10px 40px 20px 40px;">
-                                        <font style="color: #000000;">En '.$this->session->userdata('partner').' estamos seguros que podemos preparar un paquete de SAP Business One a su medida.</font>
-                                        <font style="color: #000000;">Uno de nuestros especialistas se pondrá en contacto con usted para dar el primer paso.</font>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding-bottom: 20px;">
-                                <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
-                                  <tbody>
-                                    <tr style="padding: 5px 20px;">
-                                      <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/1.jpg"></td>
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿En qué industria se desempeña?</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Industria.'</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/2.jpg"></td>
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿De qué tamaño es su empresa?</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Tamanio.' empleados</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/3.jpg"></td>
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Su facturación</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Factura_anual.'</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/4.jpg"></td>
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿Cual es la prioridad de su negocio?</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Prioridad.'</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/5.jpg"></td>
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿Qué tipo de infraestructura está buscando?</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Infraestructura.'</font></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                            '.$pdf.'
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </body>
-                </html>';
-        $this->email->message($texto);
-        $this->email->send();
-        $data['error'] = EXIT_SUCCESS;
-      }catch (Exception $e){
-        $data['msj'] = $e->getMessage();
-      }
-      return json_encode(array_map('utf8_encode', $data));
+        return json_encode(array_map('utf8_encode', $data));
     }
     function EditQuestion(){
       $data['error'] = EXIT_ERROR;
@@ -627,7 +627,8 @@ class Es extends CI_Controller {
       $data['msj']   = null;
       try {
         $confirmar = $this->input->post('confirmar');
-        $session   = array('confirmar' => $confirmar);
+        $session   = array('confirmar' => $confirmar,
+               'partner' => $this->session->userdata('partner'));
         $this->session->set_userdata($session);
         $data['error'] = EXIT_SUCCESS;
       }catch(Exception $e){
@@ -664,6 +665,8 @@ class Es extends CI_Controller {
        $data['url'] = 'es?a=VHUgbmVnb2NpbyBlbiBtYW5vcyBkZSBleHBlcnRvcw%3D%3D&logo=logo_actualisap&correo=YXNhbmppbmVzQGFjdHVhbGlzYXBib2xpdmlhLmNvbQ%3D%3D&partner=QUNUVUFMSVNBUCBDT05TVUxUT1JFUyBCT0xJVklB&utm_source=SAP%20Business%20one%20Partner&utm_medium=Banner&utm_campaign=sap_business_one&utm_term=Registro&utm_content=CRM-XL18-GIC-B1CONFIACT';
       }else if($this->session->userdata('partner') == 'CORENET'){
        $data['url'] = 'es?a=MTQgYcOxb3MgYXl1ZGFuZG8gYSBsYXMgUFlNRVMgYSBwZW5zYXIgZW4gR1JBTkRF&logo=logo_corenet&correo=SWxpYW5hLmFyYW5kYUBjb3Jwb25ldC5jb20ubXg=&partner=Q09SRU5FVA==';
+      } else if($this->session->userdata('partner') == 'IJAM') {
+        $data['url'] = 'es?a=bGliZXJhIHR1IHBvdGVuY2lhIGNvbiBlbCBzaXN0ZW1hIHF1ZSBjcmVjZSBjb250aWdv&logo=ijam&correo=Y29udGFjdG9AaWphbS5jb20ubXg&partner=SUpBTQ==';
       }
       $data['error'] = EXIT_SUCCESS;
     }catch(Exception $e) {

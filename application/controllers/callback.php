@@ -59,7 +59,7 @@ class callback extends CI_Controller {
 		}
 		if($_SESSION['partner'] == 'AJAM'){
 			if($_SESSION['idioma'] == 'Español') {
-				header("location: es?a=bGliZXJhIHR1IHBvdGVuY2lhIGNvbiBlbCBzaXN0ZW1hIHF1ZSBjcmVjZSBjb250aWdv&logo=ijam&correo=bWFpbHRvOmNvbnRhY3RvQGlqYW0uY29tLm14&partner=SUpBTQ==");
+				header("location: es?a=bGliZXJhIHR1IHBvdGVuY2lhIGNvbiBlbCBzaXN0ZW1hIHF1ZSBjcmVjZSBjb250aWdv&logo=ijam&correo=Y29udGFjdG9AaWphbS5jb20ubXg&partner=SUpBTQ==");
 			}
 		}/*else {
 			if($_SESSION['idioma'] == 'Español') {
