@@ -835,6 +835,7 @@
 				$('#factura').text("<?php echo $Factura_anual ?>");
 				$('#prioridad').append("<?php echo $priori ?>");
 				$('#infraestructura').text("<?php echo $Infraestructura ?>");
+				$('#partner').css('display','none');
 			}
 		});
     </script>
