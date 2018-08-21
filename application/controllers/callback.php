@@ -59,7 +59,7 @@ class callback extends CI_Controller {
 		}
 		if($_SESSION['partner'] == 'AJAM'){
 			if($_SESSION['idioma'] == 'Español') {
-				header("location: es?a=bGliZXJhIHR1IHBvdGVuY2lhIGNvbiBlbCBzaXN0ZW1hIHF1ZSBjcmVjZSBjb250aWdv&logo=ijam&correo=Y29udGFjdG9AaWphbS5jb20ubXg&partner=SUpBTQ==");
+				header("location: es?a=bGliZXJhIHR1IHBvdGVuY2lhIGNvbiBlbCBzaXN0ZW1hIHF1ZSBjcmVjZSBjb250aWdv&logo=ijam&correo=Y29udGFjdG9AaWphbS5jb20ubXg&partner=SUpBTQ%3D%3D&utm_source=SAP%20Business%20One%20Partner&utm_medium=banner&utm_campaign=sap_business_one&utm_term=Registro&utm_content=CRM-XL18-GIC-B1CONFISCA");
 			}
 		}/*else {
 			if($_SESSION['idioma'] == 'Español') {
