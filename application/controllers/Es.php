@@ -666,7 +666,7 @@ class Es extends CI_Controller {
       }else if($this->session->userdata('partner') == 'CORENET'){
        $data['url'] = 'es?a=MTQgYcOxb3MgYXl1ZGFuZG8gYSBsYXMgUFlNRVMgYSBwZW5zYXIgZW4gR1JBTkRF&logo=logo_corenet&correo=SWxpYW5hLmFyYW5kYUBjb3Jwb25ldC5jb20ubXg=&partner=Q09SRU5FVA==';
       } else if($this->session->userdata('partner') == 'IJAM') {
-        $data['url'] = 'es?a=bGliZXJhIHR1IHBvdGVuY2lhIGNvbiBlbCBzaXN0ZW1hIHF1ZSBjcmVjZSBjb250aWdv&logo=ijam&correo=Y29udGFjdG9AaWphbS5jb20ubXg&partner=SUpBTQ%3D%3D&utm_source=SAP%20Business%20One%20Partner&utm_medium=banner&utm_campaign=sap_business_one&utm_term=Registro&utm_content=CRM-XL18-GIC-B1CONFISCA';
+        $data['url'] = 'es?a=TGliZXJhIHR1IHBvdGVuY2lhbCBjb24gZWwgc2lzdGVtYSBxdWUgY3JlY2UgY29udGlnbw==&logo=ijam&correo=Y29udGFjdG9AaWphbS5jb20ubXg&partner=SUpBTQ%3D%3D&utm_source=SAP%20Business%20One%20Partner&utm_medium=banner&utm_campaign=sap_business_one&utm_term=Registro&utm_content=CRM-XL18-GIC-B1CONFISCA';
       }
       $data['error'] = EXIT_SUCCESS;
     }catch(Exception $e) {
