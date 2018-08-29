@@ -441,7 +441,7 @@ class Es extends CI_Controller {
                                     <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
                                         <tbody>
                                             <tr style="padding: 5px 20px;">
-                                                <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios. <a href="'.RUTA_PDF.'Fabricacion.pdf">Descargue aquí.</a></font></td>
+                                                <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios. <a href="'.RUTA_PDF.'Productos_de_Consumo.pdf">Descargue aquí.</a></font></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -453,7 +453,7 @@ class Es extends CI_Controller {
                                     <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
                                         <tbody>
                                             <tr style="padding: 5px 20px;">
-                                                <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios. <a href="'.RUTA_PDF.'Productos_de_Consumo.pdf">Descargue aquí.</a></font></td>
+                                                <td style="text-align: center;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Ahora Lo invitamos a descargar una valiosa informacion sobre el impacto de la tecnologia en los negocios. <a href="'.RUTA_PDF.'Fabricacion.pdf">Descargue aquí.</a></font></td>
                                             </tr>
                                         </tbody>
                                     </table>
